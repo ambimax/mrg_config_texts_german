@@ -1,0 +1,1997 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category Symmetrics
+ * @package Symmetrics_ConfigGermanTexts
+ * @author symmetrics gmbh <info@symmetrics.de>, Eugen Gitin <eg@symmetrics.de>
+ * @copyright symmetrics gmbh
+ * @license http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+-->
+<config>
+	<modules>
+		<Symmetrics_ConfigGermanTexts>
+			<version>0.1.0</version>
+			<depends />
+		</Symmetrics_ConfigGermanTexts>
+	</modules>
+	<global>
+		<resources>
+			<config_german_texts_setup>
+				<setup>
+					<module>Symmetrics_ConfigGermanTexts</module>
+				</setup>
+				<connection>
+					<use>core_setup</use>
+				</connection>
+			</config_german_texts_setup>
+			<config_german_texts_setup>
+				<connection>
+					<use>core_write</use>
+				</connection>
+			</config_german_texts_setup>
+			<config_german_texts_setup>
+				<connection>
+					<use>core_read</use>
+				</connection>
+			</config_german_texts_setup>
+		</resources>
+	</global>
+	<default>
+        <config_german_texts>
+            <blocks>
+                <default>
+	                <sym_agb>
+	                    <active>1</active>
+	                    <text><![CDATA[
+							<h2>AGB UND WIDERRUFSBELEHRUNG</h2>
+							<h3>{{block type="symmetrics_impressum/impressum" value="shopname"}}</h3>
+							<p>{{block type="symmetrics_impressum/impressum" value="address"}}</p>
+							<p>{{block type="symmetrics_impressum/impressum" value="communication"}}</p>
+							<p>{{block type="symmetrics_impressum/impressum" value="tax"}}</p>
+							<p>{{block type="symmetrics_impressum/impressum" value="legal"}}</p>
+							<p>Die Darstellung der Produkte im Online-Shop stellt kein rechtlich bindendes Angebot, sondern einen unverbindlichen Online-Katalog dar. Duch Anklicken des Buttons "Bestellung senden" geben Sie eine verbindliche Bestellung der im Warenkorb enthaltenen Waren ab. Die Bestätigung des Eingangs Ihrer Bestellung erfolgt zusammen mit der Annahme der Bestellung unmittelbar nach dem Absenden durch automatisierte E-Mail. Mit dieser E-Mail-Bestätigung ist der Kaufvertrag zustande gekommen.</p>
+							<p><strong>Zur Speicherung dieser Unterlagen und zu Einsichtnahmemöglichkeiten in den Vertragstext (Angebotstext) vergleichen Sie bitte § 2 der AGB.</strong></p>
+							<p><strong>Die gesetzlich vorgeschriebene Belehrung über das Widerrufsrecht im Fernabsatz für Verbraucher finden Sie unter § 9 der AGB.</strong></p>
+							<h3>§ 1 Allgemeines</h3>
+							<p>Für alle Lieferungen und Leistungen von {{block type="symmetrics_impressum/impressum" value="shopname"}} gelten ausschließlich die nachfolgenden Allgemeinen Geschäftsbedingungen in ihrer zum Zeitpunkt des Vertragsschlusses gültigen Fassung. Abweichende Bedingungen, insbesondere Allgemeine Geschäftsbedingungen des Käufers, werden nur dann Vertragsinhalt, wenn diese von uns bestätigt wurden.</p>
+							<h3>§ 2 Speichermöglichkeit und Einsicht in den Vertragstext</h3>
+							<p>2.1. Sie können diese Allgemeinen Geschäftsbedingungen jederzeit auf unserer Internetseite einsehen. Sie können dieses Dokument ausdrucken oder speichern, indem Sie die übliche Funktionalität Ihres Internetdiensteprogramms (Browser: dort meist "Datei" -> "Speichern unter") nutzen.</p>
+							<p>2.2. Sie erhalten nach der Bestellung eine automatische Bestelleingangsbestätigungs-E-Mail, welche die Daten Ihrer Bestellung und diese AGB enthält und die Sie mit Hilfe der Funktionen Ihres Browsers abspeichern können.</p>
+							<h3>§ 3 Vertragspartner, Sprache, Bestellvorgang und Vertragsschluss</h3>
+							<p>3.1. Ihr Vertragspartner ist {{block type="symmetrics_impressum/impressum" value="shopname"}}. Verträge in unserem Internetshop werden in deutscher Sprache geschlossen.</p>
+							<p>3.2. Unsere Angebote sind freibleibend, soweit sie nicht ausdrücklich zum Inhalt einer vertraglichen Vereinbarung werden.</p>
+							<p>3.3. Der Bestellvorgang läuft wie folgt ab: a. Artikel in den Warenkorb legen b. Sie können entweder als Gast oder als registrierter Kunde bei uns bestellen. Wenn Sie ein als registrierter Kunde bestellen: Geben Sie Ihre Emailadresse und Ihr Passwort ein. Wenn Sie als Gast bestellen möchten, geben Sie Ihre persönlichen Daten, Adresse und Emailadresse ein. c. Ihre Lieferadresse eingeben oder die Rechnungsadresse als Lieferadresse bestätigen d. Versandkosten bestätigen e. Zahlungsart wählen f. Bestelldaten prüfen und bestätigen, dass Sie unsere Widerrufsbelehrung sowie die AGB gelesen und die AGB akzeptiert haben g. auf den Button „Bestellung aufgeben“ klicken um die Bestellung abzusenden. Die Information über den Zeitpunkt des Vertragsschlusses finden Sie unter Punkt 3.4 dieser AGB.</p>
+							<p>3.4. Sie geben ein verbindliches Angebot ab, wenn Sie den Online-Bestellprozess gem. 3.3. unter Eingabe der dort verlangten Angaben durchlaufen haben und im letzten Bestellschritt den Button „Bestellung aufgeben“ anklicken. Nachdem Sie Ihre Bestellung abgeschlossen haben, senden wir Ihnen eine Email, die den Empfang Ihrer Bestellung bestätigt und deren Einzelheiten aufführt. Die elektronische Bestelleingangsbestätigung stellt noch keine Vertragsannahme dar, sondern dient lediglich der Benachrichtigung über den tatsächlichen Zugang der Bestellung. Ein verbindlicher Vertrag kommt erst zustande, wenn wir Ihre Bestellung durch Lieferung der Ware bzw. durch Versandbestätigung annehmen. </p>
+							<h3>§ 4 Preise, Rechnung, Versandkosten</h3>
+							<p>4.1. Für die Lieferung gelten die auf unserer Internetseite zum Zeitpunkt der Bestellung aufgeführten Versandkosten. Unsere Preise verstehen sich zuzüglich Versandkosten (inkl. Verpackung)  inklusive der gesetzlichen Mehrwertsteuer.</p>
+							<p>4.2. Über den Kauf erhalten Sie eine Rechnung mit ausgewiesener Mehrwertsteuer.</p>
+							<p>4.3. Die Versandkosten (inkl. Verpackung) für den Versand innerhalb Deutschlands betragen pauschal € 5,00 inkl. MwSt..</p>
+							<h3>§ 5 Lieferung</h3>
+							<p>5.1. Zu jedem Artikel wird die Verfügbarkeit und die Lieferzeit in der Produktanzeige angegeben. Zu dieser Zeit kommt noch die Postlaufzeit hinzu. Die Lieferfrist beginnt bei Vorauskasse mit Eingang Ihrer Zahlung auf unserem Konto und bei Lastschrift mit der Belastung Ihres Kontos. Wenn in der Produktanzeige keine Lieferinformation angezeigt wird, liefern wir in ca. einer Woche nach Erhalt Ihrer Bestellung (Nachnahme) oder des Zahlungseingangs (Vorauskasse).</p>
+							<p>5.2. Bestellungen und Lieferungen sind derzeit nur innerhalb Deutschlands möglich.</p>
+							<p>5.3. Die Lieferzeit verlängert sich angemessen bei Maßnahmen im Rahmen von Arbeitsausfällen, insbesondere Streik und Aussperrung sowie weiteren von uns nicht zu vertretenden Umständen, wie gesetzlicher oder behördlicher Anordnung (z.B. Import- und Exportbeschränkungen) oder in Fällen von Lieferverzögerungen durch höhere Gewalt. Beginn und Ende derartiger Hindernisse werden wir dem Kunden unverzüglich per Email mitteilen.</p>
+							<h3>§ 6 Zahlungsbedingungen</h3>
+							<p>Als Zahlungsarten akzeptieren wir Vorauskasse oder Lastschrift. Unsere Bankverbindung geben wir innerhalb des Bestellvorgangs an, wenn Sie die Zahlungsart Lastschrift wählen und in der Bestellbestätigungs-E-Mail, die Sie in jedem Fall von uns bekommen.</p>
+							<h3>§ 7 Versand, Gefahrübergang und Transportschäden</h3>
+							<p>7.1. Der Versand unserer Artikel erfolgt per UPS.</p>
+							<p>7.2. Sobald Sie den Empfang der Ware gegenüber dem Transportunternehmen bestätigen, geht die Gefahr auf Sie über.</p>
+							<p>7.3. Falls die Lieferung schon bei Übergabe offensichtliche äußerliche Schäden aufweist (Verpackung aufgerissen oder beschädigt), öffnen Sie die Sendung bitte im Beisein des Paketboten und vergleichen Sie den Inhalt mit der beiliegenden Rechnung. Bei Abweichungen oder Beschädigungen der Ware lassen Sie sich dies bitte vom Boten schriftlich bestätigen. Bitte melden Sie uns Transportschäden, auch soweit diese erst bei Paketöffnung feststellbar sind, unverzüglich. Die Einhaltung der vorstehenden Regelungen berührt ihre gesetzlichen Ansprüche jedoch nicht, soweit Sie zu privaten Zwecken als Verbraucher bestellt haben.</p>
+							<p>7.4. Bei Bestellungen von Unternehmern (handeln in Ausübung ihrer gewerblichen oder selbständigen beruflichen Tätigkeit gem. § 14 BGB) gilt die gesetzliche Gefahrtragung sowie die Rügeobliegenheit in vorstehendem Abs. 3 mit der Konsequenz des Verlustes von Ansprüchen aufgrund von Transportschäden, soweit eine Rüge nicht erfolgt.</p>
+							<h3>§ 8 Kaufmännische Rügepflicht</h3>
+							<p>Ist der Kauf für beide Teile ein Handelsgeschäft, so haben Sie die Ware unverzüglich nach der Ablieferung zu untersuchen und, wenn sich ein Mangel zeigt, uns unverzüglich Anzeige zu machen. Unterlassen Sie die Anzeige, so gilt die Ware bei erkennbaren Mängeln als genehmigt. Zeigt sich später ein Mangel, so hat die Anzeige unverzüglich nach der Entdeckung zu erfolgen. Ansonsten gilt die Ware auch in Ansehung dieses Mangels als genehmigt und Gewährleistungsansprüche sind insoweit ausgeschlossen. Zur Erhaltung Ihrer Rechte genügt die rechtzeitige Absendung der Anzeige. Wenn uns der Vorwurf trifft, den Mangel arglistig verschwiegen zu haben, gilt Vorstehendes nicht.</p>
+							<a name="widerruf"></a>
+							<h3>§ 9 Widerrufsrecht bei Verbraucherbestellungen</h3>
+							<p>9.1. Der Verbraucher hat die regelmäßigen Kosten der Rücksendung im Rahmen des gesetzlichen Widerrufsrechts zu tragen, wenn die gelieferte Ware der bestellten entspricht und wenn der Preis der zurückzusendenden Sache einen Betrag von 40 Euro nicht übersteigt oder wenn er bei einem höheren Preis der Sache zum Zeitpunkt des Widerrufs noch nicht die Gegenleistung oder eine vertraglich vereinbarte Teilzahlung erbracht hat.</p>
+							<p>9.2. Nachstehend erhalten Sie die gesetzlich vorgeschriebene Belehrung über die Voraussetzungen und Folgen des Widerrufsrechts für Verbraucher:</p>
+							{{block type="cms/block" block_id="sym_widerruf"}}
+							<h3>§ 10 Aufrechnung, Zurückbehaltungsrechte, Eigentumsvorbehalt</h3>
+							<p>10.1.Dem Besteller steht das Recht zur Aufrechnung nur zu, wenn seine Gegenansprüche rechtskräftig festgestellt, unbestritten oder von uns anerkannt sind. Zur Ausübung eines Zurückbehaltungsrechts ist der Besteller nur insoweit befugt, als sein Gegenanspruch auf dem gleichen Vertragsverhältnis beruht.</p>
+							<p>10.2. Bis zur vollständigen Bezahlung bleibt die Kaufsache unser Eigentum.</p>
+							<h3>§ 11 Gewährleistung</h3>
+							<p>11.1. Liegt zum Zeitpunkt der Übergabe ein von uns zu vertretender Mangel der Kaufsache vor, so können Sie zunächst Nacherfüllung durch Nachbesserung oder Nachlieferung verlangen. Sind Sie Verbraucher so haben Sie bei begründeter Mängelrüge die Wahl, ob die Nacherfüllung durch Nachbesserung oder Ersatzlieferung erfolgen soll. Haben Sie als Unternehmen gekauft (handeln in Ausübung Ihrer gewerblichen oder selbständigen beruflichen Tätigkeit; § 14 BGB), haben wir das Wahlrecht zwischen Nachbesserung und Ersatzlieferung. Wir können die von Ihnen gewählte Art der Nacherfüllung im übrigen verweigern, wenn sie nur mit unverhältnismäßigen Kosten möglich ist. Dabei sind insbesondere der Wert der Sache in mangelfreiem Zustand, die Bedeutung des Mangels und die Frage zu berücksichtigen, ob auf die andere Art der Nacherfüllung ohne erhebliche Nachteile für Sie zurückgegriffen werden könnte. Ihr Anspruch beschränkt sich in diesem Fall auf die andere Art der Nacherfüllung; auch diese können wir wegen unverhältnismäßiger Kosten verweigern. Liefern wir zum Zweck der Nacherfüllung eine mangelfreie Sache, haben Sie die mangelhafte Sache herauszugeben und Wertersatz für die gezogenen Nutzungen zu leisten.</p>
+							<p>11.2. Sind wir zur Nacherfüllung nicht in der Lage oder nicht bereit, oder wird die Nacherfüllung aus Gründen, die wir zu vertreten haben, über angemessene Fristen hinaus verzögert oder schlägt in sonstiger Weise fehl, sind Sie nach Ihrer Wahl berechtigt, vom Vertrag zurückzutreten oder eine entsprechende Minderung des Kaufpreises zu verlangen. Bei Rücktritt sind wir verpflichtet, uns die voneinander empfangenen Leistungen zurückzugewähren. Für gezogene Nutzungen haben Sie Wertersatz zu leisten.
+							<p>11.3. Die gesetzliche Gewährleistung beträgt zwei Jahre für alle von uns gelieferten neu hergestellten Produkte. Gewährleistungsansprüche gegenüber Bestellern, die nicht zu privaten Zwecken bestellt haben, werden auf einen Zeitraum innerhalb eines Jahres nach Übergabe der Ware beschränkt. Bei gebrauchter Ware können wir lediglich bei einem Verbrauchergeschäft (Bestellung zu privaten Zwecken) und nur innerhalb eines Jahres nach Übergabe der Ware kostenfreie Gewährleistung übernehmen, Gewährleistungsansprüche gegenüber Bestellern, die nicht zu privaten Zwecken bestellt haben, werden auf einen Zeitraum innerhalb von 14 Tagen nach Übergabe der Ware beschränkt.</p>
+							<p>Von der vorgenannten Verkürzung der Gewährleistungsfristen für neue Waren bzw. der Verkürzung und dem Ausschluss der Gewährleistung für gebrauchte Waren ausdrücklich ausgenommen sind die auf einem Sachmangel beruhenden Schadensersatzansprüche aus der Verletzung des Lebens, des Körpers oder der Gesundheit sowie Schadensersatzansprüche, die auf einer vorsätzlichen oder grob fahrlässige Pflichtverletzung durch uns oder unsere Erfüllungsgehilfen beruhen; bei diesen kommt wieder die ungekürzte gesetzlichen Gewährleistung mit einer Gewährleistungsfrist von 2 Jahren zur Anwendung. Zudem bleiben auch eventuelle Garantien der jeweiligen Hersteller von der Gewährleistungsverkürzung bzw. dem Gewährleistungsausschluss unberührt.</p>
+							<p>11.4. Gewährleistungsansprüche gegen uns stehen nur Ihnen selbst als Kunde zu und sind nicht abtretbar.</p>
+							<p>11.5. Von der Gewährleistung ausgeschlossen sind Mängel und Schäden, die aus ungeeigneter und unsachgemäßer Verwendung und fehlerhafter oder nachlässiger Behandlung entstanden sind, es sei denn, Sie weisen nach, dass diese Umstände nicht ursächlich für den gerügten Mangel sind.</p>
+							<p>11.6. Richten Sie Ihre Korrespondenz, eventuelle Rückfragen oder auch Kritik und Anregungen an:</p>
+							<p>{{block type="symmetrics_impressum/impressum" value="address"}}</p>
+							<p>{{block type="symmetrics_impressum/impressum" value="communication"}}</p>
+							<h3>§ 12 Haftungsbeschränkung</h3>
+							<p>12.1. Wir haften gegenüber Unternehmen sowie juristischen Personen des öffentlichen Rechts oder gegenüber öffentlich-rechtlichen Sondervermögen nicht für mittelbare Schäden, insbesondere nicht für entgangenen Gewinn oder andere Vermögensschäden.</p>
+							<p>12.2. Gegenüber Verbrauchern haftet {{block type="symmetrics_impressum/impressum" value="shopname"}} nur für Vorsatz und grobe Fahrlässigkeit. Im Falle der Verletzung wesentlicher Vertragspflichten, des Schuldnerverzuges oder der von {{block type="symmetrics_impressum/impressum" value="shopname"}} zu vertretenden Unmöglichkeit der Leistungserbringung haftet {{block type="symmetrics_impressum/impressum" value="shopname"}} jedoch für jedes schuldhafte Verhalten seiner Mitarbeiter und Erfüllungsgehilfen. Außer bei Vorsatz und/oder grober Fahrlässigkeit von gesetzlichen Vertretern, Mitarbeitern und sonstigen Erfüllungsgehilfen ist die Haftung der {{block type="symmetrics_impressum/impressum" value="shopname"}} der Höhe nach auf die bei Vertragsschluss typischerweise vorhersehbaren Schäden begrenzt.</p>
+							<p>12.3 Die vorgenannten Haftungsausschlüsse und Beschränkungen gelten nicht im Fall der Übernahme ausdrücklicher Garantien durch {{block type="symmetrics_impressum/impressum" value="shopname"}} und für Schäden aus der Verletzung des Lebens, des Körpers oder der Gesundheit sowie im Fall zwingender gesetzlicher Regelungen. </p>
+							<h3>§ 13 Datenschutz</h3>
+							<p>13.1. Wir weisen Sie darauf hin, dass Ihre Bestell- und Adressdaten gespeichert werden. Eine Speicherung und Verwendung Ihrer Daten erfolgt im Rahmen der Auftragsabwicklung, sofern Sie nicht ausdrücklich einer weitergehenden Verwendung zugestimmt haben. Sie sind berechtigt weitergehende Gestattungen jederzeit ganz oder teilweise zu widerrufen. Der Widerruf ist zu richten an: </p>
+							<p>{{block type="symmetrics_impressum/impressum" value="address"}}</p>
+							<p>{{block type="symmetrics_impressum/impressum" value="communication"}}</p>
+							<p>Stand: Februar 2009</p>
+							<p>Vertragssprache ist Deutsch.</p>
+		                ]]></text>
+	                </sym_agb>
+	
+	                <sym_widerruf>
+	                    <active>1</active>
+	                    <text><![CDATA[
+							<h2>Widerrufsrecht</h2>
+							<p>Sie können Ihre Vertragserklärung innerhalb von zwei Wochen ohne Angabe von Gründen in Textform (z. B. Brief, E-Mail) oder - wenn Ihnen die Sache vor Fristablauf überlassen wird - durch Rücksendung der Sache widerrufen. Die Frist beginnt nach Erhalt dieser Belehrung in Textform, jedoch nicht vor Eingang der Ware beim Empfänger (bei der wiederkehrenden Lieferung gleichartiger Waren nicht vor dem Eingang der ersten Teillieferung) und auch nicht vor Erfüllung unserer Informationspflichten gemäß § 312c Abs. 2 BGB in Verbindung mit § 1 Abs. 1, 2 und 4 BGB-InfoV sowie unserer Pflichten gemäß § 312e Abs. 1 Satz 1 BGB in Verbindung mit § 3 BGB-InfoV. Zur Wahrung der Widerrufsfrist genügt die rechtzeitige Absendung des Widerrufs oder der Sache. Der Widerruf ist zu richten an: </p> 
+							<p>{{block type="symmetrics_impressum/impressum" value="address"}}</p>
+							<p>{{block type="symmetrics_impressum/impressum" value="communication"}}</p>
+							<h3>Widerrufsfolgen</h3>
+							<p>Im Falle eines wirksamen Widerrufs sind die beiderseits empfangenen Leistungen zurückzugewähren und ggf. gezogene Nutzungen (z. B. Zinsen) herauszugeben. Können Sie uns die empfangene Leistung ganz oder teilweise nicht oder nur in verschlechtertem Zustand zurückgewähren, müssen Sie uns insoweit ggf. Wertersatz leisten. Bei der Überlassung von Sachen gilt dies nicht, wenn die Verschlechterung der Sache ausschließlich auf deren Prüfung - wie sie Ihnen etwa im Ladengeschäft möglich gewesen wäre - zurückzuführen ist. Im Übrigen können Sie die Pflicht zum Wertersatz für eine durch die bestimmungsgemäße Ingebrauchnahme der Sache entstandene Verschlechterung vermeiden, indem Sie die Sache nicht wie Ihr Eigentum in Gebrauch nehmen und alles unterlassen, was deren Wert beeinträchtigt. Paketversandfähige Sachen sind auf unsere Gefahr zurückzusenden. Sie haben die Kosten der Rücksendung zu tragen, wenn die gelieferte Ware der bestellten entspricht und wenn der Preis der zurückzusendenden Sache einen Betrag von 40 Euro nicht übersteigt oder wenn Sie bei einem höheren Preis der Sache zum Zeitpunkt des Widerrufs noch nicht die Gegenleistung oder eine vertraglich vereinbarte Teilzahlung erbracht haben. Anderenfalls ist die Rücksendung für Sie kostenfrei. Nicht paketversandfähige Sachen werden bei Ihnen abgeholt. Verpflichtungen zur Erstattung von Zahlungen müssen innerhalb von 30 Tagen erfüllt werden. Die Frist beginnt für Sie mit der Absendung Ihrer Widerrufserklärung oder der Sache, für uns mit deren Empfang. </p>
+							<h2>Ende der Widerrufsbelehrung</h2>
+	                    ]]></text>
+	                </sym_widerruf>
+	                
+	                <sym_404>
+	                    <active>1</active>
+	                    <text><![CDATA[
+	                        <p>404 - Seite nicht gefunden</p>
+	                    ]]></text>
+	                </sym_404>
+	                
+	                <sym_impressum>
+	                    <active>1</active>
+	                    <text><![CDATA[
+							<h2>Impressum (Muster)</h2>
+							<h3>{{block type="symmetrics_impressum/impressum" value="shopname"}}</h3>
+							<p>{{block type="symmetrics_impressum/impressum" value="address"}}</p>
+							<p>{{block type="symmetrics_impressum/impressum" value="communication"}}</p>
+							<p>Sie erreichen unseren Kundendienst für Fragen Reklamationen und Beanstandungen unter Telefon: {{block type="symmetrics_impressum/impressum" value="telephone"}} sowie per Email unter <a href="mailto:{{block type="symmetrics_impressum/impressum" value="email"}}">{{block type="symmetrics_impressum/impressum" value="email"}}</a>. Für Anfragen können Sie auch das Kontaktformular auf unserer Internetseite nutzen.</p>
+							<h3>Disclaimer (Muster)</h3>
+							<p>Bei direkten oder indirekten Verweisen auf fremde Webseiten ("Hyperlinks"), die außerhalb des Verantwortungsbereiches des Autors liegen, würde eine Haftungsverpflichtung ausschließlich in dem Fall in Kraft treten, in dem der Autor von den Inhalten Kenntnis hat und es ihm technisch möglich und zumutbar wäre, die Nutzung im Falle rechtswidriger Inhalte zu verhindern. Der Autor erklärt hiermit ausdrücklich, dass zum Zeitpunkt der Linksetzung keine illegalen Inhalte auf den zu verlinkenden Seiten erkennbar waren. Auf die aktuelle und zukünftige Gestaltung, die Inhalte oder die Urheberschaft der verlinkten/verknüpften Seiten hat der Autor keinerlei Einfluss. Deshalb distanziert er sich hiermit ausdrücklich von allen Inhalten aller verlinkten /verknüpften Seiten, die nach der Linksetzung verändert wurden. Diese Feststellung gilt für alle innerhalb des eigenen Internetangebotes gesetzten Links und Verweise sowie für Fremdeinträge in vom Autor eingerichteten Gästebüchern, Diskussionsforen, Linkverzeichnissen, Mailinglisten und in allen anderen Formen von Datenbanken, auf deren Inhalt externe Schreibzugriffe möglich sind. Für illegale, fehlerhafte oder unvollständige Inhalte und insbesondere für Schäden, die aus der Nutzung oder Nichtnutzung solcherart dargebotener Informationen entstehen, haftet allein der Anbieter der Seite, auf welche verwiesen wurde, nicht derjenige, der über Links auf die jeweilige Veröffentlichung lediglich verweist.</p>
+							<h3>Urheber- und Kennzeichenrecht</h3>
+							<p>Der Autor ist bestrebt, in allen Publikationen die Urheberrechte der verwendeten Bilder, Grafiken, Tondokumente, Videosequenzen und Texte zu beachten, von ihm selbst erstellte Bilder, Grafiken, Tondokumente, Videosequenzen und Texte zu nutzen oder auf lizenzfreie Grafiken, Tondokumente, Videosequenzen und Texte zurückzugreifen. Alle innerhalb des Internetangebotes genannten und ggf. durch Dritte geschützten Marken- und Warenzeichen unterliegen uneingeschränkt den Bestimmungen des jeweils gültigen Kennzeichenrechts und den Besitzrechten der jeweiligen eingetragenen Eigentümer. Allein aufgrund der bloßen Nennung ist nicht der Schluss zu ziehen, dass Markenzeichen nicht durch Rechte Dritter geschützt sind! Das Copyright für veröffentlichte, vom Autor selbst erstellte Objekte bleibt allein beim Autor der Seiten. Eine Vervielfältigung oder Verwendung solcher Grafiken, Tondokumente, Videosequenzen und Texte in anderen elektronischen oder gedruckten Publikationen ist ohne ausdrückliche Zustimmung des Autors nicht gestattet.</p>
+							<p>{{block type="symmetrics_impressum/impressum" value="legal"}}</p>
+							<p>Inhaltlich verantwortlich gemäß § 5 TMG ist {{block type="symmetrics_impressum/impressum" value="ceo"}}, Kontaktdaten siehe oben. </p>
+							<p>{{block type="symmetrics_impressum/impressum" value="tax"}}</p>
+							<h3>Bankverbindung</h3>
+							<p>{{block type="symmetrics_impressum/impressum" value="bank"}}</p>
+	                    ]]></text>
+	                </sym_impressum>
+	
+	                <sym_zahlung>
+	                    <active>1</active>
+	                    <text><![CDATA[
+							<h2>Zahlungsarten</h2>
+							<p>Wir bieten Ihnen folgende Zahlungsarten an. Suchen Sie sich einfach die für Sie optimale Zahlart aus.</p>
+							<p>Die Versandkosten sind teilweise abhängig von der gewählten Zahlungsart.</p>
+							<h3>Vorkasse</h3>
+							<p>Kostenloser Versand innerhalb Deutschlands (Außer Express-Versand)</p>
+							<p>Bitte überweisen Sie den Gesamtbetrag Ihrer Bestellung auf unser Konto:</p>
+							<p>{{block type="symmetrics_impressum/impressum" value="bank"}}</p>
+							<p>Sie erhalten i.d.R. innerhalb eines Arbeitstages eine Auftragsbestätigung per eMail. Nach Eingang des Rechnungsbetrages auf unserem Konto geht die Ware schnellst möglich in den Versand. Zahlungsbelege beschleunigen den Warenversand nicht!</p> 
+							<p>Zahlaungszeitpunkt: Zahlung bei Bestellung.</p>
+							<h3>Rechnung</h3>
+							<p>Nur für Schulen, Behörden und im Handelsregister eingetragene Unternehmen nach Prüfung. </p>
+							<p>Zahlaungszeitpunkt: Zahlung bei Erhalt.</p>
+							<h3>Nachnahme</h3>
+							<p>Lieferung erfolgt sofort. Bitte halten Sie den Rechnungsbetrag bereit; der Zusteller kassiert bei Lieferung in bar (keine Schecks). Bei DHL-Nachnahme fallen zusätzlich 2,00 EUR Nachnahmegebühren an, die direkt an den Paketzusteller zu entrichten sind.</p>
+							<p>Zahlaungszeitpunkt: Zahlung nach Lieferung.</p>
+							<h3>Lastschrift</h3>
+							<p>Wir ziehen den Rechnungsbetrag Ihrer Bestellung von Ihrem hinterlegten Bankkonto nach der getätigten Bestellung ein.</p>
+							<p>Zahlaungszeitpunkt: Zahlung bei Bestellung.</p>
+	                    ]]></text>
+	                </sym_zahlung>
+	
+	                <sym_datenschutz>
+	                    <active>1</active>
+	                    <text><![CDATA[
+							<h2>Datenschutz</h2>
+							<p>
+							    Die {{block type="symmetrics_impressum/impressum" value="company1"}} nimmt den Schutz personenbezogener Daten sehr ernst. Wir möchten, dass Sie wissen, wann wir welche Daten speichern und wie wir sie verwenden. Als privatrechtliches Unternehmen unterliegen wir den Bestimmungen des Bundesdatenschutzgesetzes (BDSG). Wir haben technische und organisatorische Maßnahmen getroffen, die sicherstellen, dass die Vorschriften über den Datenschutz sowohl von uns als auch von externen Dienstleistern beachtet werden.
+							    Sofern wir in Vorleistung treten, holen wir zur Wahrung unserer berechtigten Interessen ggf. eine Bonitätsauskunft bei der SCHUFA Holding AG, Kormoranweg 5, 65201 Wiesbaden ein. Ihre schutzwürdigen Belange werden gemäß den gesetzlichen Bestimmungen berücksichtigt.
+							    Nach dem Bundesdatenschutzgesetz haben Sie ein Recht auf unentgeltliche Auskunft über Ihre gespeicherten Daten sowie ggf. ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten.
+							</p>
+							<h3>Datenschutzhinweis</h3>
+							<p>Ihre E-Mail-Adresse wird nicht an andere Unternehmen weiter gegeben. Wir verwenden die von Ihnen mitgeteilten Daten zur Erfüllung und Abwicklung Ihrer Bestellung. Bei Anmeldung zum Newsletter wird Ihre E-Mail-Adresse mit Ihrer Einwilligung für eigene Werbezwecke genutzt, bis Sie sich vom Newsletter abmelden.</p>\r\n<p>Der Widerruf ist zu richten an:</p>
+							<p>{{block type="symmetrics_impressum/impressum" value="address"}}</p>
+							<p>{{block type="symmetrics_impressum/impressum" value="communication"}}</p>
+							<h3>Einsatz von Cookies</h3>
+							<p>Ein "Cookie" ist eine kleine Datendatei, die von uns auf Ihren Computers übertragen wird, wenn Sie auf unserer Site surfen. Ein Cookie kann nur Informationen enthalten, die wir selbst an Ihren Rechner senden – private Daten lassen sich damit nicht auslesen. Wenn Sie die Cookies auf unserer Site akzeptieren, haben wir keinen Zugriff auf Ihre persönlichen Informationen, aber mit Hilfe der Cookies können wir Ihren Computer identifizieren.</p>
+							<p>Wir verwenden Cookies: Sie verbleiben nicht auf Ihrem Computer. Verlassen Sie unsere Seiten, wird auch der temporäre Cookie nach einer Stunde verworfen. Mit Hilfe der zusammengetragenen Informationen können wir Nutzungsmuster und -strukturen unserer Website analysieren. Auf diese Weise können wir unsere Website immer weiter optimieren, indem wir den Inhalt oder die Personalisierung verbessern und die Nutzung vereinfachen.</p>
+							<p>Wir verwenden Cookies damit Sie den Warenkorb während Ihrer Sitzung mit Bestellungen auffüllen und verwalten können. Um den Warenkorb nutzen zu können müssen die temporären Cookies zugelassen werden.</p>
+							<h3>Kinder</h3>
+							<p>Personen unter 18 Jahren sollten ohne Zustimmung der Eltern oder Erziehungsberechtigten keine personenbezogenen Daten an uns übermitteln. Wir fordern keine personenbezogenen Daten von Kindern an, sammeln diese nicht und geben sie nicht an Dritte weiter.</p>
+							<h3>Fragen und Kommentare</h3>
+							<p>Nach dem Bundesdatenschutzgesetz haben Sie ein Recht auf unentgeltliche Auskunft über Ihre gespeicherten Daten sowie ggf. ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten. Für Fragen, Anregungen oder Kommentare zum Thema Datenschutz wenden Sie sich bitte per E-Mail an {{block type="symmetrics_impressum/impressum" value="email"}}.</p>
+							<h3>Bonitätsprüfung</h3>
+							<p>Sofern wir in Vorleistung treten, holen wir zur Wahrung unserer berechtigten Interessen ggf. eine Bonitätsauskunft bei der SCHUFA Holding AG, Kormoranweg 5, 65201 Wiesbaden ein. Ihre schutzwürdigen Belange werden gemäß den gesetzlichen Bestimmungen berücksichtigt.</p>
+							<h3>Google Analytics</h3>
+							<p>Diese Website benutzt Google Analytics, einen Webanalysedienst der Google Inc. ("Google"). Google Analytics verwendet sog. "Cookies", Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Website durch Sie ermöglichen. Die durch den Cookie erzeugten Informationen über Ihre Benutzung dieser Website (einschließlich Ihrer IP-Adresse) wird an einen Server von Google in den USA übertragen und dort gespeichert. Google wird diese Informationen benutzen, um Ihre Nutzung der Website auszuwerten, um Reports über die Websiteaktivitäten für die Websitebetreiber zusammenzustellen und um weitere mit der Websitenutzung und der Internetnutzung verbundene Dienstleistungen zu erbringen. Auch wird Google diese Informationen gegebenenfalls an Dritte übertragen, sofern dies gesetzlich vorgeschrieben oder soweit Dritte diese Daten im Auftrag von Google verarbeiten. Google wird in keinem Fall Ihre IP-Adresse mit anderen Daten von Google in Verbindung bringen. Sie können die Installation der Cookies durch eine entsprechende Einstellung Ihrer Browser Software verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website vollumfänglich nutzen können. Durch die Nutzung dieser Website erklären Sie sich mit der Bearbeitung der über Sie erhobenen Daten durch Google in der zuvor beschriebenen Art und Weise und zu dem zuvor benannten Zweck einverstanden.</p>
+	                    ]]></text>
+	                </sym_datenschutz>
+	
+	                <sym_lieferung>
+	                    <active>1</active>
+	                    <text><![CDATA[
+							<h2>Versandkosten / Lieferung</h2>
+							<p>Die Versandkosten sind teilweise abhängig von der gewählten Zahlungsart.</p>
+							<table>
+							<tr>
+							    <th></th>
+							    <th>Deutschland</th>
+							    <th>Europa</th>
+							</tr>
+							<tr>
+							    <td>Vorkasse</td>
+							    <td>0,00 EUR</td>
+							    <td>14,99 EUR</td>
+							</tr>
+							<tr>
+							    <td>Nachnahme, Sofortüberweisung</td>
+							    <td>9,98 EUR</td>
+							    <td>29,99 EUR</td>
+							</tr>
+							<tr>
+							    <td>Kreditkarte, Rechnung</td>
+							    <td>14,99 EUR</td>
+							    <td>29,99 EUR</td>
+							</tr>
+							<tr>
+							    <td colspan="3"></td>
+							</tr>
+							<tr>
+							    <td>Express</td>
+							    <td>35,00 EUR</td>
+							    <td>49,99 EUR</td>
+							</tr>
+							<tr>
+							    <td>Express 12.00 Uhr Samstagszustellung</td>
+							    <td>40,00 EUR</td>
+							    <td>--,-- EUR</td>
+							</tr>
+							</table>
+							<ul>
+							    <li>Es gibt keinen Mindestbestellwert.</li>
+							    <li>Alle Preise in EUR und inkl. gesetzlicher Mehrwertsteuer von 19%.</li>
+							    <li>Die Lieferzeit beträgt i.d.R. 1 - 3 Tage. Eventuelle Ausnahmen entnehmen Sie bitte der jeweiligen Produktseite.</li>
+							    <li>Bei Lieferungen außerhalb der EU können zusätzlich Zölle und Gebühren anfallen.</li>
+							    <li>Bei Lieferverzögerungen werden wir Sie umgehend informieren.</li>
+							    <li>Bei Vorkasse, Kreditkarte und Finanzierung keine Express-Lieferung möglich.</li>
+							    <li>Bei DHL-Nachnahme fallen zusätzlich 2,00 EUR Nachnahmegebühren an, die direkt an den Paketzusteller zu entrichten sind.</li>
+							    <li>Sie erhalten eine detaillierte Rechnung mit ausgewiesener Mehrwertsteuer. Diese Rechnung gilt zudem auch als Kaufnachweis bei Garantiefällen und sollte sorgfältig aufbewahrt werden.</li>
+							    <li>Die hier genannten Preise beinhalten eine Transportversicherung.</li>
+							    <li>Bestellungen, die nach 16 Uhr eingehen, können NICHT am nächsten Tag zugestellt werden. Auch Express-Lieferungen nicht.</li>
+							    <li>Im Falle einer Nichtverfügbarkeit der bestellten Ware behalten wir uns vor, nicht zu liefern. In diesem Fall werden wir Sie unverzüglich darüber informieren und bereits erhaltene Gegenleistungen unverzüglich zurückerstatten.</li>
+							</ul>
+	                    ]]></text>
+	                </sym_lieferung>
+	
+	                <sym_bestellung>
+	                    <active>1</active>
+	                    <text><![CDATA[
+							<h2>Bestellvorgang, einfach und bequem bestellen</h2>
+							<h3>Wie kann ich bei {{block type="symmetrics_impressum/impressum" value="shopname"}} bestellen?</h3>
+							<h4>1. Warenkorb</h4>
+							<p>Wählen Sie die Produkte aus, die Sie bestellen möchten, indem Sie den "In den Warenkorb" Button anklicken. Dadurch wird Ihre Auswahl in den Warenkorb gelegt. Sie können diese Auswahl bis zum Absenden Ihrer Bestellung jederzeit ändern, in dem Sie die Anzahl der Produkte ändern, durch Anklicken des Kästchens "Entfernen" die Auswahl löschen oder den Bestellvorgang abbrechen. Durch Anklicken des Buttons "Kasse" gelangen Sie zum nächsten Bestellschritt.</p>
+							<h4>2. Kasse</h4>
+							<p>Melden Sie sich bitte mit Ihrer eMail Adresse und Ihrem Passwort an falls Sie bereits ein Kundenkonto besitzen, ansonsten registrieren Sie sich bitte als neuer Kunde. Ihre Daten werden unter Beachtung der datenschutzrechtlichen Bestimmungen erhoben, verarbeitet und genutzt (<a href="{{store url=""}}datenschutz">Datenschutzhinweis</a>). Eine anderweitige Verwendung oder Weitergabe an Dritte erfolgt nicht. Sind Sie bereits angemeldet, können Sie nun die Versandart auswählen. Durch klicken des Buttons "Weiter" gelangen Sie zum nächsten Bestellschritt.</p>
+							<h4>3. Rechnungsadresse prüfen / Zahlungsweise auswählen</h4>
+							<p>Überprüfen Sie nun Ihre Rechnungsadresse und geben Sie Ihre gewünschte <a href="{{store url=""}}zahlung">Zahlungsweise</a> an. Durch Klicken des Buttons "Weiter" gelangen Sie zum nächsten Bestellschritt. </p>
+							<h4>4. Versandadresse prüfen / Versandart auswählen</h4>
+							<p>Überprüfen Sie nun Ihre Versandadresse und geben Sie Ihre gewünschte <a href="{{store url=""}}lieferung">Versandart</a> an. Durch Klicken des Buttons "Weiter" gelangen Sie zum nächsten Bestellschritt.</p>
+							<h4>5. Bestellvorgang abschließen / AGB und Datenschutz</h4>
+							<p>Sie erhalten eine Übersicht Ihrer Bestellung: die ausgewählten Produkte, die Versand- und Rechnungsinformationen und Ihre Kontaktdaten. Überprüfen Sie, ob alle Angaben stimmen und lesen sich bitte die <a href="{{store url=""}}agb">Allgemeinen Geschäftsbedingungen</a> und die <a href="{{store url=""}}datenschutz">Datenschutzerklärung</a> aufmerksam durch. Sie können mit der Bestellung nur fortfahren, wenn Sie den AGB und der Datenschutzerklärung zustimmen (Häkchen setzen). Mit dem Anklicken des Buttons "Bestellung absenden" übersenden Sie Ihre Bestellung an uns. Hiermit geben Sie ein rechtsverbindliches Angebot ab. Zunächst bestätigen wir den Eingang der Bestellung mit einer automatischen eMail (Bestellbestätigung). Dies stellt jedoch keine rechtsverbindliche Annahme der Bestellung durch uns dar. Ein Vertragsverhältnis kommt erst mit schriftlicher Auftragsbestätigung durch uns zustande, die wir Ihnen ebenfalls per eMail zukommen lassen.</p>
+							<h4>Widerrufsrecht für Verbraucher</h4>
+							<p>Alle Informationen zum <a href="{{store url=""}}agb#widerruf">Widerrufsrecht</a></p>
+	                    ]]></text>
+	                </sym_bestellung>
+	
+	                <sym_footerlinks>
+	                    <active>1</active>
+	                    <text><![CDATA[
+							<ul>
+							    <li><a href="{{store url=""}}agb">AGB / Widerrufsbelehrung</a></li>
+							    <li><a href="{{store url=""}}bestellung">Bestellvorgang</a></li>
+							    <li><a href="{{store url=""}}datenschutz">Datenschutz</a></li>
+							    <li><a href="{{store url=""}}zahlung">Zahlung</a></li>
+							    <li><a href="{{store url=""}}lieferung">Lieferung</a></li>
+							    <li class="last"><a href="{{store url=""}}impressum">Impressum</a></li>
+							</ul>
+	                    ]]></text>
+	                </sym_footerlinks>
+                </default>
+            </blocks>
+            
+            <emails>
+                <default>
+	                <new_adminpassword>
+	                    <active>1</active>
+	                    <text><![CDATA[
+							<style type="text/css">
+							    body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; }
+							    a { color:#1E7EC8; }
+							</style>
+							<div style="font:11px/1.35em Verdana, Arial, Helvetica, sans-serif;">
+							   <table cellspacing="0" cellpadding="0" border="0" width="98%" style="margin-top:10px; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; margin-bottom:10px;">
+							     <tr>
+							            <td align="center" valign="top">
+							                <!-- [ header starts here] -->
+							              <table cellspacing="0" cellpadding="0" border="0" width="650">
+							              <tr>
+							                    <td valign="top">
+							                       <p><a href="{{store url=""}}" style="color:#1E7EC8;"><img src="{{skin url="images/logo_email.gif" _area=''frontend''}}" alt="{{block type="symmetrics_impressum/impressum" value="shopname"}}" border="0"/></a></p>
+							                 </td>
+							               </tr>
+							               </table>
+							                <!-- [ middle starts here] -->
+							              <table cellspacing="0" cellpadding="0" border="0" width="650">
+							              <tr>
+							                    <td valign="top">
+							                       <p><strong>Hallo {{var user.name}}</strong>,<br/>Ihr neues Passwort lautet: {{var password}}</p>
+							                        <p>Sie können Ihr Passwort jederzeit ändern, indem Sie sich in <a href="{{store url="adminhtml/system_account/"}}" style="color:#1E7EC8;">Ihrem Kundenbereichen</a> anmelden.<p>
+							                    </td>
+							               </tr>
+							               <tr>
+							                    <td>
+							                        {{block type="symmetrics_impressum/impressum" value="emailfooter"}}
+							                 </td>
+							               </tr>
+							               </table>
+							            </td>
+							       </tr>
+							   </table>
+							</div>
+	                    ]]></text>
+	                </new_adminpassword>
+	
+	                <currencyupdate>
+	                    <active>1</active>
+	                    <text><![CDATA[
+							Warnungen beim Währungsupdate:
+							{{var warnings}}
+	                    ]]></text>
+	                </currencyupdate>
+	
+	                <new_account>
+	                    <active>1</active>
+	                    <text><![CDATA[
+							<style type="text/css">
+							    body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; }
+							    a { color:#1E7EC8; }
+							</style>
+							
+							<div style="font:11px/1.35em Verdana, Arial, Helvetica, sans-serif;">
+							    <table cellspacing="0" cellpadding="0" border="0" width="98%" style="margin-top:10px; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; margin-bottom:10px;">
+							    <tr>
+							        <td align="center" valign="top">
+							            <!-- [ header starts here] -->
+							            <table cellspacing="0" cellpadding="0" border="0" width="650">
+							            <tr>
+							                <td valign="top">
+							                    <a href="{{store url=""}}"><img src="{{skin url="images/logo_email.gif" _area=''frontend''}}" alt="{{block type="symmetrics_impressum/impressum" value="shopname"}}"  style="margin-bottom:10px;" border="0"/></a>
+							                </td>
+							            </tr>
+							            </table>
+							            <!-- [ middle starts here] -->
+							            <table cellspacing="0" cellpadding="0" border="0" width="650">
+							            <tr>
+							                <td valign="top">
+							                    <p><strong>Guten Tag {{var customer.name}}</strong>,<br/>herzlich willkommen in unserem Shop zum Thema Geld- und Energiesparen. Um sich bei Ihrem nächsten Besuch in unserem Shop einzuloggen, klicken Sie einfach auf <a href="{{store url="customer/account/"}}" style="color:#1E7EC8;">Login</a> oder <a href="{{store url="customer/account/"}}" style="color:#1E7EC8;">Mein Kundenkonto</a> im oberen Bereich jeder Seite, und geben Sie Ihre E-Mail-Adresse und Passwort ein.</p>
+							                    <p style="border:1px solid #BEBCB7; padding:13px 18px; background:#F8F7F5; ">
+							                        Mit folgenden Zugangsdaten können Sie sich anmelden:<br/>
+							                        E-Mail: {{var customer.email}}<br/>
+							                        Passwort: {{var customer.password}}
+							                    </p>
+							                    <p>Nach erfolgreichem Login auf unserer Seite haben Sie die folgenden Möglichkeiten:</p>
+							                    <ul>
+							                        <li>Schnellerer Bezahlvorgang beim nächsten Einkauf</li>
+							                        <li>Alle laufenden Bestellungen im Auge behalten</li>
+							                        <li>Verlauf der vergangenen Bestellungen</li>
+							                        <li>Verwalten der Kundenkonto-Einstellungen</li>
+							                        <li>Ihr Passwort ändern</li>
+							                        <li>Verschiedene Adressen für den Versand an Familienmitglieder und Freunde sowie Rechnungsadressen speichern</li>
+							                    </ul>
+							                    <p>Sollten Sie Fragen zu Ihrem Kundenkonto oder andere Anfragen haben, senden Sie uns eine E-Mail an <a href="mailto:{{block type="symmetrics_impressum/impressum" value="email"}}" style="color:#1E7EC8;">{{block type="symmetrics_impressum/impressum" value="email"}}</a></p>
+							                </td>
+							            </tr>
+							            <tr>
+							                <td>{{block type="symmetrics_impressum/impressum" value="emailfooter"}}</td>
+							            </tr>
+							            <tr>
+							                <td style="font:9px/1em Verdana, Arial, Helvetica, sans-serif;">
+		                                        {{block type="cms/block" block_id="sym_agb"}}
+		                                    </td>
+							            </tr>
+							            </table>
+							        </td>
+							    </tr>
+							    </table>
+							</div>
+	                    ]]></text>
+	                </new_account>
+	
+	                <new_account_activate>
+	                    <active>1</active>
+	                    <text><![CDATA[
+							<style type="text/css">
+							    body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; }
+							    a { color:#1E7EC8; }
+							</style>
+							
+							<div style="font:11px/1.35em Verdana, Arial, Helvetica, sans-serif;">
+							    <table cellspacing="0" cellpadding="0" border="0" width="98%" style="margin-top:10px; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; margin-bottom:10px;">
+							    <tr>
+							        <td align="center" valign="top">
+							            <!-- [ header starts here] -->
+							            <table cellspacing="0" cellpadding="0" border="0" width="650">
+							            <tr>
+							                <td valign="top"><a href="{{store url=""}}"><img src="{{skin url="images/logo_email.gif" _area=''frontend''}}" alt="{{block type="symmetrics_impressum/impressum" value="shopname"}}"  style="margin-bottom:10px;" border="0"/></a></td>
+							            </tr>
+							            </table>
+							            <!-- [ middle starts here] -->
+							            <table cellspacing="0" cellpadding="0" border="0" width="650">
+							            <tr>
+							                <td valign="top">
+							                    <p><strong>Hallo {{var customer.name}}</strong>, <br/> herzlich willkommen in unserem Shop.</p>
+							                    <p>Ihre E-Mail-Adresse {{var customer.email}} muß bestätigt werden, bevor Sie sich damit in unserem Shop einloggen können.</p>
+							                    <p>Um die E-Mail-Adresse zu bestätigen und sich sofort einzuloggen, benutzen Sie bitte <a href="{{store url="customer/account/confirm/" _query_id=$customer.id _query_key=$customer.confirmation _query_back_url=$back_url}}" style="color:#1E7EC8;">diesen Bestätigunslink</a>. Dieser Link ist nur einmal gülitig.</p>
+							                    <p>Sollten Sie Fragen zu Ihrem Kundenkonto oder andere Anfragen haben, senden Sie uns eine E-Mail an <a href="mailto:{{block type="symmetrics_impressum/impressum" value="email"}}" style="color:#1E7EC8;">{{block type="symmetrics_impressum/impressum" value="email"}}</a>.</p>
+							                </td>
+							            </tr>
+							            <tr>
+							                <td>{{block type="symmetrics_impressum/impressum" value="emailfooter"}}</td>
+							            </tr>
+							            <tr>
+							                <td style="font:9px/1em Verdana, Arial, Helvetica, sans-serif;">{{block type="cms/block" block_id="sym_agb"}}</td>
+							            </tr>
+							            </table>
+							        </td>
+							    </tr>
+							    </table>
+							</div>
+					    ]]></text>
+					</new_account_activate>
+	
+	                <new_account_confirmed>
+	                    <active>1</active>
+	                    <text><![CDATA[
+							<style type="text/css">
+							    body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; }
+							    a { color:#1E7EC8; }
+							</style>
+							
+							<div style="font:11px/1.35em Verdana, Arial, Helvetica, sans-serif;">
+							    <table cellspacing="0" cellpadding="0" border="0" width="98%" style="margin-top:10px; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; margin-bottom:10px;">
+							    <tr>
+							        <td align="center" valign="top">
+							            <!-- [ header starts here] -->
+							            <table cellspacing="0" cellpadding="0" border="0" width="650">
+							            <tr>
+							                <td valign="top"><a href="{{store url=""}}"><img src="{{skin url="images/logo_email.gif" _area=''frontend''}}" alt="{{block type="symmetrics_impressum/impressum" value="shopname"}}"  style="margin-bottom:10px;" border="0"/></a></td>
+							            </tr>
+							            </table>
+							            <!-- [ middle starts here] -->
+							            <table cellspacing="0" cellpadding="0" border="0" width="650">
+							            <tr>
+							                <td valign="top">
+							                    <p><strong>Hallo {{var customer.name}}</strong>,<br/>herzlich willkommen in unserem Shop. Um sich bei Ihrem nächsten Besuch in unserem Shop einzuloggen, klicken Sie einfach auf <a href="{{store url="customer/account/"}}" style="color:#1E7EC8;">Login</a> or <a href="{{store url="customer/account/"}}" style="color:#1E7EC8;">Mein Kundenkonto</a> im oberen Bereich jeder Seite, und geben Sie Ihre E-Mail-Adresse und Passwort ein.</p>
+							                    <p>Nach erfolgreichem Login auf unsere Seite haben Sie die folgenden Möglichkeiten:</p>
+							                    <ul>
+							                        <li>Schnellerer Bezahlvorgang beim nächsten Einkauf</li>
+							                        <li>Alle laufenden Bestellungen im Auge behalten</li>
+							                        <li>Verlauf der vergangenen Bestellungen</li>
+							                        <li>Verwalten der Kundenkonto-Einstellungen</li>
+							                        <li>Ihr Passwort ändern</li>
+							                        <li>Verschiedene Adressen für den Versand an Familienmitglieder und Freunde sowie Rechnungsadressen speichern</li>
+							                    </ul>
+							                    <p>Sollten Sie Fragen zu Ihrem Kundenkonto oder andere Anfragen haben, senden Sie uns eine E-Mail an <a href="mailto:{{block type="symmetrics_impressum/impressum" value="email"}}" style="color:#1E7EC8;">{{block type="symmetrics_impressum/impressum" value="email"}}</a></p>
+							                </td>
+							            </tr>
+							            <tr>
+							                <td>{{block type="symmetrics_impressum/impressum" value="emailfooter"}}</td>
+							            </tr>
+							            <tr>
+							                <td style="font:9px/1em Verdana, Arial, Helvetica, sans-serif;">{{block type="cms/block" block_id="sym_agb"}}</td>
+							            </tr>
+							            </table>
+							        </td>
+							    </tr>
+							    </table>
+							</div>
+					    ]]></text>
+					</new_account_confirmed>
+	
+	                <new_password>
+	                    <active>1</active>
+	                    <text><![CDATA[
+							<style type="text/css">
+							    body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; }
+							    a { color:#1E7EC8; }
+							</style>
+							
+							<div style="font:11px/1.35em Verdana, Arial, Helvetica, sans-serif;">
+							    <table cellspacing="0" cellpadding="0" border="0" width="98%" style="margin-top:10px; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; margin-bottom:10px;">
+							    <tr>
+							        <td align="center" valign="top">
+								        <!-- [ header starts here] -->
+								        <table cellspacing="0" cellpadding="0" border="0" width="650">
+								        <tr>
+								            <td valign="top">
+								                <p><a href="{{store url=""}}" style="color:#1E7EC8;"><img src="{{skin url="images/logo_email.gif" _area=''frontend''}}" alt="{{block type="symmetrics_impressum/impressum" value="shopname"}}" border="0"/></a></p>
+								            </td>
+								        </tr>
+								        </table>
+								        <!-- [ middle starts here] -->
+								        <table cellspacing="0" cellpadding="0" border="0" width="650">
+								        <tr>
+								            <td valign="top">
+								                <p><strong>Hallo {{var user.name}}</strong>,<br/>Ihr neues Passwort lautet: {{var password}}</p>
+								                <p>Sie können Ihr Passwort jederzeit ändern, indem Sie sich in <a href="{{store url="adminhtml/system_account/"}}" style="color:#1E7EC8;">Ihrem Kundenbereichen</a> anmelden.<p>
+								            </td>
+								        </tr>
+								        <tr>
+								            <td>{{block type="symmetrics_impressum/impressum" value="emailfooter"}}</td>
+								        </tr>
+								        </table>
+							        </td>
+							    </tr>
+							    </table>
+							</div>
+					    ]]></text>
+					</new_password> 
+	
+	                <new_order>
+	                    <active>1</active>
+	                    <text><![CDATA[
+							<style type="text/css">
+							    body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; }
+							    a { color:#1E7EC8; }
+							</style>
+							
+							<div style="font:11px/1.35em Verdana, Arial, Helvetica, sans-serif;">
+							    <table cellspacing="0" cellpadding="0" border="0" width="98%" style="margin-top:10px; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; margin-bottom:10px;">
+							    <tr>
+							        <td align="center" valign="top">
+							            <!-- [ header starts here] -->
+							            <table cellspacing="0" cellpadding="0" border="0" width="650">
+							            <tr>
+							                <td valign="top"><a href="{{store url=""}}"><img src="{{skin url="images/logo_email.gif" _area=''frontend''}}" alt="{{block type="symmetrics_impressum/impressum" value="shopname"}}"  style="margin-bottom:10px;" border="0"/></a></td>
+							            </tr>
+							            </table>
+							            <!-- [ middle starts here] -->
+							            <table cellspacing="0" cellpadding="0" border="0" width="650">
+							            <tr>
+							                <td valign="top">
+							                    <p><strong>Hallo {{var order.getCustomerName()}}</strong>,<br/>Vielen Dank für Ihre Bestellung bei {{var order.getStoreGroupName()}}. Sobald Ihre Sendung verschickt wurde, erhalten Sie per E-Mail weitere Informationen zur Sendungsverfolgung. Sie können den aktuellen Status Ihrer Bestellung jederzeit <a href="{{store url="customer/account/"}}" style="color:#1E7EC8;">in Ihrem Kundenbereich</a> einsehen. Sollten Sie Fragen zu Ihrem Kundenkonto oder Ihrer Bestellung haben, senden Sie uns eine E-Mail an <a href="mailto:{{block type="symmetrics_impressum/impressum" value="email"}}" style="color:#1E7EC8;">{{block type="symmetrics_impressum/impressum" value="email"}}</a>.</p>
+							                    <p>Nachfolgend finden Sie Ihre Bestellbestätigung, vielen Dank!</p>
+							                    <p>Diese Bestelleingangsbestätigung stellt noch keine Vertragsannahme dar, sondern dient lediglich Ihrer Benachrichtigung über den tatsächlichen Zugang Ihrer Bestellung. Die Ware ist nun für Sie für 2 Wochen reserviert. Ein verbindlicher Vertrag kommt erst zustande, wenn wir Ihre Bestellung durch Lieferung der Ware bzw. durch Versandbestätigung annehmen. Bitte beachten Sie, dass eine Auslieferung der Ware bei Vorauskasse auf jeden Fall erst erfolgen kann, wenn die Zahlung hier eingegangen ist. Nur in Ausnahmefällen nehmen wir Bestellungen nicht an. In diesen Fällen werden eingegangene Zahlungen umgehend zurücküberwiesen.</p>
+							                    
+							                    <h3 style="border-bottom:2px solid #eee; font-size:1.05em; padding-bottom:1px; ">Ihre Bestellung Nr. {{var order.increment_id}} <small>({{var order.getCreatedAtFormated(''long'')}})</small></h3>
+							                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+							                    <thead>
+							                    <tr>
+							                        <th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;">Rechnungsinformationen:</th>
+							                        <th width="3%"></th>
+							                        <th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;">Zahlungsmethode:</th>
+							                    </tr>
+							                    </thead>
+							                    <tbody>
+							                    <tr>
+							                        <td valign="top" style="padding:7px 9px 9px 9px; border:1px solid #bebcb7; border-top:0; background:#f8f7f5;">
+							                            {{var order.getBillingAddress().format(''html'')}}
+							                        </td>
+							                        <td>&nbsp;</td>
+							                        <td valign="top" style="padding:7px 9px 9px 9px; border:1px solid #bebcb7; border-top:0; background:#f8f7f5;">
+							                            {{var payment_html}}
+							                        </td>
+							                    </tr>
+							                    </tbody>
+							                    </table>
+							
+							                    <br/>
+							                    
+							                    {{depend order.getIsNotVirtual()}}
+							                    
+							                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+							                    <thead>
+							                    <tr>
+							                        <th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;">Versandinformationen:</th>
+							                        <th width="3%"></th>
+							                        <th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;">Versandart:</th>
+							                    </tr>
+							                    </thead>
+							                    <tbody>
+							                    <tr>
+							                        <td valign="top" style="padding:7px 9px 9px 9px; border:1px solid #bebcb7; border-top:0; background:#f8f7f5;">
+							                            {{var order.getShippingAddress().format(''html'')}}
+							                        </td>
+							                        <td>&nbsp;</td>
+							                        <td valign="top" style="padding:7px 9px 9px 9px; border:1px solid #bebcb7; border-top:0; background:#f8f7f5;">
+							                            {{var order.getShippingDescription()}}
+							                        </td>
+							                    </tr>
+							                    </tbody>
+							                    </table>
+							                    
+							                    <br/>
+							                    
+							                    {{/depend}}
+							
+							                    {{layout handle="sales_email_order_items" order=$order}}
+							                    {{var items_html}}
+							              
+							                    <br/>
+							                    
+							                    {{var order.getEmailCustomerNote()}}
+							                </td>
+							            </tr>
+							            <tr>
+							                <td>
+							                    {{block type="symmetrics_impressum/impressum" value="emailfooter"}}
+							                </td>
+							            </tr>
+							            <tr>
+							                <td style="font:9px/1em Verdana, Arial, Helvetica, sans-serif;">
+							                    {{block type="cms/block" block_id="sym_agb"}}
+							                </td>
+							            </tr>
+							            </table>
+							        </td>
+							    </tr>
+							    </table>
+							</div>
+					    ]]></text>
+					</new_order>
+	
+	                <new_order_guest>
+	                    <active>1</active>
+	                    <text><![CDATA[
+							<style type="text/css">
+							    body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; }
+							    a { color:#1E7EC8; }
+							</style>
+							
+							<div style="font:11px/1.35em Verdana, Arial, Helvetica, sans-serif;">
+							    <table cellspacing="0" cellpadding="0" border="0" width="98%" style="margin-top:10px; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; margin-bottom:10px;">
+							    <tr>
+							        <td align="center" valign="top">
+							            <!-- [ header starts here] -->
+							            <table cellspacing="0" cellpadding="0" border="0" width="650">
+							            <tr>
+							                <td valign="top"><a href="{{store url=""}}"><img src="{{skin url="images/logo_email.gif" _area=''frontend''}}" alt="{{block type="symmetrics_impressum/impressum" value="shopname"}}"  style="margin-bottom:10px;" border="0"/></a></td>
+							            </tr>
+							            </table>
+							            <!-- [ middle starts here] -->
+							            <table cellspacing="0" cellpadding="0" border="0" width="650">
+							            <tr>
+							                <td valign="top">
+							                    <p><strong>Hallo {{var order.getCustomerName()}}</strong>,<br/>Vielen Dank für Ihre Bestellung bei {{var order.getStoreGroupName()}}. Sobald Ihre Sendung verschickt wurde, erhalten Sie per E-Mail weitere Informationen zur Sendungsverfolgung. Sie können den aktuellen Status Ihrer Bestellung jederzeit <a href="{{store url="customer/account/"}}" style="color:#1E7EC8;">in Ihrem Kundenbereich</a> einsehen. Sollten Sie Fragen zu Ihrem Kundenkonto oder Ihrer Bestellung haben, senden Sie uns eine E-Mail an <a href="mailto:{{block type="symmetrics_impressum/impressum" value="email"}}" style="color:#1E7EC8;">{{block type="symmetrics_impressum/impressum" value="email"}}</a>.</p>
+							                    <p>Nachfolgend finden Sie Ihre Bestellbestätigung, vielen Dank!</p>
+							                    <p>Diese Bestelleingangsbestätigung stellt noch keine Vertragsannahme dar, sondern dient lediglich Ihrer Benachrichtigung über den tatsächlichen Zugang Ihrer Bestellung. Die Ware ist nun für Sie für 2 Wochen reserviert. Ein verbindlicher Vertrag kommt erst zustande, wenn wir Ihre Bestellung durch Lieferung der Ware bzw. durch Versandbestätigung annehmen. Bitte beachten Sie, dass eine Auslieferung der Ware bei Vorauskasse auf jeden Fall erst erfolgen kann, wenn die Zahlung hier eingegangen ist. Nur in Ausnahmefällen nehmen wir Bestellungen nicht an. In diesen Fällen werden eingegangene Zahlungen umgehend zurücküberwiesen.</p>
+							                    
+							                    <h3 style="border-bottom:2px solid #eee; font-size:1.05em; padding-bottom:1px; ">Ihre Bestellung Nr. {{var order.increment_id}} <small>({{var order.getCreatedAtFormated(''long'')}})</small></h3>
+							                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+							                    <thead>
+							                    <tr>
+							                        <th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;">Rechnungsinformationen:</th>
+							                        <th width="3%"></th>
+							                        <th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;">Zahlungsmethode:</th>
+							                    </tr>
+							                    </thead>
+							                    <tbody>
+							                    <tr>
+							                        <td valign="top" style="padding:7px 9px 9px 9px; border:1px solid #bebcb7; border-top:0; background:#f8f7f5;">
+							                            {{var order.getBillingAddress().format(''html'')}}
+							                        </td>
+							                        <td>&nbsp;</td>
+							                        <td valign="top" style="padding:7px 9px 9px 9px; border:1px solid #bebcb7; border-top:0; background:#f8f7f5;">
+							                            {{var payment_html}}
+							                        </td>
+							                    </tr>
+							                    </tbody>
+							                    </table>
+							
+							                    <br/>
+							                
+							                    {{depend order.getIsNotVirtual()}}
+							              
+							                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+							                    <thead>
+							                    <tr>
+							                        <th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;">Versandinformationen:</th>
+							                        <th width="3%"></th>
+							                        <th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;">Versandart:</th>
+							                    </tr>
+							                    </thead>
+							                    <tbody>
+							                    <tr>
+							                        <td valign="top" style="padding:7px 9px 9px 9px; border:1px solid #bebcb7; border-top:0; background:#f8f7f5;">
+							                            {{var order.getShippingAddress().format(''html'')}}
+							                        </td>
+							                        <td>&nbsp;</td>
+							                        <td valign="top" style="padding:7px 9px 9px 9px; border:1px solid #bebcb7; border-top:0; background:#f8f7f5;">
+							                            {{var order.getShippingDescription()}}
+							                        </td>
+							                    </tr>
+							                    </tbody>
+							                    </table>
+							
+							                    <br/>
+							
+							                    {{/depend}}
+							                    
+							                    {{layout handle="sales_email_order_items" order=$order}}
+							                    {{var items_html}}
+							              
+							                    <br/>
+							                
+							                    {{var order.getEmailCustomerNote()}}
+							                
+							                </td>
+							            </tr>
+							            <tr>
+							                <td>
+							                    {{block type="symmetrics_impressum/impressum" value="emailfooter"}}
+							                </td>
+							            </tr>
+							            <tr>
+							                <td style="font:9px/1em Verdana, Arial, Helvetica, sans-serif;">
+							                    {{block type="cms/block" block_id="sym_agb"}}
+							                </td>
+							            </tr>
+							            </table>
+							        </td>
+							    </tr>
+							    </table>
+							</div>
+					    ]]></text>
+					</new_order_guest>
+	
+	                <update_order>
+	                    <active>1</active>
+	                    <text><![CDATA[
+							<style type="text/css">
+							    body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; }
+							    a { color:#1E7EC8; }
+							</style>
+							<div style="font:11px/1.35em Verdana, Arial, Helvetica, sans-serif;">
+							    <table cellspacing="0" cellpadding="0" border="0" width="98%" style="margin-top:10px; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; margin-bottom:10px;">
+							    <tr>
+							        <td align="center" valign="top">
+								        <!-- [ header starts here] -->
+								        <table cellspacing="0" cellpadding="0" border="0" width="650">
+								        <tr>
+								            <td valign="top"><a href="{{store url=""}}"><img src="{{skin url="images/logo_email.gif" _area=''frontend''}}" alt="{{block type="symmetrics_impressum/impressum" value="shopname"}}"  style="margin-bottom:10px;" border="0"/></a></td>
+								        </tr>
+								        </table>
+								
+								        <!-- [ middle starts here] -->
+								        <table cellspacing="0" cellpadding="0" border="0" width="650">
+								        <tr>
+								            <td valign="top">
+								                <p><strong>Hallo {{var order.getCustomerName()}}</strong>,</p>
+								                <p>Status Ihrer Bestellung Nr. {{var order.increment_id}} ist jetzt: <strong>{{var order.getStatusLabel()}}</strong>.</p>
+								                <p>Sie können den aktuellen Status Ihrer Bestellung jederzeit <a href="{{store url="customer/account/"}}" style="color:#1E7EC8;">in Ihrem Kundenbereich</a> einsehen.</p>
+								                <p>{{var comment}}</p>
+								                <p>
+								                    Sollten Sie Fragen haben,
+								                    senden Sie uns eine E-Mail an <a href="mailto:{{block type="symmetrics_impressum/impressum" value="email"}}" style="color:#1E7EC8;">{{block type="symmetrics_impressum/impressum" value="email"}}</a>.
+								                </p>
+								            </td>
+								        </tr>
+								        <tr>
+								            <td>
+								                {{block type="symmetrics_impressum/impressum" value="emailfooter"}}
+								            </td>
+								        </tr>
+								        <tr>
+								            <td style="font:9px/1em Verdana, Arial, Helvetica, sans-serif;">
+								                {{block type="cms/block" block_id="sym_agb"}}
+								            </td>
+								        </tr>
+								        </table>
+							        </td>
+								</tr>
+								</table>
+							</div>
+					    ]]></text>
+					</update_order>
+	
+	                <update_order_guest>
+	                    <active>1</active>
+	                    <text><![CDATA[
+							<style type="text/css">
+							    body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; }
+							    a { color:#1E7EC8; }
+							</style>
+							<div style="font:11px/1.35em Verdana, Arial, Helvetica, sans-serif;">
+							    <table cellspacing="0" cellpadding="0" border="0" width="98%" style="margin-top:10px; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; margin-bottom:10px;">
+							    <tr>
+							        <td align="center" valign="top">
+							        <!-- [ header starts here] -->
+							            <table cellspacing="0" cellpadding="0" border="0" width="650">
+							            <tr>
+							                <td valign="top"><a href="{{store url=""}}"><img src="{{skin url="images/logo_email.gif" _area=''frontend''}}" alt="{{block type="symmetrics_impressum/impressum" value="shopname"}}"  style="margin-bottom:10px;" border="0"/></a></td>
+							            </tr>
+							            </table>
+							
+								        <!-- [ middle starts here] -->
+								        <table cellspacing="0" cellpadding="0" border="0" width="650">
+								        <tr>
+								            <td valign="top">
+								                <p><strong>Hallo {{var order.getCustomerName()}}</strong>,</p>
+								                <p>Status Ihrer Bestellung Nr. {{var order.increment_id}} ist jetzt: <strong>{{var order.getStatusLabel()}}</strong>.</p>
+								                <p>{{var comment}}</p>
+								                <p>
+								                    Sollten Sie Fragen haben,
+								                    senden Sie uns eine E-Mail an <a href="mailto:{{block type="symmetrics_impressum/impressum" value="email"}}" style="color:#1E7EC8;">{{block type="symmetrics_impressum/impressum" value="email"}}</a>.
+								                </p>
+								            </td>
+								        </tr>
+							            <tr>
+							                <td>
+							                    {{block type="symmetrics_impressum/impressum" value="emailfooter"}}
+							                </td>
+							            </tr>
+							           <tr>
+							                <td style="font:9px/1em Verdana, Arial, Helvetica, sans-serif;">
+							                    {{block type="cms/block" block_id="sym_agb"}}
+							                </td>
+							           </tr>
+							            </table>
+							        </td>
+							    </tr>
+							    </table>
+							</div>
+					    ]]></text>
+					</update_order_guest>
+	
+	                <new_invoice>
+	                    <active>1</active>
+	                    <text><![CDATA[
+							<style type="text/css">
+							    body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; }
+							    a { color:#1E7EC8; }
+							</style>
+							
+							<div style="font:11px/1.35em Verdana, Arial, Helvetica, sans-serif;">
+							    <table cellspacing="0" cellpadding="0" border="0" width="98%" style="margin-top:10px; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; margin-bottom:10px;">
+							    <tr>
+							        <td align="center" valign="top">
+								        <!-- [ header starts here] -->
+								        <table cellspacing="0" cellpadding="0" border="0" width="650">
+								            <tr>
+								                <td valign="top"><a href="{{store url=""}}"><img src="{{skin url="images/logo_email.gif" _area=''frontend''}}" alt="{{block type="symmetrics_impressum/impressum" value="shopname"}}"  style="margin-bottom:10px;" border="0"/></a></td>
+								            </tr>
+								        </table>
+								        <!-- [ middle starts here] -->
+								        <table cellspacing="0" cellpadding="0" border="0" width="650">
+								            <tr>
+								                <td valign="top">
+								                    <p>
+								                        <strong>Hallo {{var order.getCustomerName()}}</strong>,<br/>
+								                        Vielen Dank für Ihre Bestellung bei {{block type="symmetrics_impressum/impressum" value="shopname"}}.
+								                        Sie können den aktuellen Status Ihrer Bestellung jederzeit <a href="{{store url="customer/account/"}}" style="color:#1E7EC8;">in Ihrem Kundenbereich</a> einsehen.
+								                        Sollten Sie Fragen zu Ihrem Kundenkonto oder andere Anfragen haben, senden Sie uns eine E-Mail an <a href="mailto:{{block type="symmetrics_impressum/impressum" value="email"}}" style="color:#1E7EC8;">{{block type="symmetrics_impressum/impressum" value="email"}}</a>.
+								                        Vielen Dank!
+								                    </p>
+								                    <h3 style="border-bottom:2px solid #eee; font-size:1.05em; padding-bottom:1px; ">
+								                        Ihre Proformarechnung Nr. {{var invoice.increment_id}} für Ihre Bestellung Nr. {{var order.increment_id}}
+								                    </h3>
+								                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+								                        <thead>
+								                        <tr>
+								                            <th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;">Rechnungsinformationen:</th>
+								                            <th width="3%"></th>
+								                            <th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;">Zahlungsmethode:</th>
+								                        </tr>
+								                        </thead>
+								                        <tbody>
+								                        <tr>
+								                            <td valign="top" style="padding:7px 9px 9px 9px; border:1px solid #bebcb7; border-top:0; background:#f8f7f5;">
+								                                {{var order.billing_address.format(''html'')}}
+								                            </td>
+								                            <td>&nbsp;</td>
+								                            <td valign="top" style="padding:7px 9px 9px 9px; border:1px solid #bebcb7; border-top:0; background:#f8f7f5;">
+								                                {{var payment_html}}
+								                            </td>
+								                        </tr>
+								                        </tbody>
+								                    </table>
+								                    <br/>
+								                    {{depend order.getIsNotVirtual()}}
+								                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+								                        <thead>
+								                        <tr>
+								                            <th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;">Versandinformationen:</th>
+								                            <th width="3%"></th>
+								                            <th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;">Versandart:</th>
+								                        </tr>
+								                        </thead>
+								                        <tbody>
+								                        <tr>
+								                            <td valign="top" style="padding:7px 9px 9px 9px; border:1px solid #bebcb7; border-top:0; background:#f8f7f5;">
+								                                {{var order.shipping_address.format(''html'')}}
+								                            </td>
+								                            <td>&nbsp;</td>
+								                            <td valign="top" style="padding:7px 9px 9px 9px; border:1px solid #bebcb7; border-top:0; background:#f8f7f5;">
+								                                {{var order.shipping_description}}
+								                            </td>
+								                        </tr>
+								                        </tbody>
+								                    </table>
+								                    <br/>
+								                    {{/depend}}
+								
+								                    {{layout area="frontend" handle="sales_email_order_invoice_items" invoice=$invoice order=$order}}
+								                    <p>{{var comment}}</p>
+								                </td>
+								            </tr>
+								            <tr>
+							                    <td>
+								                   {{block type="symmetrics_impressum/impressum" value="emailfooter"}}
+							                    </td>
+							                </tr>
+							                <tr>
+							                    <td style="font:9px/1em Verdana, Arial, Helvetica, sans-serif;">
+							                        {{block type="cms/block" block_id="sym_agb"}}
+								                </td>
+							                </tr>
+							                </table>
+							        </td>
+							    </tr>
+							    </table>
+							</div>
+					    ]]></text>
+					</new_invoice>
+	
+	                <new_invoice_guest>
+	                    <active>1</active>
+	                    <text><![CDATA[
+							<style type="text/css">
+							    body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; }
+							    a { color:#1E7EC8; }
+							</style>
+							
+							<div style="font:11px/1.35em Verdana, Arial, Helvetica, sans-serif;">
+								<table cellspacing="0" cellpadding="0" border="0" width="98%" style="margin-top:10px; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; margin-bottom:10px;">
+								<tr>
+								    <td align="center" valign="top">
+								        <!-- [ header starts here] -->
+								        <table cellspacing="0" cellpadding="0" border="0" width="650">
+								            <tr>
+								                <td valign="top"><a href="{{store url=""}}"><img src="{{skin url="images/logo_email.gif" _area=''frontend''}}" alt="{{block type="symmetrics_impressum/impressum" value="shopname"}}"  style="margin-bottom:10px;" border="0"/></a></td>
+								            </tr>
+								        </table>
+								        <!-- [ middle starts here] -->
+								        <table cellspacing="0" cellpadding="0" border="0" width="650">
+								            <tr>
+								                <td valign="top">
+								                    <p>
+								                        <strong>Hallo {{var billing.getName()}}</strong>,<br/>
+								                        Vielen Dank für Ihre Bestellung bei {{var order.getStoreGroupName()}}.
+								                        Sollten Sie Fragen haben, senden Sie uns eine E-Mail an <a href="mailto:{{block type="symmetrics_impressum/impressum" value="email"}}" style="color:#1E7EC8;">{{block type="symmetrics_impressum/impressum" value="email"}}</a>.
+								                        Vielen Dank!
+								                    </p>
+								                    <h3 style="border-bottom:2px solid #eee; font-size:1.05em; padding-bottom:1px; ">
+								                        Ihre Proformarechnung Nr. {{var invoice.increment_id}} für Ihre Bestellung Nr. {{var order.increment_id}}
+								                    </h3>
+								                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+								                        <thead>
+								                        <tr>
+								                            <th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;">Rechnungsinformationen:</th>
+								                            <th width="3%"></th>
+								                            <th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;">Zahlungsmethode:</th>
+								                        </tr>
+								                        </thead>
+								                        <tbody>
+								                        <tr>
+								                            <td valign="top" style="padding:7px 9px 9px 9px; border:1px solid #bebcb7; border-top:0; background:#f8f7f5;">
+								                                {{var order.billing_address.format(''html'')}}
+								                            </td>
+								                            <td>&nbsp;</td>
+								                            <td valign="top" style="padding:7px 9px 9px 9px; border:1px solid #bebcb7; border-top:0; background:#f8f7f5;">
+								                                {{var payment_html}}
+								                            </td>
+								                        </tr>
+								                        </tbody>
+								                    </table>
+								                    <br/>
+								                    {{depend order.getIsNotVirtual()}}
+								                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+								                        <thead>
+								                        <tr>
+								                            <th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;">Versandinformationen:</th>
+								                            <th width="3%"></th>
+								                            <th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;">Versandart:</th>
+								                        </tr>
+								                        </thead>
+								                        <tbody>
+								                        <tr>
+								                            <td valign="top" style="padding:7px 9px 9px 9px; border:1px solid #bebcb7; border-top:0; background:#f8f7f5;">
+								                                {{var order.shipping_address.format(''html'')}}
+								                            </td>
+								                            <td>&nbsp;</td>
+								                            <td valign="top" style="padding:7px 9px 9px 9px; border:1px solid #bebcb7; border-top:0; background:#f8f7f5;">
+								                                {{var order.shipping_description}}
+								                            </td>
+								                        </tr>
+								                        </tbody>
+								                    </table>
+								                    <br/>
+								                    {{/depend}}
+								
+								                    {{layout handle="sales_email_order_invoice_items" invoice=$invoice order=$order}}
+								
+								                    <p>{{var comment}}</p>
+								
+								                </td>
+							                </tr>
+							                <tr>
+							                    <td>
+								                   {{block type="symmetrics_impressum/impressum" value="emailfooter"}}
+								                </td>
+								            </tr>
+							                <tr>
+							                    <td style="font:9px/1em Verdana, Arial, Helvetica, sans-serif;">
+							                        {{block type="cms/block" block_id="sym_agb"}}
+							                    </td>
+								            </tr>
+								        </table>
+								    </td>
+								</tr>
+								</table>
+							</div>
+					    ]]></text>
+					</new_invoice_guest>
+	
+	                <update_invoice>
+	                    <active>1</active>
+	                    <text><![CDATA[
+							<style type="text/css">
+							    body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; }
+							    a { color:#1E7EC8; }
+							</style>
+							<div style="font:11px/1.35em Verdana, Arial, Helvetica, sans-serif;">
+								<table cellspacing="0" cellpadding="0" border="0" width="98%" style="margin-top:10px; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; margin-bottom:10px;">
+								<tr>
+								    <td align="center" valign="top">
+								        <!-- [ header starts here] -->
+								        <table cellspacing="0" cellpadding="0" border="0" width="650">
+								        <tr>
+								            <td valign="top"><a href="{{store url=""}}"><img src="{{skin url="images/logo_email.gif" _area=''frontend''}}" alt="{{block type="symmetrics_impressum/impressum" value="shopname"}}"  style="margin-bottom:10px;" border="0"/></a></td>
+								        </tr>
+								        </table>
+								
+								        <!-- [ middle starts here] -->
+								        <table cellspacing="0" cellpadding="0" border="0" width="650">
+								        <tr>
+								            <td valign="top">
+								                <p><strong>Hallo {{var order.getCustomerName()}}</strong>,</p>
+								                <p>Ihre Rechnung Nr. {{var order.increment_id}} wurde atkualisiert. Neuer Status: <strong>{{var order.getStatusLabel()}}</strong>.</p>
+								                <p>Sie können den aktuellen Status Ihrer Bestellung jederzeit <a href="{{store url="customer/account/"}}" style="color:#1E7EC8;">in Ihrem Kundenbereich</a> einsehen.</p>
+								                <p>{{var comment}}</p>
+								                <p>
+								                    Sollten Sie Fragen haben,
+								                    senden Sie uns eine E-Mail an <a href="mailto:{{block type="symmetrics_impressum/impressum" value="email"}}" style="color:#1E7EC8;">{{block type="symmetrics_impressum/impressum" value="email"}}</a>.
+								                </p>
+								            </td>
+								        </tr>
+								               <tr>
+								                    <td>
+								                        {{block type="symmetrics_impressum/impressum" value="emailfooter"}}
+								                 </td>
+								               </tr>
+								           <tr>
+								                <td style="font:9px/1em Verdana, Arial, Helvetica, sans-serif;">
+								                  {{block type="cms/block" block_id="sym_agb"}}
+								                </td>
+								           </tr>
+								        </table>
+								    </td>
+								</tr>
+								</table>
+							</div>
+					    ]]></text>
+					</update_invoice>
+	
+	                <update_invoice_guest>
+	                    <active>1</active>
+	                    <text><![CDATA[
+							<style type="text/css">
+							    body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; }
+							    a { color:#1E7EC8; }
+							</style>
+							<div style="font:11px/1.35em Verdana, Arial, Helvetica, sans-serif;">
+								<table cellspacing="0" cellpadding="0" border="0" width="98%" style="margin-top:10px; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; margin-bottom:10px;">
+								<tr>
+								    <td align="center" valign="top">
+								        <!-- [ header starts here] -->
+								        <table cellspacing="0" cellpadding="0" border="0" width="650">
+								        <tr>
+								            <td valign="top"><a href="{{store url=""}}"><img src="{{skin url="images/logo_email.gif" _area=''frontend''}}" alt="{{block type="symmetrics_impressum/impressum" value="shopname"}}"  style="margin-bottom:10px;" border="0"/></a></td>
+								        </tr>
+								        </table>
+								
+								        <!-- [ middle starts here] -->
+								        <table cellspacing="0" cellpadding="0" border="0" width="650">
+								        <tr>
+								            <td valign="top">
+								                <p><strong>Hallo {{var order.getCustomerName()}}</strong>,</p>
+								                <p>Ihre Rechnung Nr. {{var order.increment_id}} wurde atkualisiert. Neuer Status: <strong>{{var order.getStatusLabel()}}</strong>.</p>
+								                <p>{{var comment}}</p>
+								                <p>
+								                    Sollten Sie Fragen haben,
+								                    senden Sie uns eine E-Mail an <a href="mailto:{{block type="symmetrics_impressum/impressum" value="email"}}" style="color:#1E7EC8;">{{block type="symmetrics_impressum/impressum" value="email"}}</a>.
+								                </p>
+								            </td>
+								        </tr>
+								                <tr>
+								                    <td>
+								                        {{block type="symmetrics_impressum/impressum" value="emailfooter"}}
+								                 </td>
+								               </tr>
+								           <tr>
+								                <td style="font:9px/1em Verdana, Arial, Helvetica, sans-serif;">
+								                  {{block type="cms/block" block_id="sym_agb"}}
+								                </td>
+								           </tr>
+								        </table>
+								    </td>
+								</tr>
+								</table>
+							</div>
+					    ]]></text>
+					</update_invoice_guest>
+	
+	                <new_creditmemo>
+	                    <active>1</active>
+	                    <text><![CDATA[
+							<style type="text/css">
+							    body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; }
+							    a { color:#1E7EC8; }
+							</style>
+							
+							<div style="font:11px/1.35em Verdana, Arial, Helvetica, sans-serif;">
+								<table cellspacing="0" cellpadding="0" border="0" width="98%" style="margin-top:10px; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; margin-bottom:10px;">
+								<tr>
+								    <td align="center" valign="top">
+								        <!-- [ header starts here] -->
+								        <table cellspacing="0" cellpadding="0" border="0" width="650">
+								            <tr>
+								                <td valign="top"><a href="{{store url=""}}"><img src="{{skin url="images/logo_email.gif" _area=''frontend''}}" alt="{{block type="symmetrics_impressum/impressum" value="shopname"}}"  style="margin-bottom:10px;" border="0"/></a></td>
+								            </tr>
+								        </table>
+								        <!-- [ middle starts here] -->
+								        <table cellspacing="0" cellpadding="0" border="0" width="650">
+								            <tr>
+								                <td valign="top">
+								                    <p>
+								                        <strong>Hallo {{var order.getCustomerName()}}</strong>,<br/>
+								                        Vielen Dank für Ihre Bestellung bei {{block type="symmetrics_impressum/impressum" value="shopname"}}.
+								                        Sie können den aktuellen Status Ihrer Bestellung jederzeit <a href="{{store url="customer/account/"}}" style="color:#1E7EC8;">in Ihrem Kundenbereich</a> einsehen.</p>
+								                        Sollten Sie Fragen zu Ihrem Kundenkonto oder andere Anfragen haben, senden Sie uns eine E-Mail an <a href="mailto:{{block type="symmetrics_impressum/impressum" value="email"}}" style="color:#1E7EC8;">{{block type="symmetrics_impressum/impressum" value="email"}}</a>.
+								                        Vielen Dank!
+								                    </p>
+								                    <h3 style="border-bottom:2px solid #eee; font-size:1.05em; padding-bottom:1px; ">
+								                        Ihre Gutschrift Nr. {{var creditmemo.increment_id}} für Ihre Bestellung Nr. {{var order.increment_id}}
+								                    </h3>
+								                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+								                        <thead>
+								                        <tr>
+								                            <th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;">Rechnungsinformationen:</th>
+								                            <th width="3%"></th>
+								                            <th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;">Zahlungsmethode:</th>
+								                        </tr>
+								                        </thead>
+								                        <tbody>
+								                        <tr>
+								                            <td valign="top" style="padding:7px 9px 9px 9px; border:1px solid #bebcb7; border-top:0; background:#f8f7f5;">
+								                                {{var order.billing_address.format(''html'')}}
+								                            </td>
+								                            <td>&nbsp;</td>
+								                            <td valign="top" style="padding:7px 9px 9px 9px; border:1px solid #bebcb7; border-top:0; background:#f8f7f5;">
+								                                {{var payment_html}}
+								                            </td>
+								                        </tr>
+								                        </tbody>
+								                    </table>
+								                    <br/>
+								                    {{depend order.getIsNotVirtual()}}
+								                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+								                        <thead>
+								                        <tr>
+								                            <th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;">Versandinformationen:</th>
+								                            <th width="3%"></th>
+								                            <th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;">Versandart:</th>
+								                        </tr>
+								                        </thead>
+								                        <tbody>
+								                        <tr>
+								                            <td valign="top" style="padding:7px 9px 9px 9px; border:1px solid #bebcb7; border-top:0; background:#f8f7f5;">
+								                                {{var order.shipping_address.format(''html'')}}
+								                            </td>
+								                            <td>&nbsp;</td>
+								                            <td valign="top" style="padding:7px 9px 9px 9px; border:1px solid #bebcb7; border-top:0; background:#f8f7f5;">
+								                                {{var order.shipping_description}}
+								                            </td>
+								                        </tr>
+								                        </tbody>
+								                    </table>
+								                    <br/>
+								                    {{/depend}}
+								
+								                    {{layout handle="sales_email_order_creditmemo_items" creditmemo=$creditmemo order=$order}}
+								
+								                    <p>{{var comment}}</p>
+								                </td>
+								            </tr>
+							                <tr>
+								                <td>
+								                   {{block type="symmetrics_impressum/impressum" value="emailfooter"}}
+								                </td>
+								            </tr>
+								            <tr>
+								                <td style="font:9px/1em Verdana, Arial, Helvetica, sans-serif;">
+							                        {{block type="cms/block" block_id="sym_agb"}}
+								                </td>
+								            </tr>
+								        </table>
+								    </td>
+								</tr>
+								</table>
+							</div>
+					    ]]></text>
+					</new_creditmemo>
+	
+	                <new_creditmemo_guest>
+	                    <active>1</active>
+	                    <text><![CDATA[
+							<style type="text/css">
+							    body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; }
+							    a { color:#1E7EC8; }
+							</style>
+							
+							<div style="font:11px/1.35em Verdana, Arial, Helvetica, sans-serif;">
+								<table cellspacing="0" cellpadding="0" border="0" width="98%" style="margin-top:10px; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; margin-bottom:10px;">
+								<tr>
+								    <td align="center" valign="top">
+								        <!-- [ header starts here] -->
+								        <table cellspacing="0" cellpadding="0" border="0" width="650">
+								            <tr>
+								                <td valign="top"><a href="{{store url=""}}"><img src="{{skin url="images/logo_email.gif" _area=''frontend''}}" alt="{{block type="symmetrics_impressum/impressum" value="shopname"}}"  style="margin-bottom:10px;" border="0"/></a></td>
+								            </tr>
+								        </table>
+								        <!-- [ middle starts here] -->
+								        <table cellspacing="0" cellpadding="0" border="0" width="650">
+								            <tr>
+								                <td valign="top">
+								                    <p>
+								                        <strong>Hallo {{var billing.getName()}}</strong>,<br/>
+								                        Vielen Dank für Ihre Bestellung bei {{block type="symmetrics_impressum/impressum" value="shopname"}}.
+								                        Sollten Sie Fragen haben, senden Sie uns eine E-Mail an <a href="mailto:{{block type="symmetrics_impressum/impressum" value="email"}}" style="color:#1E7EC8;">{{block type="symmetrics_impressum/impressum" value="email"}}</a>.
+								                        Vielen Dank!
+								                    </p>
+								                    <h3 style="border-bottom:2px solid #eee; font-size:1.05em; padding-bottom:1px; ">
+								                        Ihre Gutschrift Nr. {{var creditmemo.increment_id}} für Ihre Bestellung Nr. {{var order.increment_id}}
+								                    </h3>
+								                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+								                        <thead>
+								                        <tr>
+								                            <th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;">Rechnungsinformationen:</th>
+								                            <th width="3%"></th>
+								                            <th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;">Zahlungsmethode:</th>
+								                        </tr>
+								                        </thead>
+								                        <tbody>
+								                        <tr>
+								                            <td valign="top" style="padding:7px 9px 9px 9px; border:1px solid #bebcb7; border-top:0; background:#f8f7f5;">
+								                                {{var order.billing_address.format(''html'')}}
+								                            </td>
+								                            <td>&nbsp;</td>
+								                            <td valign="top" style="padding:7px 9px 9px 9px; border:1px solid #bebcb7; border-top:0; background:#f8f7f5;">
+								                                {{var payment_html}}
+								                            </td>
+								                        </tr>
+								                        </tbody>
+								                    </table>
+								                    <br/>
+								                    {{depend order.getIsNotVirtual()}}
+								                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+								                        <thead>
+								                        <tr>
+								                            <th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;">Versandinformationen:</th>
+								                            <th width="3%"></th>
+								                            <th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;">Versandart:</th>
+								                        </tr>
+								                        </thead>
+								                        <tbody>
+								                        <tr>
+								                            <td valign="top" style="padding:7px 9px 9px 9px; border:1px solid #bebcb7; border-top:0; background:#f8f7f5;">
+								                                {{var order.shipping_address.format(''html'')}}
+								                            </td>
+								                            <td>&nbsp;</td>
+								                            <td valign="top" style="padding:7px 9px 9px 9px; border:1px solid #bebcb7; border-top:0; background:#f8f7f5;">
+								                                {{var order.shipping_description}}
+								                            </td>
+								                        </tr>
+								                        </tbody>
+								                    </table>
+								                    <br/>
+								                    {{/depend}}
+								
+								                    {{layout handle="sales_email_order_creditmemo_items" creditmemo=$creditmemo order=$order}}
+								
+								                    <p>{{var comment}}</p>
+								                </td>
+								            </tr>
+								            <tr>
+								                <td>
+							                        {{block type="symmetrics_impressum/impressum" value="emailfooter"}}
+								                 </td>
+							                </tr>
+								            <tr>
+								                <td style="font:9px/1em Verdana, Arial, Helvetica, sans-serif;">
+								                   {{block type="cms/block" block_id="sym_agb"}}
+								                </td>
+								            </tr>
+							                </table>
+							            </td>
+								</tr>
+								</table>
+							</div>
+					    ]]></text>
+					</new_creditmemo_guest>
+	
+	                <update_creditmemo>
+	                    <active>1</active>
+	                    <text><![CDATA[
+							<style type="text/css">
+							    body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; }
+							    a { color:#1E7EC8; }
+							</style>
+							<div style="font:11px/1.35em Verdana, Arial, Helvetica, sans-serif;">
+								<table cellspacing="0" cellpadding="0" border="0" width="98%" style="margin-top:10px; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; margin-bottom:10px;">
+								<tr>
+								    <td align="center" valign="top">
+								        <!-- [ header starts here] -->
+								        <table cellspacing="0" cellpadding="0" border="0" width="650">
+								        <tr>
+								            <td valign="top"><a href="{{store url=""}}"><img src="{{skin url="images/logo_email.gif" _area=''frontend''}}" alt="{{block type="symmetrics_impressum/impressum" value="shopname"}}"  style="margin-bottom:10px;" border="0"/></a></td>
+								        </tr>
+								        </table>
+								
+								        <!-- [ middle starts here] -->
+								        <table cellspacing="0" cellpadding="0" border="0" width="650">
+								        <tr>
+								            <td valign="top">
+								                <p><strong>Hallo {{var order.getCustomerName()}}</strong>,</p>
+								                <p>Ihre Gutschrift Nr. {{var order.increment_id}} wurde atkualisiert. Neuer Status: <strong>{{var order.getStatusLabel()}}</strong>.</p>
+								                <p>Sie können den aktuellen Status Ihrer Bestellung jederzeit <a href="{{store url="customer/account/"}}" style="color:#1E7EC8;">in Ihrem Kundenbereich</a> einsehen.</p>
+								                <p>{{var comment}}</p>
+								                <p>
+								                    Sollten Sie Fragen haben,
+								                    senden Sie uns eine E-Mail an <a href="mailto:{{block type="symmetrics_impressum/impressum" value="email"}}" style="color:#1E7EC8;">{{block type="symmetrics_impressum/impressum" value="email"}}</a>.
+								                </p>
+								            </td>
+								        </tr>
+							            <tr>
+							                <td>
+							                    {{block type="symmetrics_impressum/impressum" value="emailfooter"}}
+							                </td>
+							            </tr>
+							            <tr>
+							                <td style="font:9px/1em Verdana, Arial, Helvetica, sans-serif;">
+							                    {{block type="cms/block" block_id="sym_agb"}}
+							                </td>
+							            </tr>
+								        </table>
+								    </td>
+								</tr>
+								</table>
+							</div>
+					    ]]></text>
+					</update_creditmemo>
+	
+	                <update_creditmemo_guest>
+	                    <active>1</active>
+	                    <text><![CDATA[
+							<style type="text/css">
+							    body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; }
+							    a { color:#1E7EC8; }
+							</style>
+							<div style="font:11px/1.35em Verdana, Arial, Helvetica, sans-serif;">
+								<table cellspacing="0" cellpadding="0" border="0" width="98%" style="margin-top:10px; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; margin-bottom:10px;">
+								<tr>
+								    <td align="center" valign="top">
+								        <!-- [ header starts here] -->
+								        <table cellspacing="0" cellpadding="0" border="0" width="650">
+								        <tr>
+								            <td valign="top"><a href="{{store url=""}}"><img src="{{skin url="images/logo_email.gif" _area=''frontend''}}" alt="{{block type="symmetrics_impressum/impressum" value="shopname"}}"  style="margin-bottom:10px;" border="0"/></a></td>
+								        </tr>
+								        </table>
+								
+								        <!-- [ middle starts here] -->
+								        <table cellspacing="0" cellpadding="0" border="0" width="650">
+								        <tr>
+								            <td valign="top">
+								                <p><strong>Hallo {{var order.getCustomerName()}}</strong>,</p>
+								                <p>Ihre Gutschrift Nr. {{var order.increment_id}} wurde atkualisiert. Neuer Status: <strong>{{var order.getStatusLabel()}}</strong>.</p>
+								                <p>{{var comment}}</p>
+								                <p>
+								                    Sollten Sie Fragen haben,
+								                    senden Sie uns eine E-Mail an <a href="mailto:{{block type="symmetrics_impressum/impressum" value="email"}}" style="color:#1E7EC8;">{{block type="symmetrics_impressum/impressum" value="email"}}</a>.
+								                </p>
+								            </td>
+								        </tr>
+							            <tr>
+							                <td>
+							                    {{block type="symmetrics_impressum/impressum" value="emailfooter"}}
+							                </td>
+							            </tr>
+							            <tr>
+							                <td style="font:9px/1em Verdana, Arial, Helvetica, sans-serif;">
+							                      {{block type="cms/block" block_id="sym_agb"}}
+							                </td>
+							            </tr>
+								        </table>
+								    </td>
+								</tr>
+								</table>
+						    </div>
+				     ]]></text>
+				    </update_creditmemo_guest>
+	
+	                <new_shipment>
+	                    <active>1</active>
+	                    <text><![CDATA[
+							<style type="text/css">
+							    body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; }
+							    a { color:#1E7EC8; }
+							</style>
+							
+							<div style="font:11px/1.35em Verdana, Arial, Helvetica, sans-serif;">
+								<table cellspacing="0" cellpadding="0" border="0" width="98%" style="margin-top:10px; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; margin-bottom:10px;">
+								<tr>
+								    <td align="center" valign="top">
+								        <!-- [ header starts here] -->
+								        <table cellspacing="0" cellpadding="0" border="0" width="650">
+								            <tr>
+								                <td valign="top"><a href="{{store url=""}}"><img src="{{skin url="images/logo_email.gif" _area=''frontend''}}" alt="{{block type="symmetrics_impressum/impressum" value="shopname"}}"  style="margin-bottom:10px;" border="0"/></a></td>
+								            </tr>
+								        </table>
+								        <!-- [ middle starts here] -->
+								        <table cellspacing="0" cellpadding="0" border="0" width="650">
+								            <tr>
+								                <td valign="top">
+								                    <p>
+								                        <strong>Hallo {{var order.getCustomerName()}}</strong>,<br/>
+								                        Vielen Dank für Ihre Bestellung bei {{block type="symmetrics_impressum/impressum" value="shopname"}}.
+								                        Sobald Ihre Sendung verschickt wurde, erhalten Sie per E-Mail weitere Informationen zur Sendungsverfolgung.
+								                        Sie können den aktuellen Status Ihrer Bestellung jederzeit <a href="{{store url="customer/account/"}}" style="color:#1E7EC8;">in Ihrem Kundenbereich</a> einsehen.
+								                        Sollten Sie Fragen zu Ihrem Kundenkonto oder Ihrer Bestellung haben, senden Sie uns eine E-Mail an <a href="mailto:{{block type="symmetrics_impressum/impressum" value="email"}}" style="color:#1E7EC8;">{{block type="symmetrics_impressum/impressum" value="email"}}</a>.
+								                    </p>
+								                    <p>
+								                        Nachfolgend finden Sie Ihren Lieferschein, vielen Dank!
+								                    </p>
+								
+								                    <h3 style="border-bottom:2px solid #eee; font-size:1.05em; padding-bottom:1px; ">
+								                        Ihr Lieferschein Nr. {{var shipment.increment_id}} für Ihre Bestellung Nr. {{var order.increment_id}}
+								                    </h3>
+								                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+								                        <thead>
+								                        <tr>
+								                            <th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;">Rechnungsinformationen:</th>
+								                            <th width="3%"></th>
+								                            <th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;">Zahlungsmethode:</th>
+								                        </tr>
+								                        </thead>
+								                        <tbody>
+								                        <tr>
+								                            <td valign="top" style="padding:7px 9px 9px 9px; border:1px solid #bebcb7; border-top:0; background:#f8f7f5;">
+								                                {{var order.billing_address.format(''html'')}}
+								                            </td>
+								                            <td>&nbsp;</td>
+								                            <td valign="top" style="padding:7px 9px 9px 9px; border:1px solid #bebcb7; border-top:0; background:#f8f7f5;">
+								                                {{var payment_html}}
+								                            </td>
+								                        </tr>
+								                        </tbody>
+								                    </table>
+								                    <br/>
+								                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+								                        <thead>
+								                        <tr>
+								                            <th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;">Versandinformationen:</th>
+								                            <th width="3%"></th>
+								                            <th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;">Versandart:</th>
+								                        </tr>
+								                        </thead>
+								                        <tbody>
+								                        <tr>
+								                            <td valign="top" style="padding:7px 9px 9px 9px; border:1px solid #bebcb7; border-top:0; background:#f8f7f5;">
+								                                {{var order.shipping_address.format(''html'')}}
+								                            </td>
+								                            <td>&nbsp;</td>
+								                            <td valign="top" style="padding:7px 9px 9px 9px; border:1px solid #bebcb7; border-top:0; background:#f8f7f5;">
+								                                {{var order.shipping_description}}
+								                            </td>
+								                        </tr>
+								                        </tbody>
+								                    </table>
+								                    <br/>
+								
+								                    {{layout handle="sales_email_order_shipment_items" shipment=$shipment order=$order}}
+								
+								                    <br/>
+								                    {{block type=''core/template'' area=''frontend'' template=''email/order/shipment/track.phtml'' shipment=$shipment order=$order}}
+								                    <p>{{var comment}}</p>
+								                </td>
+								            </tr>
+							                <tr>
+							                    <td>
+							                        {{block type="symmetrics_impressum/impressum" value="emailfooter"}}
+								                 </td>
+							               </tr>
+								           <tr>
+								                <td style="font:9px/1em Verdana, Arial, Helvetica, sans-serif;">
+							                        {{block type="cms/block" block_id="sym_agb"}}
+								                </td>
+								           </tr>
+								        </table>
+								    </td>
+								</tr>
+								</table>
+							</div>
+					    ]]></text>
+					</new_shipment>
+	
+	                <new_shipment_guest>
+	                    <active>1</active>
+	                    <text><![CDATA[
+							<style type="text/css">
+							    body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; }
+							    a { color:#1E7EC8; }
+							</style>
+							
+							<div style="font:11px/1.35em Verdana, Arial, Helvetica, sans-serif;">
+								<table cellspacing="0" cellpadding="0" border="0" width="98%" style="margin-top:10px; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; margin-bottom:10px;">
+								<tr>
+								    <td align="center" valign="top">
+								        <!-- [ header starts here] -->
+								        <table cellspacing="0" cellpadding="0" border="0" width="650">
+								            <tr>
+								                <td valign="top"><a href="{{store url=""}}"><img src="{{skin url="images/logo_email.gif" _area=''frontend''}}" alt="{{block type="symmetrics_impressum/impressum" value="shopname"}}"  style="margin-bottom:10px;" border="0"/></a></td>
+								            </tr>
+								        </table>
+								        <!-- [ middle starts here] -->
+								        <table cellspacing="0" cellpadding="0" border="0" width="650">
+								            <tr>
+								                <td valign="top">
+								                    <p>
+								                        <strong>Hallo {{var billing.getName()}}</strong>,<br/>
+								                        Vielen Dank für Ihre Bestellung bei {{block type="symmetrics_impressum/impressum" value="shopname"}}.
+								                        Sobald Ihre Sendung verschickt wurde, erhalten Sie per E-Mail weitere Informationen zur Sendungsverfolgung.
+								                        Sollten Sie Fragen zu Ihrer Bestellung haben, senden Sie uns eine E-Mail an <a href="mailto:{{block type="symmetrics_impressum/impressum" value="email"}}" style="color:#1E7EC8;">{{block type="symmetrics_impressum/impressum" value="email"}}</a>
+								                    </p>
+								                    <p>
+								                        Nachfolgend finden Sie Ihren Lieferschein, vielen Dank!
+								                    </p>
+								
+								                    <h3 style="border-bottom:2px solid #eee; font-size:1.05em; padding-bottom:1px; ">
+								                        Ihre Lieferschein Nr. {{var shipment.increment_id}} für Ihre Bestellung Nr. {{var order.increment_id}}
+								                    </h3>
+								                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+								                        <thead>
+								                        <tr>
+								                            <th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;">Rechnungsinformationen:</th>
+								                            <th width="3%"></th>
+								                            <th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;">Zahlungsmethode:</th>
+								                        </tr>
+								                        </thead>
+								                        <tbody>
+								                        <tr>
+								                            <td valign="top" style="padding:7px 9px 9px 9px; border:1px solid #bebcb7; border-top:0; background:#f8f7f5;">
+								                                {{var order.billing_address.format(''html'')}}
+								                            </td>
+								                            <td>&nbsp;</td>
+								                            <td valign="top" style="padding:7px 9px 9px 9px; border:1px solid #bebcb7; border-top:0; background:#f8f7f5;">
+								                                {{var payment_html}}
+								                            </td>
+								                        </tr>
+								                        </tbody>
+								                    </table>
+								                    <br/>
+								                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
+								                        <thead>
+								                        <tr>
+								                            <th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;">Versandinformationen:</th>
+								                            <th width="3%"></th>
+								                            <th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;">Versandart:</th>
+								                        </tr>
+								                        </thead>
+								                        <tbody>
+								                        <tr>
+								                            <td valign="top" style="padding:7px 9px 9px 9px; border:1px solid #bebcb7; border-top:0; background:#f8f7f5;">
+								                                {{var order.shipping_address.format(''html'')}}
+								                            </td>
+								                            <td>&nbsp;</td>
+								                            <td valign="top" style="padding:7px 9px 9px 9px; border:1px solid #bebcb7; border-top:0; background:#f8f7f5;">
+								                                {{var order.shipping_description}}
+								                            </td>
+								                        </tr>
+								                        </tbody>
+								                    </table>
+								                    <br/>
+								
+								                    {{layout handle="sales_email_order_shipment_items" shipment=$shipment order=$order}}
+								
+								                    <br/>
+								                    {{block type=''core/template'' area=''frontend'' template=''email/order/shipment/track.phtml'' shipment=$shipment order=$order}}
+								                    <p>{{var comment}}</p>
+								                </td>
+								            </tr>
+							                <tr>
+							                    <td>
+							                        {{block type="symmetrics_impressum/impressum" value="emailfooter"}}
+								                 </td>
+							                </tr>
+							                <tr>
+								                <td style="font:9px/1em Verdana, Arial, Helvetica, sans-serif;">
+							                        {{block type="cms/block" block_id="sym_agb"}}
+							                    </td>
+							                </tr>
+							                </table>
+								    </td>
+								</tr>
+								</table>
+							</div>
+					    ]]></text>
+					</new_shipment_guest>
+	
+	                <update_shipment>
+	                    <active>1</active>
+	                    <text><![CDATA[
+							<style type="text/css">
+							    body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; }
+							    a { color:#1E7EC8; }
+							</style>
+							<div style="font:11px/1.35em Verdana, Arial, Helvetica, sans-serif;">
+								<table cellspacing="0" cellpadding="0" border="0" width="98%" style="margin-top:10px; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; margin-bottom:10px;">
+								<tr>
+								    <td align="center" valign="top">
+								        <!-- [ header starts here] -->
+								        <table cellspacing="0" cellpadding="0" border="0" width="650">
+								        <tr>
+								            <td valign="top"><a href="{{store url=""}}"><img src="{{skin url="images/logo_email.gif" _area=''frontend''}}" alt="{{block type="symmetrics_impressum/impressum" value="shopname"}}"  style="margin-bottom:10px;" border="0"/></a></td>
+								        </tr>
+								        </table>
+								
+								        <!-- [ middle starts here] -->
+								        <table cellspacing="0" cellpadding="0" border="0" width="650">
+								        <tr>
+								            <td valign="top">
+								                <p><strong>Hallo {{var order.getCustomerName()}}</strong>,</p>
+								                <p>Ihr Lieferschein Nr. {{var order.increment_id}} wurde atkualisiert. Neuer Status: <strong>{{var order.getStatusLabel()}}</strong>.</p>
+								                <p>Sie können den aktuellen Status Ihrer Bestellung jederzeit <a href="{{store url="customer/account/"}}" style="color:#1E7EC8;">in Ihrem Kundenbereich</a> einsehen.</p>
+								                <p>{{var comment}}</p>
+								                <p>
+								                    Sollten Sie Fragen haben,
+								                    senden Sie uns eine E-Mail an <a href="mailto:{{block type="symmetrics_impressum/impressum" value="email"}}" style="color:#1E7EC8;">{{block type="symmetrics_impressum/impressum" value="email"}}</a>.
+								                </p>
+								            </td>
+								        </tr>
+							            <tr>
+							                <td>
+							                    {{block type="symmetrics_impressum/impressum" value="emailfooter"}}
+							                </td>
+							            </tr>
+							            <tr>
+							                <td style="font:9px/1em Verdana, Arial, Helvetica, sans-serif;">
+							                    {{block type="cms/block" block_id="sym_agb"}}
+							                </td>
+							            </tr>
+								        </table>
+								    </td>
+								</tr>
+								</table>
+							</div>
+					    ]]></text>
+					</update_shipment>
+	
+	                <update_shipment_guest>
+	                    <active>1</active>
+	                    <text><![CDATA[
+							<style type="text/css">
+							   body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; }
+							    a { color:#1E7EC8; }
+							</style>
+							<div style="font:11px/1.35em Verdana, Arial, Helvetica, sans-serif;">
+								<table cellspacing="0" cellpadding="0" border="0" width="98%" style="margin-top:10px; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; margin-bottom:10px;">
+								<tr>
+								    <td align="center" valign="top">
+								        <!-- [ header starts here] -->
+								        <table cellspacing="0" cellpadding="0" border="0" width="650">
+								        <tr>
+								            <td valign="top"><a href="{{store url=""}}"><img src="{{skin url="images/logo_email.gif" _area=''frontend''}}" alt="{{block type="symmetrics_impressum/impressum" value="shopname"}}"  style="margin-bottom:10px;" border="0"/></a></td>
+								        </tr>
+								        </table>
+								
+								        <!-- [ middle starts here] -->
+								        <table cellspacing="0" cellpadding="0" border="0" width="650">
+								        <tr>
+								            <td valign="top">
+								                <p><strong>Hallo {{var order.getCustomerName()}}</strong>,</p>
+								                <p>Ihr Lieferschein Nr. {{var order.increment_id}} wurde atkualisiert. Neuer Status: <strong>{{var order.getStatusLabel()}}</strong>.</p>
+								                <p>{{var comment}}</p>
+								                <p>
+								                    Sollten Sie Fragen haben,
+								                    senden Sie uns eine E-Mail an <a href="mailto:{{block type="symmetrics_impressum/impressum" value="email"}}" style="color:#1E7EC8;">{{block type="symmetrics_impressum/impressum" value="email"}}</a>.
+								                </p>
+								            </td>
+								        </tr>
+							            <tr>
+							                <td>
+							                    {{block type="symmetrics_impressum/impressum" value="emailfooter"}}
+							                </td>
+							            </tr>
+							            <tr>
+							                <td style="font:9px/1em Verdana, Arial, Helvetica, sans-serif;">
+							                    {{block type="cms/block" block_id="sym_agb"}}
+							                </td>
+							            </tr>
+								        </table>
+								    </td>
+								</tr>
+								</table>
+							</div>
+					    ]]></text>
+					</update_shipment_guest>
+	
+	                <transaction_failed>
+	                    <active>1</active>
+	                    <text><![CDATA[
+							<table>
+							    <thead>
+							        <tr>
+							            <th>Transaktion fehlgeschlagen.</th>
+							        </tr>
+							    </thead>
+							    <tbody>
+							        <tr>
+							            <td>
+							                <p>
+							                    <b>Grund</b><br />
+							                    {{var reason}}
+							                </p>
+							                <p>
+							                    <b>Typ</b><br />
+							                    {{var checkoutType}}
+							                </p>
+							                <p>
+							                    <b>Kunde:</b><br />
+							                    <a href="mailto:{{var customerEmail}}">{{var customer}}</a> &lt;{{var customerEmail}}&gt;
+							                </p>
+							                <p>
+							                    <b>Artikel</b><br />
+							                    {{var items}}
+							                </p>
+							                <p>
+							                    <b>Summe:</b><br />
+							                    {{var total}}
+							                </p>
+							                <p>
+							                    <b>Rechnungsadresse:</b><br />
+							                    {{var billingAddress.format(''html'')}}
+							                </p>
+							                <p>
+							                    <b>Lieferadresse:</b><br />
+							                    {{var shippingAddress.format(''html'')}}
+							                </p>
+							                <p>
+							                    <b>Lieferung:</b><br />
+							                    {{var shippingMethod}}
+							                </p>
+							                <p>
+							                    <b>Zahlungsmethode:</b><br />
+							                    {{var paymentMethod}}
+							                </p>
+							                <p>
+							                    <b>Datum & Zeit:</b><br />
+							                    {{var dateAndTime}}
+							                </p>
+							            </td>
+							        </tr>
+							    </tbody>
+							</table>
+					    ]]></text>
+					</transaction_failed>
+	
+	                <log_cleaning_errors>
+	                    <active>1</active>
+	                    <text><![CDATA[
+							Warnung bei der Log-Löschlung:
+							{{var warnings}}
+					    ]]></text>
+					</log_cleaning_errors>
+	
+	                <newsletter_subscription_confirm>
+	                    <active>1</active>
+	                    <text><![CDATA[
+							<style type="text/css">
+							    body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; }
+							    a { color:#1E7EC8; }
+							</style>
+							
+							<div style="font:11px/1.35em Verdana, Arial, Helvetica, sans-serif;">
+							    <table cellspacing="0" cellpadding="0" border="0" width="98%" style="margin-top:10px; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; margin-bottom:10px;">
+							        <tr>
+							            <td align="center" valign="top">
+							                <!-- [ header starts here] -->
+							                <table cellspacing="0" cellpadding="0" border="0" width="650">
+							                    <tr>
+							                        <td valign="top">
+							                            <p><a href="{{store url=""}}" style="color:#1E7EC8;"><img src="{{skin url="images/logo_email.gif" _area=''frontend''}}" alt="{{block type="symmetrics_impressum/impressum" value="shopname"}}" border="0"/></a></p></td>
+							                    </tr>
+							                </table>
+							
+							                <!-- [ middle starts here] -->
+							                <table cellspacing="0" cellpadding="0" border="0" width="650">
+							                    <tr>
+							                        <td valign="top">
+							                            <p><strong>Hallo {{var customer.name}}</strong>,<br/>
+							                            vielen Dank, dass Sie sich als Abonennt unseres kostenlosen Newsletters angemeldet haben.</p>
+							                            <p style="border:1px solid #BEBCB7; padding:13px 18px; background:#F8F7F5; ">Um Sie in den Versandverteiler aufnehmen zu können, müssen Sie einmalig und abschließen Ihre Anmeldung bestätigen. Klicken Sie dazu bitte auf den folgenden Link:<br />
+							                            <a href="{{var subscriber.getConfirmationLink()}}" style="color:#1E7EC8;">{{var subscriber.getConfirmationLink()}}</a></p>
+							                        </td>
+							                    </tr>
+							                    <tr>
+							                        <td>
+							                            {{block type="symmetrics_impressum/impressum" value="emailfooter"}}
+							                        </td>
+							                    </tr>
+							                    </table>
+							             </td>
+							        </tr>
+							    </table>
+							</div>
+					    ]]></text>
+					</newsletter_subscription_confirm>
+	
+	                <newsletter_subscription_success>
+	                    <active>1</active>
+	                    <text><![CDATA[
+	                        Newsletter Anmeldung erfolgreich
+	                    ]]></text>
+	                </newsletter_subscription_success>
+	                
+	                <newsletter_unsubscription_success>
+	                    <active>1</active>
+	                    <text><![CDATA[
+	                        Newsletter Abmeldung erfolgreich
+	                    ]]></text>
+	                </newsletter_unsubscription_success>
+	                
+	                <wishlist_share>
+	                    <active>1</active>
+	                    <text><![CDATA[
+							<style type="text/css">
+							    body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; }
+							</style>
+							<div style="font:11px/1.35em Verdana, Arial, Helvetica, sans-serif;">
+							    <table cellspacing="0" cellpadding="0" border="0" width="98%" style="margin-top:10px; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; margin-bottom:10px;">
+							        <tr>
+							            <td align="center" valign="top">
+							            <!-- [ header starts here] -->
+							            <table cellspacing="0" cellpadding="0" border="0" width="650">
+							            <tr>
+							                <td valign="top">
+							                    <p><a href="{{store url=""}}" style="color:#1E7EC8;"><img src="{{skin url="images/logo_email.gif" _area=''frontend''}}" alt="{{block type="symmetrics_impressum/impressum" value="shopname"}}" border="0"/></a></p>
+							                </td>
+							            </tr>
+							            </table>
+							
+							            <!-- [ middle starts here] -->
+							            <table cellspacing="0" cellpadding="0" border="0" width="650">
+							            <tr>
+							                <td valign="top">
+							                    <p>Hallo,<br/> hier gibt es meinen Wunschzettel!</p>
+							                    <p>{{var message}}</p>
+							                    {{var items}}
+							                    
+							                    <br/>
+							                    
+							                    {{depend salable}}
+							                    <p><strong><a href="{{var addAllLink}}" style="color:#DC6809;">Alle Artikel in Warenkorb legen</a></strong> |
+							                    {{/depend}}
+							                    <strong><a href="{{var viewOnSiteLink}}" style="color:#1E7EC8;">Alle Artikel im Shop ansehen!</a></strong></p>
+							                    <p>Danke,<br/><strong>{{var customer.name}}</strong></p>
+							                </td>
+							            </tr>
+							            </table>
+							            </td>
+							        </tr>
+							    </table>
+							</div>
+					    ]]></text>
+					</wishlist_share>
+	
+	                <product_tellafriend>
+	                    <active>1</active>
+	                    <text><![CDATA[
+							<p>Willkommen, {{var name}}</p>
+							<p>Bitte schau dir <a href="{{var product_url}}">{{var product_name}}</a></p>
+							<p>Hier ist die Nachricht:</p> 
+							<p>{{var message}}</p>
+					    ]]></text>
+	                </product_tellafriend>
+	
+	                <contact_form>
+	                    <active>1</active>
+	                    <text><![CDATA[
+							Name:       {{var data.name}}
+							E-Mail:     {{var data.email}}
+							Telefon:    {{var data.telephone}}
+							Kommentar:  {{var data.comment}}
+	                    ]]></text>
+	                </contact_form>
+	
+	                <sitemap_generation_warnings>
+	                    <active>1</active>
+	                    <text><![CDATA[
+							Sitemap Generierung - Warnung:
+							{{var warnings}}
+	                    ]]></text>
+	                </sitemap_generation_warnings>
+	
+	                <product_available>
+	                    <active>1</active>
+	                    <text><![CDATA[
+							<p>Hallo {{var customerName}},</p>
+							{{var alertGrid}}
+					    ]]></text>
+	                </product_available>
+	
+	                <product_priceupdate>
+	                    <active>1</active>
+	                    <text><![CDATA[
+							<p>Hallo {{var customerName}},</p>
+							{{var alertGrid}}
+					    ]]></text>
+					</product_priceupdate>
+	
+	                <product_priceupdate_cron>
+	                    <active>1</active>
+	                    <text><![CDATA[
+		                    Product alerts cron warnings:
+		                    {{var warnings}}
+	                    ]]></text>
+	                </product_priceupdate_cron>
+                </default>
+            </emails>
+            <impressum>
+                <shop_name><![CDATA[Muster SHOP]]></shop_name>
+	            <company_name><![CDATA[Musterfirma GmbH]]></company_name>
+                <zip><![CDATA[12345]]></zip>
+	            <street><![CDATA[Musterstrasse 1a]]></street>
+	            <city><![CDATA[Musterstadt]]></city>
+	            <phone><![CDATA[+49 (0) 123 987 654 321]]></phone>
+	            <fax><![CDATA[+49 (0) 123 321 654 897]]></fax>
+	            <email><![CDATA[info@musterdomain.de]]></email>
+	            <homepage><![CDATA[www.musterdomain.de]]></homepage>
+	            <tax_number><![CDATA[12/123/123456]]></tax_number>
+	            <sales_tax_id_number><![CDATA[DE123456789]]></sales_tax_id_number>
+	            <commercial_register><![CDATA[Gericht Musterstadt]]></commercial_register>
+	            <tax_office><![CDATA[Finanzamt Musterstadt]]></tax_office>
+	            <holder_names><![CDATA[Max Mustermann, Petra Muster]]></holder_names>
+	            <hrb><![CDATA[123456789]]></hrb>
+	            <bank_account><![CDATA[123 456 789]]></bank_account>
+	            <bank_id_code><![CDATA[100 200 30]]></bank_id_code>
+	            <bank_name><![CDATA[Musterbank]]></bank_name>
+	            <bank_swift><![CDATA[12345]]></bank_swift>
+	            <bank_iban><![CDATA[12345]]></bank_iban>
+	            <bank_account_owner><![CDATA[Musterfirma GmbH]]></bank_account_owner>
+	            <legal_info><![CDATA[<p><strong>Max Muster, Apotheker</strong></p>
+<p>Die Berufsbezeichnung "Apotheker" wurde in der Bundesrepublik Deutschland verliehen.</p>
+<p>Zuständige Aufsichtsbehörde: Gesundheitsamt Musterstadt</p>
+<p>Mitglied der Apothekenkammer Musterstadt</p>]]></legal_info>
+	            <invoice_maturity><![CDATA[14]]></invoice_maturity>
+	            <invoice_note><![CDATA[Vielen Dank für Ihren Auftrag!]]></invoice_note>
+	            <invoice_customer_prefix><![CDATA[K]]></invoice_customer_prefix>
+            </impressum>
+        </config_german_texts>
+    </default>
+</config>
