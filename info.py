@@ -6,7 +6,7 @@
 # =============================================================================
 NAME = 'symmetrics_config_texts_german'
 
-TAGS = ()
+TAGS = ('magento', 'module', 'symmetrics', 'config', 'german', 'germanconfig', 'texts')
 
 LICENSE = 'AFL 3.0'
 
@@ -19,47 +19,45 @@ INSTALL_PATH = ''
 # responsibilities
 # =============================================================================
 TEAM_LEADER = {
-    '[firstname] [lastname]': '[email]'
+    'Sergej Braznikov': 'sb@symmetrics.de'
 }
 
 MAINTAINER = {
-    '[firstname] [lastname]': '[email]'
+    'Eugen Gitin': 'eg@symmetrics.de'
 }
 
 AUTHORS = {
-    '[firstname] [lastname]': '[email]',
+    'Eugen Gitin': 'eg@symmetrics.de'
 }
 
 # =============================================================================
 # additional infos
 # =============================================================================
-INFO = '[short description, max 60 chars]'
+INFO = 'Standard- und Mustertexte für deutsche Shops'
 
 SUMMARY = '''
-    [long description
-    with multiple lines]
+    Standard- und Mustertexte für deutsche Shops
 '''
 
 NOTES = '''
-    [special notes, restrictions, bugs etc.]
 '''
 
 # =============================================================================
 # relations
 # =============================================================================
 REQUIRES = {
+    'magento': '*',
+    'mc_module_locale_mage_community_de_de': '*',
 }
 
 EXCLUDES = {
 }
 
 DEPENDS_ON_FILES = (
-    'app/code/core/.../1.php',
-    'app/code/core/.../2.php',
-    'app/code/core/.../3.php',
 )
 
 PEAR_KEY = ''
 
 COMPATIBLE_WITH = {
+    'magento': '1.3.1'
 }
