@@ -7,25 +7,6 @@ $installer = $this;
 $installer->startSetup();
 
 #############################################################################################################
-# agb
-#############################################################################################################
-
-if ($configData['blocks']['default']['sym_agb']['active'] == 1)
-{
-	$query = <<< EOF
-    INSERT INTO `checkout_agreement` (`name`, `content`, `content_height`, `checkbox_text`, `is_active`, `is_html`) VALUES
-    ('AGB', '{{block type="cms/block" block_id="sym_agb"}}', '', 'Hiermit werden die Allgemeinen Geschäftsbedingungen und die Widerrufsbelehrung akzeptiert.', 1, 1);
-EOF;
-	$installer->run($query);
-	
-	$newEntityId = $installer->getConnection()->lastInsertId();
-	$query = <<< EOF
-    INSERT INTO `checkout_agreement_store` (`agreement_id`, `store_id`) VALUES ('$newEntityId', '0');
-EOF;
-	$installer->run($query);
-}
-
-#############################################################################################################
 # cms pages
 #############################################################################################################
 
@@ -34,21 +15,6 @@ if ($configData['blocks']['default']['sym_404']['active'] == 1)
 	$query = <<< EOF
 	INSERT INTO `cms_page` (`title`, `root_template`, `meta_keywords`, `meta_description`, `identifier`, `content`, `creation_time`, `update_time`, `is_active`, `sort_order`, `layout_update_xml`, `custom_theme`, `custom_theme_from`, `custom_theme_to`) VALUES
 	('Seite nicht gefunden', 'two_columns_right', '', '', 'not-found', '{$configData['blocks']['default']['sym_404']['text']}', '$dateTime', '$dateTime', 1, 0, '', '', NULL, NULL);
-EOF;
-	$installer->run($query);
-	
-	$newEntityId = $installer->getConnection()->lastInsertId();
-	$query = <<< EOF
-	INSERT INTO `cms_page_store` (`page_id`, `store_id`) VALUES ('$newEntityId', '0');
-EOF;
-	$installer->run($query);
-}
-
-if ($configData['blocks']['default']['sym_agb']['active'] == 1)
-{
-	$query = <<< EOF
-	INSERT INTO `cms_page` (`title`, `root_template`, `meta_keywords`, `meta_description`, `identifier`, `content`, `creation_time`, `update_time`, `is_active`, `sort_order`, `layout_update_xml`, `custom_theme`, `custom_theme_from`, `custom_theme_to`) VALUES
-	('AGB / Widerrufsbelehrung', 'one_column', '', '', 'agb', '{{block type="cms/block" block_id="sym_agb"}}', '$dateTime', '$dateTime', 1, 0, '', '', NULL, NULL);
 EOF;
 	$installer->run($query);
 	
@@ -153,17 +119,30 @@ EOF;
 
 if ($configData['blocks']['default']['sym_agb']['active'] == 1)
 {
-	$query = <<< EOF
-	INSERT INTO `cms_block` (`title`, `identifier`, `content`, `creation_time`, `update_time`, `is_active`) VALUES
-	('AGB', 'sym_agb', '{$configData['blocks']['default']['sym_agb']['text']}', '$dateTime', '$dateTime', 1);
+	$agreement = Mage::getConfig()->getNode('modules/Symmetrics_Agreement');
+
+    if(is_object($agreement))
+    {
+        if($agreement->active == 'true')
+        {
+            $query = "UPDATE `cms_block` SET `content` = '".$configData['blocks']['default']['sym_agb']['text']."', `update_time` = '".$dateTime."', `is_active` = 1 WHERE `identifier` = 'sym_agb'";
+            $installer->run($query);
+        }
+    }
+    else
+    {
+        $query = <<< EOF
+        INSERT INTO `cms_block` (`title`, `identifier`, `content`, `creation_time`, `update_time`, `is_active`) VALUES
+        ('AGB', 'sym_agb', '{$configData['blocks']['default']['sym_agb']['text']}', '$dateTime', '$dateTime', 1);
 EOF;
-	$installer->run($query);
-	
-	$newEntityId = $installer->getConnection()->lastInsertId();
-	$query = <<< EOF
-	INSERT INTO `cms_block_store` (`block_id`, `store_id`) VALUES ('$newEntityId', '0');
+        $installer->run($query);
+    
+        $newEntityId = $installer->getConnection()->lastInsertId();
+        $query = <<< EOF
+        INSERT INTO `cms_block_store` (`block_id`, `store_id`) VALUES ('$newEntityId', '0');
 EOF;
-	$installer->run($query);
+        $installer->run($query);
+    }
 }
 
 if ($configData['blocks']['default']['sym_widerruf']['active'] == 1)
