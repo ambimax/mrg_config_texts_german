@@ -112,9 +112,16 @@ EOF;
 	$installer->run($query);
 	
 	$query = <<< EOF
-	INSERT INTO `cms_block` (`title`, `content`, `creation_time`, `update_time`, `identifier`) VALUES ('{$configData['blocks']['default']['sym_footerlinks']['text']}',  '$dateTime', '$dateTime', 'footer_links');
+	INSERT INTO `cms_block` (`title`, `content`, `creation_time`, `update_time`, `identifier`) VALUES 
+	('Footer Links (sym)', '{$configData['blocks']['default']['sym_footerlinks']['text']}',  '$dateTime', '$dateTime', 'footer_links');
 EOF;
 	$installer->run($query);
+	
+    $newEntityId = $installer->getConnection()->lastInsertId();
+    $query = <<< EOF
+    INSERT INTO `cms_block_store` (`block_id`, `store_id`) VALUES ('$newEntityId', '0');
+EOF;
+    $installer->run($query);
 }
 
 if ($configData['blocks']['default']['sym_agb']['active'] == 1)
@@ -125,7 +132,14 @@ if ($configData['blocks']['default']['sym_agb']['active'] == 1)
     {
         if($agreement->active == 'true')
         {
-            $query = "UPDATE `cms_block` SET `content` = '".$configData['blocks']['default']['sym_agb']['text']."', `update_time` = '".$dateTime."', `is_active` = 1 WHERE `identifier` = 'sym_agb'";
+            $query = <<< EOF
+            UPDATE `cms_block` SET 
+                `content` = '{$configData['blocks']['default']['sym_agb']['text']}', 
+                `update_time` = '".$dateTime."', 
+                `is_active` = '1' 
+            WHERE 
+                `identifier` = 'sym_agb'";
+EOF;
             $installer->run($query);
         }
     }
