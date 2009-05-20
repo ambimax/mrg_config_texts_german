@@ -135,10 +135,10 @@ if ($configData['blocks']['default']['sym_agb']['active'] == 1)
             $query = <<< EOF
             UPDATE `cms_block` SET 
                 `content` = '{$configData['blocks']['default']['sym_agb']['text']}', 
-                `update_time` = '".$dateTime."', 
+                `update_time` = '$dateTime', 
                 `is_active` = '1' 
             WHERE 
-                `identifier` = 'sym_agb'";
+                `identifier` = 'sym_agb';
 EOF;
             $installer->run($query);
         }
