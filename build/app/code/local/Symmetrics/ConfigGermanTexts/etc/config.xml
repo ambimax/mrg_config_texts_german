@@ -306,7 +306,7 @@
 							&lt;h4&gt;4. Versandadresse prüfen / Versandart auswählen&lt;/h4&gt;
 							&lt;p&gt;Überprüfen Sie nun Ihre Versandadresse und geben Sie Ihre gewünschte &lt;a href="{{store url=""}}lieferung"&gt;Versandart&lt;/a&gt; an. Durch Klicken des Buttons "Weiter" gelangen Sie zum nächsten Bestellschritt.&lt;/p&gt;
 							&lt;h4&gt;5. Bestellvorgang abschließen / AGB und Datenschutz&lt;/h4&gt;
-							&lt;p&gt;Sie erhalten eine Übersicht Ihrer Bestellung: die ausgewählten Produkte, die Versand- und Rechnungsinformationen und Ihre Kontaktdaten. Überprüfen Sie, ob alle Angaben stimmen und lesen sich bitte die &lt;a href="{{store url=""}}agb"&gt;Allgemeinen Geschäftsbedingungen&lt;/a&gt; und die &lt;a href="{{store url=""}}datenschutz"&gt;Datenschutzerklärung&lt;/a&gt; aufmerksam durch. Sie können mit der Bestellung nur fortfahren, wenn Sie den AGB und der Datenschutzerklärung zustimmen (Häkchen setzen). Mit dem Anklicken des Buttons "Bestellung absenden" übersenden Sie Ihre Bestellung an uns. Hiermit geben Sie ein rechtsverbindliches Angebot ab. Zunächst bestätigen wir den Eingang der Bestellung mit einer automatischen eMail (Bestellbestätigung). Dies stellt jedoch keine rechtsverbindliche Annahme der Bestellung durch uns dar. Ein Vertragsverhältnis kommt erst mit schriftlicher Auftragsbestätigung durch uns zustande, die wir Ihnen ebenfalls per eMail zukommen lassen.&lt;/p&gt;
+							&lt;p&gt;Sie erhalten eine Übersicht Ihrer Bestellung: die ausgewählten Produkte, die Versand- und Rechnungsadresse und Ihre Kontaktdaten. Überprüfen Sie, ob alle Angaben stimmen und lesen sich bitte die &lt;a href="{{store url=""}}agb"&gt;Allgemeinen Geschäftsbedingungen&lt;/a&gt; und die &lt;a href="{{store url=""}}datenschutz"&gt;Datenschutzerklärung&lt;/a&gt; aufmerksam durch. Sie können mit der Bestellung nur fortfahren, wenn Sie den AGB und der Datenschutzerklärung zustimmen (Häkchen setzen). Mit dem Anklicken des Buttons "Bestellung absenden" übersenden Sie Ihre Bestellung an uns. Hiermit geben Sie ein rechtsverbindliches Angebot ab. Zunächst bestätigen wir den Eingang der Bestellung mit einer automatischen eMail (Bestellbestätigung). Dies stellt jedoch keine rechtsverbindliche Annahme der Bestellung durch uns dar. Ein Vertragsverhältnis kommt erst mit schriftlicher Auftragsbestätigung durch uns zustande, die wir Ihnen ebenfalls per eMail zukommen lassen.&lt;/p&gt;
 							&lt;h4&gt;Widerrufsrecht für Verbraucher&lt;/h4&gt;
 							&lt;p&gt;Alle Informationen zum &lt;a href="{{store url=""}}agb#widerruf"&gt;Widerrufsrecht&lt;/a&gt;&lt;/p&gt;
 	                    </text>
@@ -586,7 +586,7 @@
 							                    &lt;table cellspacing="0" cellpadding="0" border="0" width="100%"&gt;
 							                    &lt;thead&gt;
 							                    &lt;tr&gt;
-							                        &lt;th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;"&gt;Rechnungsinformationen:&lt;/th&gt;
+							                        &lt;th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;"&gt;Rechnungsadresse:&lt;/th&gt;
 							                        &lt;th width="3%"&gt;&lt;/th&gt;
 							                        &lt;th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;"&gt;Zahlungsmethode:&lt;/th&gt;
 							                    &lt;/tr&gt;
@@ -611,7 +611,7 @@
 							                    &lt;table cellspacing="0" cellpadding="0" border="0" width="100%"&gt;
 							                    &lt;thead&gt;
 							                    &lt;tr&gt;
-							                        &lt;th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;"&gt;Versandinformationen:&lt;/th&gt;
+							                        &lt;th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;"&gt;Versandadresse:&lt;/th&gt;
 							                        &lt;th width="3%"&gt;&lt;/th&gt;
 							                        &lt;th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;"&gt;Versandart:&lt;/th&gt;
 							                    &lt;/tr&gt;
@@ -689,7 +689,7 @@
 							                    &lt;table cellspacing="0" cellpadding="0" border="0" width="100%"&gt;
 							                    &lt;thead&gt;
 							                    &lt;tr&gt;
-							                        &lt;th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;"&gt;Rechnungsinformationen:&lt;/th&gt;
+							                        &lt;th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;"&gt;Rechnungsadresse:&lt;/th&gt;
 							                        &lt;th width="3%"&gt;&lt;/th&gt;
 							                        &lt;th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;"&gt;Zahlungsmethode:&lt;/th&gt;
 							                    &lt;/tr&gt;
@@ -714,7 +714,7 @@
 							                    &lt;table cellspacing="0" cellpadding="0" border="0" width="100%"&gt;
 							                    &lt;thead&gt;
 							                    &lt;tr&gt;
-							                        &lt;th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;"&gt;Versandinformationen:&lt;/th&gt;
+							                        &lt;th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;"&gt;Versandadresse:&lt;/th&gt;
 							                        &lt;th width="3%"&gt;&lt;/th&gt;
 							                        &lt;th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;"&gt;Versandart:&lt;/th&gt;
 							                    &lt;/tr&gt;
@@ -897,7 +897,7 @@
 								                    &lt;table cellspacing="0" cellpadding="0" border="0" width="100%"&gt;
 								                        &lt;thead&gt;
 								                        &lt;tr&gt;
-								                            &lt;th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;"&gt;Rechnungsinformationen:&lt;/th&gt;
+								                            &lt;th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;"&gt;Rechnungsadresse:&lt;/th&gt;
 								                            &lt;th width="3%"&gt;&lt;/th&gt;
 								                            &lt;th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;"&gt;Zahlungsmethode:&lt;/th&gt;
 								                        &lt;/tr&gt;
@@ -919,7 +919,7 @@
 								                    &lt;table cellspacing="0" cellpadding="0" border="0" width="100%"&gt;
 								                        &lt;thead&gt;
 								                        &lt;tr&gt;
-								                            &lt;th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;"&gt;Versandinformationen:&lt;/th&gt;
+								                            &lt;th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;"&gt;Versandadresse:&lt;/th&gt;
 								                            &lt;th width="3%"&gt;&lt;/th&gt;
 								                            &lt;th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;"&gt;Versandart:&lt;/th&gt;
 								                        &lt;/tr&gt;
@@ -995,7 +995,7 @@
 								                    &lt;table cellspacing="0" cellpadding="0" border="0" width="100%"&gt;
 								                        &lt;thead&gt;
 								                        &lt;tr&gt;
-								                            &lt;th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;"&gt;Rechnungsinformationen:&lt;/th&gt;
+								                            &lt;th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;"&gt;Rechnungsadresse:&lt;/th&gt;
 								                            &lt;th width="3%"&gt;&lt;/th&gt;
 								                            &lt;th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;"&gt;Zahlungsmethode:&lt;/th&gt;
 								                        &lt;/tr&gt;
@@ -1017,7 +1017,7 @@
 								                    &lt;table cellspacing="0" cellpadding="0" border="0" width="100%"&gt;
 								                        &lt;thead&gt;
 								                        &lt;tr&gt;
-								                            &lt;th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;"&gt;Versandinformationen:&lt;/th&gt;
+								                            &lt;th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;"&gt;Versandadresse:&lt;/th&gt;
 								                            &lt;th width="3%"&gt;&lt;/th&gt;
 								                            &lt;th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;"&gt;Versandart:&lt;/th&gt;
 								                        &lt;/tr&gt;
@@ -1195,7 +1195,7 @@
 								                    &lt;table cellspacing="0" cellpadding="0" border="0" width="100%"&gt;
 								                        &lt;thead&gt;
 								                        &lt;tr&gt;
-								                            &lt;th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;"&gt;Rechnungsinformationen:&lt;/th&gt;
+								                            &lt;th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;"&gt;Rechnungsadresse:&lt;/th&gt;
 								                            &lt;th width="3%"&gt;&lt;/th&gt;
 								                            &lt;th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;"&gt;Zahlungsmethode:&lt;/th&gt;
 								                        &lt;/tr&gt;
@@ -1217,7 +1217,7 @@
 								                    &lt;table cellspacing="0" cellpadding="0" border="0" width="100%"&gt;
 								                        &lt;thead&gt;
 								                        &lt;tr&gt;
-								                            &lt;th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;"&gt;Versandinformationen:&lt;/th&gt;
+								                            &lt;th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;"&gt;Versandadresse:&lt;/th&gt;
 								                            &lt;th width="3%"&gt;&lt;/th&gt;
 								                            &lt;th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;"&gt;Versandart:&lt;/th&gt;
 								                        &lt;/tr&gt;
@@ -1294,7 +1294,7 @@
 								                    &lt;table cellspacing="0" cellpadding="0" border="0" width="100%"&gt;
 								                        &lt;thead&gt;
 								                        &lt;tr&gt;
-								                            &lt;th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;"&gt;Rechnungsinformationen:&lt;/th&gt;
+								                            &lt;th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;"&gt;Rechnungsadresse:&lt;/th&gt;
 								                            &lt;th width="3%"&gt;&lt;/th&gt;
 								                            &lt;th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;"&gt;Zahlungsmethode:&lt;/th&gt;
 								                        &lt;/tr&gt;
@@ -1316,7 +1316,7 @@
 								                    &lt;table cellspacing="0" cellpadding="0" border="0" width="100%"&gt;
 								                        &lt;thead&gt;
 								                        &lt;tr&gt;
-								                            &lt;th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;"&gt;Versandinformationen:&lt;/th&gt;
+								                            &lt;th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;"&gt;Versandadresse:&lt;/th&gt;
 								                            &lt;th width="3%"&gt;&lt;/th&gt;
 								                            &lt;th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;"&gt;Versandart:&lt;/th&gt;
 								                        &lt;/tr&gt;
@@ -1497,7 +1497,7 @@
 								                    &lt;table cellspacing="0" cellpadding="0" border="0" width="100%"&gt;
 								                        &lt;thead&gt;
 								                        &lt;tr&gt;
-								                            &lt;th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;"&gt;Rechnungsinformationen:&lt;/th&gt;
+								                            &lt;th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;"&gt;Rechnungsadresse:&lt;/th&gt;
 								                            &lt;th width="3%"&gt;&lt;/th&gt;
 								                            &lt;th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;"&gt;Zahlungsmethode:&lt;/th&gt;
 								                        &lt;/tr&gt;
@@ -1518,7 +1518,7 @@
 								                    &lt;table cellspacing="0" cellpadding="0" border="0" width="100%"&gt;
 								                        &lt;thead&gt;
 								                        &lt;tr&gt;
-								                            &lt;th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;"&gt;Versandinformationen:&lt;/th&gt;
+								                            &lt;th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;"&gt;Versandadresse:&lt;/th&gt;
 								                            &lt;th width="3%"&gt;&lt;/th&gt;
 								                            &lt;th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;"&gt;Versandart:&lt;/th&gt;
 								                        &lt;/tr&gt;
@@ -1600,7 +1600,7 @@
 								                    &lt;table cellspacing="0" cellpadding="0" border="0" width="100%"&gt;
 								                        &lt;thead&gt;
 								                        &lt;tr&gt;
-								                            &lt;th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;"&gt;Rechnungsinformationen:&lt;/th&gt;
+								                            &lt;th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;"&gt;Rechnungsadresse:&lt;/th&gt;
 								                            &lt;th width="3%"&gt;&lt;/th&gt;
 								                            &lt;th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;"&gt;Zahlungsmethode:&lt;/th&gt;
 								                        &lt;/tr&gt;
@@ -1621,7 +1621,7 @@
 								                    &lt;table cellspacing="0" cellpadding="0" border="0" width="100%"&gt;
 								                        &lt;thead&gt;
 								                        &lt;tr&gt;
-								                            &lt;th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;"&gt;Versandinformationen:&lt;/th&gt;
+								                            &lt;th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;"&gt;Versandadresse:&lt;/th&gt;
 								                            &lt;th width="3%"&gt;&lt;/th&gt;
 								                            &lt;th align="left" width="48.5%" bgcolor="#d9e5ee" style="padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em;"&gt;Versandart:&lt;/th&gt;
 								                        &lt;/tr&gt;
