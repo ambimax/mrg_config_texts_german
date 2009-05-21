@@ -6,6 +6,8 @@ $dateTime = date('Y-m-d H:i:s');
 $installer = $this;
 $installer->startSetup();
 
+$footerLinks = array('sym_agb', 'sym_widerruf', 'sym_bestellung', 'sym_datenschutz', 'sym_zahlung', 'sym_lieferung', 'sym_impressum');
+
 #############################################################################################################
 # cms pages
 #############################################################################################################
@@ -111,9 +113,21 @@ if ($configData['blocks']['default']['sym_footerlinks']['active'] == 1)
 EOF;
 	$installer->run($query);
 	
+	$footerLinksHTML = '<ul>';
+	$footerLinksCounter = 0;
+	foreach($footerLinks as $link)
+	{
+        $footerLinksCounter++;
+		if($configData['blocks']['default'][$link]['active'] == 1)
+		{
+			$footerLinksHTML .= '<li class="'.(($footerLinksCounter == count($footerLinks)) ? 'last' : '').'"><a href="{{store url="'.$configData['blocks']['default'][$link]['footerlink']['default']['link'].'"}}">'.$configData['blocks']['default'][$link]['footerlink']['default']['title'].'</a></li>';
+		}
+	}
+	$footerLinksHTML .= '</ul>';
+	
 	$query = <<< EOF
 	INSERT INTO `cms_block` (`title`, `content`, `creation_time`, `update_time`, `identifier`) VALUES 
-	('Footer Links (sym)', '{$configData['blocks']['default']['sym_footerlinks']['text']}',  '$dateTime', '$dateTime', 'footer_links');
+	('Footer Links (sym)', '$footerLinksHTML',  '$dateTime', '$dateTime', 'footer_links');
 EOF;
 	$installer->run($query);
 	
