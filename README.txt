@@ -8,7 +8,10 @@ footer_links.
 1. Ordner Symmetrics/ConfigGermanTexts nach 
 app/code/local oder app/code/community kopieren.
 
-2. ConfigGermanTexts/etc/config.xml öffnen und 
+2. Datei app/etc/modules/Symmetrics_ConfigGermanTexts.xml
+nach app/etc/modules kopieren.
+
+3. ConfigGermanTexts/etc/config.xml öffnen und 
 Beispieltexte durch eigene Daten ersetzen. Diese 
 Daten können später über die Admin-Oberfläche im 
 Bereich "CMS -> Static Blocks" geändert werden.
@@ -41,9 +44,7 @@ konfiguriert werden.
                             </default>
                         </footerlink>
                         
-                        <!-- Blockinhalt
-                        Bitte beachten Sie, dass im Text 
-                        keine ' vorkommen. -->
+                        <!-- Blockinhalt -->
                         <text>
                             AGB
                         </text>
@@ -60,9 +61,7 @@ konfiguriert werden.
                         <!-- Schaltet das Template ein oder aus -->
 	                    <active>1</active>
                         
-                        <!-- Templateinhalt 
-                        Bitte beachten Sie, dass im Text 
-                        keine ' vorkommen. -->                        
+                        <!-- Templateinhalt  -->                        
 	                    <text>
                             TEXT
                         </text>
@@ -75,11 +74,11 @@ konfiguriert werden.
     </default>
 </config>
 
-3. Cache löschen
+4. Cache löschen
 
-4. Frontend aufrufen
+5. Frontend aufrufen
 
-5. Fertig!
+6. Fertig!
 
 ----------------------------------------------------
 Beschreibung
@@ -88,9 +87,9 @@ Beschreibung
 Das Modul erstellt Blöcke mit Beispieltexten und 
 installiert deutsche E-Mail Templates. Alle Webshops,
 die in Deutschland betrieben werden, müssen bestimmte
-Voraussetzungen erfüllen und Informationen für den 
-Verbraucher beinhalten. So muss der Verbraucher über
-z.B. Versandkosten, Bezahlmethoden, Bestellprozess usw.
+Voraussetzungen erfüllen und unerschiedliche Informationen 
+für den Verbraucher beinhalten. So muss der Verbraucher 
+über z.B. Versandkosten, Bezahlmethoden, Bestellprozess usw.
 explizit im Shop informiert werden. Um die Arbeit für 
 den Shopbetreiber zu erleichern, installiert das Modul 
 alle benötigten Texte, die u.A. auch vom Modul
@@ -99,14 +98,20 @@ verwendet werden.
 
 Es werden auch rechtskonforme E-Mail E-Mail Templates
 installiert, die AGBs und Widerrufsbelehrung beinhalten.
+Die Templates sind alle in Deutsch übersetzt.
 
 Symmetrics_ConfigGermanTexts erstellt u.A. Blöcke
 für AGBs und Widerrufsbelehrung, die überall auf der 
 Webseite verwendet werden können. Das erleichert die 
 Arbeit erheblich, wenn die Texte ausgetauscht oder 
-angepasst werden müss. Man braucht die Texte nur in
-CMS -> Static Blocks zu verändern und die Änderung
-überall übernommen, wo dieser Block aufgerufen wird.
+angepasst werden müssem. An Beispiel der AGB:
+
+Sie ändern den eigentlichen AGB-Text in CMS -> Static
+Blocks und die Änderungen erscheinen in 
+Bestellbedingungen am Ende des Checkout-Prozesses
+(Voraussetzung ist, dass das Modul Symmetrics_Agreement
+installiert ist), auf der Seite "AGB" und in allen
+E-Mail Templates.
 
 Features:
 
@@ -133,10 +138,10 @@ Funktonalität und Besonderheiten
 ----------------------------------------------------
 
 ACHTUNG! Das Modul überschreibt die Konfiguration von
-E-Mail Templates. Die E-Mail Templates selbst werden 
-aber nicht ersetzt. Es werden neue E-Mail Templates 
-hinzugefügt und die Konfiguration so angepasst, dass
-diese E-Mail Template benutzt werden. 
+E-Mail Templates. Die E-Mail Templates werden aber nicht 
+ersetzt. Es werden neue E-Mail Templates hinzugefügt und 
+die Konfiguration so angepasst, dass diese E-Mail 
+Templates benutzt werden. 
 
 WICHTIG! Die Daten aus config.xml werden nur einer 
 Neuinstallation des Moduls in die Datenbank
@@ -162,4 +167,4 @@ Symmetrics_Impressum installiert ist.
 
 Das Modul installiert auch Beispieltexte für andere 
 Symmetrics Konfigurations-Module, wie z.B. 
-Symmetrics_InvoicePdf.
+Symmetrics_InvoicePdf und Symmetrics_InvoicePdf.
