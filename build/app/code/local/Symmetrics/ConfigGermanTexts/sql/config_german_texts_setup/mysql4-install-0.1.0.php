@@ -138,65 +138,76 @@ EOF;
     $installer->run($query);
 }
 
-$insert = false;
-
 if ($configData['blocks']['default']['sym_agb']['active'] == 1)
 {
-	$agreement = Mage::getConfig()->getNode('modules/Symmetrics_Agreement');
-
-    if(is_object($agreement))
+    $agbBlock = $installer->getConnection()->fetchRow("
+        SELECT COUNT(block_id) AS counter FROM {$installer->getTable('cms_block')} WHERE identifier='sym_agb'
+    ");
+    
+    if($agbBlock['counter'] == 0)
     {
-        if($agreement->active == 'true')
-        {
-            $query = <<< EOF
-            UPDATE `cms_block` SET 
-                `content` = '{$configData['blocks']['default']['sym_agb']['text']}', 
-                `update_time` = '$dateTime', 
-                `is_active` = '1' 
-            WHERE 
-                `identifier` = 'sym_agb';
+        $query = <<< EOF
+        INSERT INTO `cms_block` (`title`, `identifier`, `content`, `creation_time`, `update_time`, `is_active`) VALUES
+        ('AGB', 'sym_agb', '{$configData['blocks']['default']['sym_agb']['text']}', '$dateTime', '$dateTime', 1);
 EOF;
-            $installer->run($query);
-        }
-        else
-        {
-        	$insert = true;
-        }
+        $installer->run($query);
+    
+        $newEntityId = $installer->getConnection()->lastInsertId();
+        $query = <<< EOF
+        INSERT INTO `cms_block_store` (`block_id`, `store_id`) VALUES ('$newEntityId', '0');
+EOF;
+        $installer->run($query);
     }
     else
     {
-        $insert = true;
+        $query = <<< EOF
+        UPDATE 
+                `cms_block` 
+        SET 
+                `content` = '{$configData['blocks']['default']['sym_agb']['text']}', 
+                `update_time` = '$dateTime', 
+                `is_active` = '1' 
+        WHERE 
+                `identifier` = 'sym_agb';
+EOF;
+        $installer->run($query);    	
     }
-}
-
-if($insert == true)
-{
-    $query = <<< EOF
-    INSERT INTO `cms_block` (`title`, `identifier`, `content`, `creation_time`, `update_time`, `is_active`) VALUES
-    ('AGB', 'sym_agb', '{$configData['blocks']['default']['sym_agb']['text']}', '$dateTime', '$dateTime', 1);
-EOF;
-    $installer->run($query);
-    
-    $newEntityId = $installer->getConnection()->lastInsertId();
-    $query = <<< EOF
-    INSERT INTO `cms_block_store` (`block_id`, `store_id`) VALUES ('$newEntityId', '0');
-EOF;
-    $installer->run($query);
 }
 
 if ($configData['blocks']['default']['sym_widerruf']['active'] == 1)
 {
-	$query = <<< EOF
-	INSERT INTO `cms_block` (`title`, `identifier`, `content`, `creation_time`, `update_time`, `is_active`) VALUES
-	('Widerrufsbelehrung', 'sym_widerruf', '{$configData['blocks']['default']['sym_widerruf']['text']}', '$dateTime', '$dateTime', 1);
+    $widerrufBlock = $installer->getConnection()->fetchRow("
+        SELECT COUNT(block_id) AS counter FROM {$installer->getTable('cms_block')} WHERE identifier='sym_widerruf'
+    ");
+    
+    if($widerrufBlock['counter'] == 0)
+    {
+        $query = <<< EOF
+        INSERT INTO `cms_block` (`title`, `identifier`, `content`, `creation_time`, `update_time`, `is_active`) VALUES
+        ('Widerrufsbelehrung', 'sym_widerruf', '{$configData['blocks']['default']['sym_widerruf']['text']}', '$dateTime', '$dateTime', 1);
 EOF;
-	$installer->run($query);
-	
-	$newEntityId = $installer->getConnection()->lastInsertId();
-	$query = <<< EOF
-	INSERT INTO `cms_block_store` (`block_id`, `store_id`) VALUES ('$newEntityId', '0');
+        $installer->run($query);
+        
+        $newEntityId = $installer->getConnection()->lastInsertId();
+        $query = <<< EOF
+        INSERT INTO `cms_block_store` (`block_id`, `store_id`) VALUES ('$newEntityId', '0');
 EOF;
-	$installer->run($query);
+        $installer->run($query);
+    }
+    else
+    {
+        $query = <<< EOF
+        UPDATE 
+                `cms_block` 
+        SET 
+                `content` = '{$configData['blocks']['default']['sym_widerruf']['text']}', 
+                `update_time` = '$dateTime', 
+                `is_active` = '1' 
+        WHERE 
+                `identifier` = 'sym_widerruf';
+EOF;
+        $installer->run($query);        
+    }
 }
 
 #############################################################################################################
