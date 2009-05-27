@@ -12,7 +12,8 @@ $footerLinks = array('sym_agb', 'sym_widerruf', 'sym_bestellung', 'sym_datenschu
 # cms pages
 #############################################################################################################
 
-if ($configData['blocks']['default']['sym_404']['active'] == 1) {
+if ($configData['blocks']['default']['sym_404']['active'] == 1)
+{
 	$query = <<< EOF
 	INSERT INTO `cms_page` (`title`, `root_template`, `meta_keywords`, `meta_description`, `identifier`, `content`, `creation_time`, `update_time`, `is_active`, `sort_order`, `layout_update_xml`, `custom_theme`, `custom_theme_from`, `custom_theme_to`) VALUES
 	('Seite nicht gefunden', 'two_columns_right', '', '', 'not-found', '{$configData['blocks']['default']['sym_404']['text']}', '$dateTime', '$dateTime', 1, 0, '', '', NULL, NULL);
@@ -26,7 +27,8 @@ EOF;
 	$installer->run($query);
 }
 
-if ($configData['blocks']['default']['sym_impressum']['active'] == 1) {
+if ($configData['blocks']['default']['sym_impressum']['active'] == 1)
+{
 	$query = <<< EOF
 	INSERT INTO `cms_page` (`title`, `root_template`, `meta_keywords`, `meta_description`, `identifier`, `content`, `creation_time`, `update_time`, `is_active`, `sort_order`, `layout_update_xml`, `custom_theme`, `custom_theme_from`, `custom_theme_to`) VALUES
 	('Impressum', 'one_column', '', '', 'impressum', '{$configData['blocks']['default']['sym_impressum']['text']}', '$dateTime', '$dateTime', 1, 0, '', '', NULL, NULL);
@@ -40,7 +42,8 @@ EOF;
 	$installer->run($query);
 }
 
-if ($configData['blocks']['default']['sym_zahlung']['active'] == 1) {
+if ($configData['blocks']['default']['sym_zahlung']['active'] == 1)
+{
 	$query = <<< EOF
 	INSERT INTO `cms_page` (`title`, `root_template`, `meta_keywords`, `meta_description`, `identifier`, `content`, `creation_time`, `update_time`, `is_active`, `sort_order`, `layout_update_xml`, `custom_theme`, `custom_theme_from`, `custom_theme_to`) VALUES
 	('Zahlungsarten', 'one_column', '', '', 'zahlung', '{$configData['blocks']['default']['sym_zahlung']['text']}', '$dateTime', '$dateTime', 1, 0, '', '', NULL, NULL);
@@ -54,7 +57,8 @@ EOF;
 	$installer->run($query);
 }
 
-if ($configData['blocks']['default']['sym_datenschutz']['active'] == 1) {
+if ($configData['blocks']['default']['sym_datenschutz']['active'] == 1)
+{
 	$query = <<< EOF
 	INSERT INTO `cms_page` (`title`, `root_template`, `meta_keywords`, `meta_description`, `identifier`, `content`, `creation_time`, `update_time`, `is_active`, `sort_order`, `layout_update_xml`, `custom_theme`, `custom_theme_from`, `custom_theme_to`) VALUES
 	('Datenschutz', 'one_column', '', '', 'datenschutz', '{$configData['blocks']['default']['sym_datenschutz']['text']}', '$dateTime', '$dateTime', 1, 0, '', '', NULL, NULL);
@@ -68,7 +72,8 @@ EOF;
 	$installer->run($query);
 }
 
-if ($configData['blocks']['default']['sym_lieferung']['active'] == 1) {
+if ($configData['blocks']['default']['sym_lieferung']['active'] == 1)
+{
 	$query = <<< EOF
 	INSERT INTO `cms_page` (`title`, `root_template`, `meta_keywords`, `meta_description`, `identifier`, `content`, `creation_time`, `update_time`, `is_active`, `sort_order`, `layout_update_xml`, `custom_theme`, `custom_theme_from`, `custom_theme_to`) VALUES
 	('Lieferung', 'one_column', '', '', 'lieferung', '{$configData['blocks']['default']['sym_lieferung']['text']}', '$dateTime', '$dateTime', 1, 0, '', '', NULL, NULL);
@@ -82,7 +87,8 @@ EOF;
 	$installer->run($query);
 }
 
-if ($configData['blocks']['default']['sym_bestellung']['active'] == 1) {
+if ($configData['blocks']['default']['sym_bestellung']['active'] == 1)
+{
 	$query = <<< EOF
 	INSERT INTO `cms_page` (`title`, `root_template`, `meta_keywords`, `meta_description`, `identifier`, `content`, `creation_time`, `update_time`, `is_active`, `sort_order`, `layout_update_xml`, `custom_theme`, `custom_theme_from`, `custom_theme_to`) VALUES
 	('Bestellvorgang', 'one_column', '', '', 'bestellung', '{$configData['blocks']['default']['sym_bestellung']['text']}', '$dateTime', '$dateTime', 1, 0, '', '', NULL, NULL);
@@ -100,7 +106,8 @@ EOF;
 # cms blocks
 #############################################################################################################
 
-if ($configData['blocks']['default']['sym_footerlinks']['active'] == 1) {
+if ($configData['blocks']['default']['sym_footerlinks']['active'] == 1)
+{
 	$query = <<< EOF
 	UPDATE `cms_block` SET `identifier` = 'footer_links_backup', `update_time` = '$dateTime' WHERE `identifier` = 'footer_links';
 EOF;
@@ -131,11 +138,16 @@ EOF;
     $installer->run($query);
 }
 
-if ($configData['blocks']['default']['sym_agb']['active'] == 1) {
+$insert = false;
+
+if ($configData['blocks']['default']['sym_agb']['active'] == 1)
+{
 	$agreement = Mage::getConfig()->getNode('modules/Symmetrics_Agreement');
 
-    if (is_object($agreement)) {
-        if ($agreement->active == 'true') {
+    if(is_object($agreement))
+    {
+        if($agreement->active == 'true')
+        {
             $query = <<< EOF
             UPDATE `cms_block` SET 
                 `content` = '{$configData['blocks']['default']['sym_agb']['text']}', 
@@ -146,23 +158,34 @@ if ($configData['blocks']['default']['sym_agb']['active'] == 1) {
 EOF;
             $installer->run($query);
         }
+        else
+        {
+        	$insert = true;
+        }
     }
-    else {
-        $query = <<< EOF
-        INSERT INTO `cms_block` (`title`, `identifier`, `content`, `creation_time`, `update_time`, `is_active`) VALUES
-        ('AGB', 'sym_agb', '{$configData['blocks']['default']['sym_agb']['text']}', '$dateTime', '$dateTime', 1);
-EOF;
-        $installer->run($query);
-    
-        $newEntityId = $installer->getConnection()->lastInsertId();
-        $query = <<< EOF
-        INSERT INTO `cms_block_store` (`block_id`, `store_id`) VALUES ('$newEntityId', '0');
-EOF;
-        $installer->run($query);
+    else
+    {
+        $insert = true;
     }
 }
 
-if ($configData['blocks']['default']['sym_widerruf']['active'] == 1) {
+if($insert == true)
+{
+    $query = <<< EOF
+    INSERT INTO `cms_block` (`title`, `identifier`, `content`, `creation_time`, `update_time`, `is_active`) VALUES
+    ('AGB', 'sym_agb', '{$configData['blocks']['default']['sym_agb']['text']}', '$dateTime', '$dateTime', 1);
+EOF;
+    $installer->run($query);
+    
+    $newEntityId = $installer->getConnection()->lastInsertId();
+    $query = <<< EOF
+    INSERT INTO `cms_block_store` (`block_id`, `store_id`) VALUES ('$newEntityId', '0');
+EOF;
+    $installer->run($query);
+}
+
+if ($configData['blocks']['default']['sym_widerruf']['active'] == 1)
+{
 	$query = <<< EOF
 	INSERT INTO `cms_block` (`title`, `identifier`, `content`, `creation_time`, `update_time`, `is_active`) VALUES
 	('Widerrufsbelehrung', 'sym_widerruf', '{$configData['blocks']['default']['sym_widerruf']['text']}', '$dateTime', '$dateTime', 1);
@@ -180,7 +203,8 @@ EOF;
 # email templates
 #############################################################################################################
 
-if ($configData['emails']['default']['new_adminpassword']['active'] == 1) {
+if ($configData['emails']['default']['new_adminpassword']['active'] == 1)
+{
 	$query = <<< EOF
 	INSERT INTO `core_email_template` (`template_code`, `template_text`, `template_type`, `template_subject`, `template_sender_name`, `template_sender_email`, `added_at`, `modified_at`) VALUES
 	('Neues Admin-Passwort (Template)', '{$configData['emails']['default']['new_adminpassword']['text']}', 2, 'Neues Passwort für {{var user.name}}', NULL, NULL, '$dateTime', '$dateTime');
@@ -190,7 +214,8 @@ EOF;
 	$installer->setConfigData('admin/emails/forgot_email_template', $newEntityId);
 }
 
-if ($configData['emails']['default']['currencyupdate']['active'] == 1) {
+if ($configData['emails']['default']['currencyupdate']['active'] == 1)
+{
 	$query = <<< EOF
 	INSERT INTO `core_email_template` (`template_code`, `template_text`, `template_type`, `template_subject`, `template_sender_name`, `template_sender_email`, `added_at`, `modified_at`) VALUES
 	('Währung Aktualisierung (Template)', '{$configData['emails']['default']['currencyupdate']['text']}', 1, 'Warnungen bei Währungsupdate', NULL, NULL, '$dateTime', '$dateTime');
@@ -200,7 +225,8 @@ EOF;
 	$installer->setConfigData('currency/import/error_email_template', $newEntityId);
 }
 
-if ($configData['emails']['default']['new_account']['active'] == 1) {
+if ($configData['emails']['default']['new_account']['active'] == 1)
+{
 	$query = <<< EOF
 	INSERT INTO `core_email_template` (`template_code`, `template_text`, `template_type`, `template_subject`, `template_sender_name`, `template_sender_email`, `added_at`, `modified_at`) VALUES
 	('Neues Konto (Template)', '{$configData['emails']['default']['new_account']['text']}', 2, 'Willkommen, {{var customer.name}}!', NULL, NULL, '$dateTime', '$dateTime');
@@ -210,7 +236,8 @@ EOF;
 	$installer->setConfigData('customer/create_account/email_template', $newEntityId);
 }
 
-if ($configData['emails']['default']['new_account_activate']['active'] == 1) {
+if ($configData['emails']['default']['new_account_activate']['active'] == 1)
+{
 	$query = <<< EOF
 	INSERT INTO `core_email_template` (`template_code`, `template_text`, `template_type`, `template_subject`, `template_sender_name`, `template_sender_email`, `added_at`, `modified_at`) VALUES
 	('Neues Konto Aktivierung  (Template)', '{$configData['emails']['default']['new_account_activate']['text']}', 2, 'Bestätigung des Kundenkontos für {{var customer.name}}', NULL, NULL, '$dateTime', '$dateTime');
@@ -220,7 +247,8 @@ EOF;
 	$installer->setConfigData('customer/create_account/email_confirmation_template', $newEntityId);
 }
 
-if ($configData['emails']['default']['new_account_confirmed']['active'] == 1) {
+if ($configData['emails']['default']['new_account_confirmed']['active'] == 1)
+{
 	$query = <<< EOF
 	INSERT INTO `core_email_template` (`template_code`, `template_text`, `template_type`, `template_subject`, `template_sender_name`, `template_sender_email`, `added_at`, `modified_at`) VALUES
 	('Neues Konto Bestätigung (Template)', '{$configData['emails']['default']['new_account_confirmed']['text']}', 2, 'Willkommen, {{var customer.name}}!', NULL, NULL, '$dateTime', '$dateTime');
@@ -230,7 +258,8 @@ EOF;
 	$installer->setConfigData('customer/create_account/email_confirmed_template', $newEntityId);
 }
 
-if ($configData['emails']['default']['new_password']['active'] == 1) {
+if ($configData['emails']['default']['new_password']['active'] == 1)
+{
 	$query = <<< EOF
 	INSERT INTO `core_email_template` (`template_code`, `template_text`, `template_type`, `template_subject`, `template_sender_name`, `template_sender_email`, `added_at`, `modified_at`) VALUES
 	('Neues Passwort (Template)', '{$configData['emails']['default']['new_password']['text']}', 2, 'Neues Passwort für {{var customer.name}}', NULL, NULL, '$dateTime', '$dateTime');
@@ -240,7 +269,8 @@ EOF;
 	$installer->setConfigData('customer/password/forgot_email_template', $newEntityId);
 }
 
-if ($configData['emails']['default']['new_order']['active'] == 1) {
+if ($configData['emails']['default']['new_order']['active'] == 1)
+{
 	$query = <<< EOF
 	INSERT INTO `core_email_template` (`template_code`, `template_text`, `template_type`, `template_subject`, `template_sender_name`, `template_sender_email`, `added_at`, `modified_at`) VALUES
 	('Neue Bestellung (Template)', '{$configData['emails']['default']['new_order']['text']}', 2, '{{var order.getStoreGroupName()}}: Neue Bestellung Nr. # {{var order.increment_id}}', NULL, NULL, '$dateTime', '$dateTime');
@@ -250,7 +280,8 @@ EOF;
 	$installer->setConfigData('sales_email/order/template', $newEntityId);
 }
 
-if ($configData['emails']['default']['new_order_guest']['active'] == 1) {
+if ($configData['emails']['default']['new_order_guest']['active'] == 1)
+{
 	$query = <<< EOF
 	INSERT INTO `core_email_template` (`template_code`, `template_text`, `template_type`, `template_subject`, `template_sender_name`, `template_sender_email`, `added_at`, `modified_at`) VALUES
 	('Neue Bestellung Gast (Template)', '{$configData['emails']['default']['new_order_guest']['text']}', 2, '{{var order.getStoreGroupName()}}: Neue Bestellung Nr. # {{var order.increment_id}}', NULL, NULL, '$dateTime', '$dateTime');
@@ -260,7 +291,8 @@ EOF;
 	$installer->setConfigData('sales_email/order/guest_template', $newEntityId);
 }
 
-if ($configData['emails']['default']['update_order']['active'] == 1) {
+if ($configData['emails']['default']['update_order']['active'] == 1)
+{
 	$query = <<< EOF
 	INSERT INTO `core_email_template` (`template_code`, `template_text`, `template_type`, `template_subject`, `template_sender_name`, `template_sender_email`, `added_at`, `modified_at`) VALUES
 	('Bestellung Aktualsierung (Template)', '{$configData['emails']['default']['update_order']['text']}', 2, '{{var order.getStoreGroupName()}}: Bestellung Nr. # {{var order.increment_id}} Aktualisierung', NULL, NULL, '$dateTime', '$dateTime');
@@ -270,7 +302,8 @@ EOF;
 	$installer->setConfigData('sales_email/order_comment/template', $newEntityId);
 }
 
-if ($configData['emails']['default']['update_order_guest']['active'] == 1) {
+if ($configData['emails']['default']['update_order_guest']['active'] == 1)
+{
 	$query = <<< EOF
 	INSERT INTO `core_email_template` (`template_code`, `template_text`, `template_type`, `template_subject`, `template_sender_name`, `template_sender_email`, `added_at`, `modified_at`) VALUES
 	('Bestellung Aktualsierung Gast (Template)', '{$configData['emails']['default']['update_order_guest']['text']}', 2, '{{var order.getStoreGroupName()}}: Bestellung Nr. # {{var order.increment_id}} Aktualisierung', NULL, NULL, '$dateTime', '$dateTime');
@@ -280,7 +313,8 @@ EOF;
 	$installer->setConfigData('sales_email/order_comment/guest_template', $newEntityId);
 }
 
-if ($configData['emails']['default']['new_invoice']['active'] == 1) {
+if ($configData['emails']['default']['new_invoice']['active'] == 1)
+{
 	$query = <<< EOF
 	INSERT INTO `core_email_template` (`template_code`, `template_text`, `template_type`, `template_subject`, `template_sender_name`, `template_sender_email`, `added_at`, `modified_at`) VALUES
 	('Neue Rechnung (Template)', '{$configData['emails']['default']['new_invoice']['text']}', 2, '{{var order.getStoreGroupName()}}: Proformarechnung Nr. # {{var invoice.increment_id}} für Bestellung Nr. # {{var order.increment_id}}', NULL, NULL, '$dateTime', '$dateTime');
@@ -290,7 +324,8 @@ EOF;
 	$installer->setConfigData('sales_email/invoice/template', $newEntityId);
 }
 
-if ($configData['emails']['default']['new_invoice_guest']['active'] == 1) {
+if ($configData['emails']['default']['new_invoice_guest']['active'] == 1)
+{
 	$query = <<< EOF
 	INSERT INTO `core_email_template` (`template_code`, `template_text`, `template_type`, `template_subject`, `template_sender_name`, `template_sender_email`, `added_at`, `modified_at`) VALUES
 	('Neue Rechnung Gast (Template)', '{$configData['emails']['default']['new_invoice_guest']['text']}', 2, '{{var order.getStoreGroupName()}}: Proformarechnung Nr. # {{var invoice.increment_id}} für Bestellung Nr. # {{var order.increment_id}}', NULL, NULL, '$dateTime', '$dateTime');
@@ -300,7 +335,8 @@ EOF;
 	$installer->setConfigData('sales_email/invoice/guest_template', $newEntityId);
 }
 
-if ($configData['emails']['default']['update_invoice']['active'] == 1) {
+if ($configData['emails']['default']['update_invoice']['active'] == 1)
+{
 	$query = <<< EOF
 	INSERT INTO `core_email_template` (`template_code`, `template_text`, `template_type`, `template_subject`, `template_sender_name`, `template_sender_email`, `added_at`, `modified_at`) VALUES
 	('Rechnung Aktualisierung (Template)', '{$configData['emails']['default']['update_invoice']['text']}', 2, '{{var order.getStoreGroupName()}}: Rechnung Nr. # {{var invoice.increment_id}} Aktualisierung', NULL, NULL, '$dateTime', '$dateTime');
@@ -310,7 +346,8 @@ EOF;
 	$installer->setConfigData('sales_email/invoice_comment/template', $newEntityId);
 }
 
-if ($configData['emails']['default']['update_invoice_guest']['active'] == 1) {
+if ($configData['emails']['default']['update_invoice_guest']['active'] == 1)
+{
     $query = <<< EOF
 	INSERT INTO `core_email_template` (`template_code`, `template_text`, `template_type`, `template_subject`, `template_sender_name`, `template_sender_email`, `added_at`, `modified_at`) VALUES
 	('Rechnung Aktualisierung Gast (Template)', '{$configData['emails']['default']['update_invoice_guest']['text']}', 2, '{{var order.getStoreGroupName()}}: Rechnung Nr. # {{var invoice.increment_id}} Aktualisierung', NULL, NULL, '$dateTime', '$dateTime');
@@ -320,7 +357,8 @@ EOF;
 	$installer->setConfigData('sales_email/invoice_comment/guest_template', $newEntityId);
 }
 
-if ($configData['emails']['default']['new_creditmemo']['active'] == 1) {
+if ($configData['emails']['default']['new_creditmemo']['active'] == 1)
+{
 	$query = <<< EOF
 	INSERT INTO `core_email_template` (`template_code`, `template_text`, `template_type`, `template_subject`, `template_sender_name`, `template_sender_email`, `added_at`, `modified_at`) VALUES
 	('Neue Gutschrift (Template)', '{$configData['emails']['default']['new_creditmemo']['text']}', 2, '{{var order.getStoreGroupName()}}: Gutschrift Nr. # {{var creditmemo.increment_id}} für Bestellung Nr. # {{var order.increment_id}}', NULL, NULL, '$dateTime', '$dateTime');
@@ -330,7 +368,8 @@ EOF;
 	$installer->setConfigData('sales_email/creditmemo/template', $newEntityId);
 }
 
-if ($configData['emails']['default']['new_creditmemo_guest']['active'] == 1) {
+if ($configData['emails']['default']['new_creditmemo_guest']['active'] == 1)
+{
 	$query = <<< EOF
 	INSERT INTO `core_email_template` (`template_code`, `template_text`, `template_type`, `template_subject`, `template_sender_name`, `template_sender_email`, `added_at`, `modified_at`) VALUES
 	('Neue Gutschrift Gast (Template)', '{$configData['emails']['default']['new_creditmemo_guest']['text']}', 2, '{{var order.getStoreGroupName()}}: Gutschrift Nr. # {{var creditmemo.increment_id}} für Bestellung Nr. # {{var order.increment_id}}', NULL, NULL, '$dateTime', '$dateTime');
@@ -340,7 +379,8 @@ EOF;
 	$installer->setConfigData('sales_email/creditmemo/guest_template', $newEntityId);
 }
 
-if ($configData['emails']['default']['update_creditmemo']['active'] == 1) {
+if ($configData['emails']['default']['update_creditmemo']['active'] == 1)
+{
 	$query = <<< EOF
 	INSERT INTO `core_email_template` (`template_code`, `template_text`, `template_type`, `template_subject`, `template_sender_name`, `template_sender_email`, `added_at`, `modified_at`) VALUES
 	('Gutschrift Aktualisierung (Template)', '{$configData['emails']['default']['update_creditmemo']['text']}', 2, '{{var order.getStoreGroupName()}}: Gutschrift Nr. # {{var creditmemo.increment_id}} Aktualisierung', NULL, NULL, '$dateTime', '$dateTime');
@@ -350,7 +390,8 @@ EOF;
 	$installer->setConfigData('sales_email/creditmemo_comment/template', $newEntityId);
 }
 
-if ($configData['emails']['default']['update_creditmemo_guest']['active'] == 1) {
+if ($configData['emails']['default']['update_creditmemo_guest']['active'] == 1)
+{
 	$query = <<< EOF
 	INSERT INTO `core_email_template` (`template_code`, `template_text`, `template_type`, `template_subject`, `template_sender_name`, `template_sender_email`, `added_at`, `modified_at`) VALUES
 	('Gutschrift Aktualisierung Gast (Template)', '{$configData['emails']['default']['update_creditmemo_guest']['text']}', 2, '{{var order.getStoreGroupName()}}: Gutschrift Nr. # {{var creditmemo.increment_id}} Aktualisierung', NULL, NULL, '$dateTime', '$dateTime');
@@ -360,7 +401,8 @@ EOF;
 	$installer->setConfigData('sales_email/creditmemo_comment/guest_template', $newEntityId);
 }
 
-if ($configData['emails']['default']['new_shipment']['active'] == 1) {
+if ($configData['emails']['default']['new_shipment']['active'] == 1)
+{
 	$query = <<< EOF
 	INSERT INTO `core_email_template` (`template_code`, `template_text`, `template_type`, `template_subject`, `template_sender_name`, `template_sender_email`, `added_at`, `modified_at`) VALUES
 	('Neue Lieferung (Template)', '{$configData['emails']['default']['new_shipment']['text']}', 2, '{{var order.getStoreGroupName()}}: Lieferschein Nr. # {{var shipment.increment_id}} für Bestellung Nr. # {{var order.increment_id}}', NULL, NULL, '$dateTime', '$dateTime');
@@ -370,7 +412,8 @@ EOF;
 	$installer->setConfigData('sales_email/shipment/template', $newEntityId);
 }
 
-if ($configData['emails']['default']['new_shipment_guest']['active'] == 1) {
+if ($configData['emails']['default']['new_shipment_guest']['active'] == 1)
+{
 	$query = <<< EOF
 	INSERT INTO `core_email_template` (`template_code`, `template_text`, `template_type`, `template_subject`, `template_sender_name`, `template_sender_email`, `added_at`, `modified_at`) VALUES
 	('Neue Lieferung Gast (Template)', '{$configData['emails']['default']['new_shipment_guest']['text']}', 2, '{{var order.getStoreGroupName()}}: Lieferschein Nr. # {{var shipment.increment_id}} für Bestellung Nr. # {{var order.increment_id}}', NULL, NULL, '$dateTime', '$dateTime');
@@ -380,7 +423,8 @@ EOF;
 	$installer->setConfigData('sales_email/shipment/guest_template', $newEntityId);
 }
 
-if ($configData['emails']['default']['update_shipment']['active'] == 1) {
+if ($configData['emails']['default']['update_shipment']['active'] == 1)
+{
 	$query = <<< EOF
 	INSERT INTO `core_email_template` (`template_code`, `template_text`, `template_type`, `template_subject`, `template_sender_name`, `template_sender_email`, `added_at`, `modified_at`) VALUES
 	('Lieferung Aktualisierung (Template)', '{$configData['emails']['default']['update_shipment']['text']}', 2, '{{var order.getStoreGroupName()}}: Lieferschein Nr. # {{var shipment.increment_id}} Aktualisierung', NULL, NULL, '$dateTime', '$dateTime');
@@ -390,7 +434,8 @@ EOF;
 	$installer->setConfigData('sales_email/shipment_comment/template', $newEntityId);
 }
 
-if ($configData['emails']['default']['update_shipment_guest']['active'] == 1) {
+if ($configData['emails']['default']['update_shipment_guest']['active'] == 1)
+{
 	$query = <<< EOF
 	INSERT INTO `core_email_template` (`template_code`, `template_text`, `template_type`, `template_subject`, `template_sender_name`, `template_sender_email`, `added_at`, `modified_at`) VALUES
 	('Lieferung Aktualisierung Gast (Template)', '{$configData['emails']['default']['update_shipment_guest']['text']}', 2, '{{var order.getStoreGroupName()}}: Lieferschein Nr. # {{var shipment.increment_id}} Aktualisierung', NULL, NULL, '$dateTime', '$dateTime');
@@ -400,7 +445,8 @@ EOF;
 	$installer->setConfigData('sales_email/shipment_comment/guest_template', $newEntityId);
 }
 
-if ($configData['emails']['default']['transaction_failed']['active'] == 1) {
+if ($configData['emails']['default']['transaction_failed']['active'] == 1)
+{
 	$query = <<< EOF
 	INSERT INTO `core_email_template` (`template_code`, `template_text`, `template_type`, `template_subject`, `template_sender_name`, `template_sender_email`, `added_at`, `modified_at`) VALUES
 	('Zahlung fehlgeschlagen (Template)', '{$configData['emails']['default']['transaction_failed']['text']}', 2, 'Transaktion fehlgeschlagen', NULL, NULL, '$dateTime', '$dateTime');
@@ -410,7 +456,8 @@ EOF;
 	$installer->setConfigData('checkout/payment_failed/template', $newEntityId);
 }
 
-if ($configData['emails']['default']['log_cleaning_errors']['active'] == 1) {
+if ($configData['emails']['default']['log_cleaning_errors']['active'] == 1)
+{
 	$query = <<< EOF
 	INSERT INTO `core_email_template` (`template_code`, `template_text`, `template_type`, `template_subject`, `template_sender_name`, `template_sender_email`, `added_at`, `modified_at`) VALUES
 	('Protokoll Bereinigung Warnungen (Template)', '{$configData['emails']['default']['log_cleaning_errors']['text']}', 1, 'Warnung bei der Protokollbereinigung', NULL, NULL, '$dateTime', '$dateTime');
@@ -420,7 +467,8 @@ EOF;
 	$installer->setConfigData('system/log/error_email_template', $newEntityId);
 }
 
-if ($configData['emails']['default']['newsletter_subscription_confirm']['active'] == 1) {
+if ($configData['emails']['default']['newsletter_subscription_confirm']['active'] == 1)
+{
 	$query = <<< EOF
 	INSERT INTO `core_email_template` (`template_code`, `template_text`, `template_type`, `template_subject`, `template_sender_name`, `template_sender_email`, `added_at`, `modified_at`) VALUES
 	('Newsletter Anmeldung Bestätigung (Template)', '{$configData['emails']['default']['newsletter_subscription_confirm']['text']}', 2, 'Newsletter Anmeldung Bestätigung', NULL, NULL, '$dateTime', '$dateTime');
@@ -430,7 +478,8 @@ EOF;
 	$installer->setConfigData('newsletter/subscription/confirm_email_template', $newEntityId);
 }
 
-if ($configData['emails']['default']['newsletter_subscription_success']['active'] == 1) {
+if ($configData['emails']['default']['newsletter_subscription_success']['active'] == 1)
+{
 	$query = <<< EOF
 	INSERT INTO `core_email_template` (`template_code`, `template_text`, `template_type`, `template_subject`, `template_sender_name`, `template_sender_email`, `added_at`, `modified_at`) VALUES
 	('Newsletter Anmeldung Erfolg (Template)', '{$configData['emails']['default']['newsletter_subscription_success']['text']}', 2, 'Newsletter Anmeldung erfolgreich', NULL, NULL, '$dateTime', '$dateTime');
@@ -440,7 +489,8 @@ EOF;
 	$installer->setConfigData('newsletter/subscription/un_email_template', $newEntityId);
 }
 
-if ($configData['emails']['default']['newsletter_unsubscription_success']['active'] == 1) {
+if ($configData['emails']['default']['newsletter_unsubscription_success']['active'] == 1)
+{
 	$query = <<< EOF
 	INSERT INTO `core_email_template` (`template_code`, `template_text`, `template_type`, `template_subject`, `template_sender_name`, `template_sender_email`, `added_at`, `modified_at`) VALUES
 	('Newsletter Abmeldung Erfolg (Template)', '{$configData['emails']['default']['newsletter_unsubscription_success']['text']}', 2, 'Newsletter Abmeldung erfolgreich', NULL, NULL, '$dateTime', '$dateTime');
@@ -450,7 +500,8 @@ EOF;
 	$installer->setConfigData('newsletter/subscription/success_email_template', $newEntityId);
 }
 
-if ($configData['emails']['default']['wishlist_share']['active'] == 1) {
+if ($configData['emails']['default']['wishlist_share']['active'] == 1)
+{
 	$query = <<< EOF
 	INSERT INTO `core_email_template` (`template_code`, `template_text`, `template_type`, `template_subject`, `template_sender_name`, `template_sender_email`, `added_at`, `modified_at`) VALUES
 	('Wunschliste gemeinsam nutzen (Template)', '{$configData['emails']['default']['wishlist_share']['text']}', 2, 'Schauen Sie sich {{var customer.name}}''s Wunschzettel an', NULL, NULL, '$dateTime', '$dateTime');
@@ -460,7 +511,8 @@ EOF;
 	$installer->setConfigData('wishlist/email/email_template', $newEntityId);
 }
 
-if ($configData['emails']['default']['product_tellafriend']['active'] == 1) {
+if ($configData['emails']['default']['product_tellafriend']['active'] == 1)
+{
 	$query = <<< EOF
 	INSERT INTO `core_email_template` (`template_code`, `template_text`, `template_type`, `template_subject`, `template_sender_name`, `template_sender_email`, `added_at`, `modified_at`) VALUES
 	('Produkt an einen Freund verschicken (Template)', '{$configData['emails']['default']['product_tellafriend']['text']}', 2, 'Willkommen, {{var name}}', NULL, NULL, '$dateTime', '$dateTime');
@@ -470,7 +522,8 @@ EOF;
 	$installer->setConfigData('sendfriend/email/template', $newEntityId);
 }
 
-if ($configData['emails']['default']['contact_form']['active'] == 1) {
+if ($configData['emails']['default']['contact_form']['active'] == 1)
+{
 	$query = <<< EOF
 	INSERT INTO `core_email_template` (`template_code`, `template_text`, `template_type`, `template_subject`, `template_sender_name`, `template_sender_email`, `added_at`, `modified_at`) VALUES
 	('Kontaktformular (Template)', '{$configData['emails']['default']['contact_form']['text']}', 1, 'Kontaktformular', NULL, NULL, '$dateTime', '$dateTime');
@@ -480,7 +533,8 @@ EOF;
 	$installer->setConfigData('contacts/email/email_template', $newEntityId);
 }
 
-if ($configData['emails']['default']['sitemap_generation_warnings']['active'] == 1) {
+if ($configData['emails']['default']['sitemap_generation_warnings']['active'] == 1)
+{
 	$query = <<< EOF
 	INSERT INTO `core_email_template` (`template_code`, `template_text`, `template_type`, `template_subject`, `template_sender_name`, `template_sender_email`, `added_at`, `modified_at`) VALUES
 	('Sitemap Generierung Warnungen (Template)', '{$configData['emails']['default']['sitemap_generation_warnings']['text']}', 1, 'Sitemap Generierung - Warnung', NULL, NULL, '$dateTime', '$dateTime');
@@ -490,7 +544,8 @@ EOF;
 	$installer->setConfigData('sitemap/generate/error_email_template', $newEntityId);
 }
 
-if ($configData['emails']['default']['product_available']['active'] == 1) {
+if ($configData['emails']['default']['product_available']['active'] == 1)
+{
 	$query = <<< EOF
 	INSERT INTO `core_email_template` (`template_code`, `template_text`, `template_type`, `template_subject`, `template_sender_name`, `template_sender_email`, `added_at`, `modified_at`) VALUES
 	('Produkt wieder verfügbar (Template)', '{$configData['emails']['default']['product_available']['text']}', 2, 'Produkt wieder verfügbar', NULL, NULL, '$dateTime', '$dateTime');
@@ -500,7 +555,8 @@ EOF;
 	$installer->setConfigData('catalog/productalert/email_stock_template', $newEntityId);
 }
 
-if ($configData['emails']['default']['product_priceupdate']['active'] == 1) {
+if ($configData['emails']['default']['product_priceupdate']['active'] == 1)
+{
 	$query = <<< EOF
 	INSERT INTO `core_email_template` (`template_code`, `template_text`, `template_type`, `template_subject`, `template_sender_name`, `template_sender_email`, `added_at`, `modified_at`) VALUES
 	('Produkt Preisänderung (Template)', '{$configData['emails']['default']['product_priceupdate']['text']}', 2, 'Produkt Preisänderung', NULL, NULL, '$dateTime', '$dateTime');
@@ -510,7 +566,8 @@ EOF;
 	$installer->setConfigData('catalog/productalert/email_price_template', $newEntityId);
 }
 
-if ($configData['emails']['default']['product_priceupdate_cron']['active'] == 1) {
+if ($configData['emails']['default']['product_priceupdate_cron']['active'] == 1)
+{
 	$query = <<< EOF
 	INSERT INTO `core_email_template` (`template_code`, `template_text`, `template_type`, `template_subject`, `template_sender_name`, `template_sender_email`, `added_at`, `modified_at`) VALUES
 	('Produkt Cron Fehler (Template)', '{$configData['emails']['default']['product_priceupdate_cron']['text']}', 2, 'Product alerts Cron error', NULL, NULL, '$dateTime', '$dateTime');
