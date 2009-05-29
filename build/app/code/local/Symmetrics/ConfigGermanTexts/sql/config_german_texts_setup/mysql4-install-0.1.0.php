@@ -601,7 +601,9 @@ INSERT INTO `core_translate` (`string`, `store_id`, `translate`, `locale`) VALUE
 ('Mage_Newsletter::Sign up for our newsletter:', 0, 'Abonnieren Sie unseren Newsletter (Abmeldung jederzeit möglich):', 'de_DE'),
 ('Mage_Customer::Sign Up for Newsletter', 0, 'In den Newsletter eintragen (Abmeldung jederzeit möglich)', 'de_DE'),
 ('Mage_Catalog::Availability: In stock.', 0, 'Verfügbarkeit: sofort lieferbar', 'de_DE'),
-('Mage_Catalog::Weight', 0, 'Gewicht', 'de_DE');
+('Mage_Catalog::Gewicht', 0, 'Gewicht', 'en_US'),
+('Mage_Sales::Tax', 0, 'Inkl. MwSt.', 'de_DE');
+;
 ;
 EOF;
 $installer->run($query);
