@@ -126,6 +126,9 @@ Features:
 
 - Erstellt zentrale Blöcke für AGBs und Widerrufsrecht
 
+- Erstellt untere Link-Leiste (inkl. leere AGB- und 
+Widerrufsrecht-Links)
+
 - Ersetzt standard E-Mail Templates mit rechtskonformen
 und übersetzten E-Mail Templates inkl. AGB und 
 Widerrufsbelehrung
