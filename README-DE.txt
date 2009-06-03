@@ -11,13 +11,19 @@ app/code/local oder app/code/community kopieren.
 2. Datei app/etc/modules/Symmetrics_ConfigGermanTexts.xml
 nach app/etc/modules kopieren.
 
-3. ConfigGermanTexts/etc/config.xml öffnen und 
-Beispieltexte durch eigene Daten ersetzen. Diese 
-Daten können später über die Admin-Oberfläche im 
-Bereich "CMS -> Static Blocks" geändert werden.
+3. Ordner app/locale/de_DE/german_config_texts/ nach
+app/locale/de_DE/german_config_texts/ kopieren.
 
-Zusätzlich können in diesem Schritt die Texte
-konfiguriert werden.
+4. ConfigGermanTexts/etc/config.xml öffnen und 
+Beispieltexte im Bereich <impressum> durch eigene Daten 
+ersetzen. Ebenfalls ist es empfehlenswert die HTML-
+Dateien mit Beispielinhalten zu überprüfen, ob die
+Texte mit der gewünschten Shopkonfiguration
+übereinstimmen. Alle Beispieltexte sind in HTML-Dateien
+unter app/locale/de_DE/german_config/texts/ ausgelagert.
+
+Alle Daten können später über die Admin-Oberfläche im 
+Bereich "CMS -> Static Blocks" geändert werden.
 
 <config>
     <default>
@@ -45,9 +51,7 @@ konfiguriert werden.
                         </footerlink>
                         
                         <!-- Blockinhalt -->
-                        <text>
-                            AGB
-                        </text>
+                        <text>[Pfad zu der Template-Datei]</text>
                     </sym_agb>
                     ...
                 </default>
@@ -62,9 +66,7 @@ konfiguriert werden.
 	                    <active>1</active>
                         
                         <!-- Templateinhalt  -->                        
-	                    <text>
-                            TEXT
-                        </text>
+	                    <text>[Pfad zu der Template-Datei]</text>
                     </new_adminpassword>
                     ...
                 </default>
@@ -74,11 +76,11 @@ konfiguriert werden.
     </default>
 </config>
 
-4. Cache löschen
+5. Cache löschen
 
-5. Frontend aufrufen
+6. Frontend aufrufen
 
-6. Fertig!
+7. Fertig!
 
 ----------------------------------------------------
 Beschreibung
@@ -133,8 +135,8 @@ Widerrufsrecht-Links)
 und übersetzten E-Mail Templates inkl. AGB und 
 Widerrufsbelehrung
 
-- Alle Texte sind vor der Installation zentral über config.xml
-veränderbar
+- Alle Texte sind vor der Installation zentral über 
+HTML-Dateien veränderbar
 
 ----------------------------------------------------
 Funktonalität und Besonderheiten
