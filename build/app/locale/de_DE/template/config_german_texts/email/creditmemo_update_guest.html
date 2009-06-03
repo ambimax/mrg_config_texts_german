@@ -17,7 +17,7 @@
 	        <table cellspacing="0" cellpadding="0" border="0" width="650">
 	        <tr>
 	            <td valign="top">
-	                <p><strong>Hallo {{var order.getCustomerName()}}</strong>,</p>
+	                <p><strong>Hallo {{htmlescape var=$billing.getName()}}</strong>,</p>
 	                <p>Ihre Gutschrift Nr. {{var order.increment_id}} wurde atkualisiert. Neuer Status: <strong>{{var order.getStatusLabel()}}</strong>.</p>
 	                <p>{{var comment}}</p>
 	                <p>

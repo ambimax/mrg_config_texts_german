@@ -17,7 +17,7 @@
 	        <table cellspacing="0" cellpadding="0" border="0" width="650">
 	        <tr>
 	            <td valign="top">
-	                <p><strong>Hallo {{var order.getCustomerName()}}</strong>,</p>
+	                <p><strong>Hallo {{htmlescape var=$order.getCustomerName()}}</strong>,</p>
 	                <p>Ihre Rechnung Nr. {{var order.increment_id}} wurde atkualisiert. Neuer Status: <strong>{{var order.getStatusLabel()}}</strong>.</p>
 	                <p>Sie können den aktuellen Status Ihrer Bestellung jederzeit <a href="{{store url="customer/account/"}}" style="color:#1E7EC8;">in Ihrem Kundenbereich</a> einsehen.</p>
 	                <p>{{var comment}}</p>

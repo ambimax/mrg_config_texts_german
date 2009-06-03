@@ -18,7 +18,7 @@
 	            <tr>
 	                <td valign="top">
 	                    <p>
-	                        <strong>Hallo {{var order.getCustomerName()}}</strong>,<br/>
+	                        <strong>Hallo {{htmlescape var=$order.getCustomerName()}}</strong>,<br/>
 	                        Vielen Dank für Ihre Bestellung bei {{block type="symmetrics_impressum/impressum" value="shopname"}}.
 	                        Sie können den aktuellen Status Ihrer Bestellung jederzeit <a href="{{store url="customer/account/"}}" style="color:#1E7EC8;">in Ihrem Kundenbereich</a> einsehen.</p>
 	                        Sollten Sie Fragen zu Ihrem Kundenkonto oder andere Anfragen haben, senden Sie uns eine E-Mail an <a href="mailto:{{block type="symmetrics_impressum/impressum" value="email"}}" style="color:#1E7EC8;">{{block type="symmetrics_impressum/impressum" value="email"}}</a>.

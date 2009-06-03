@@ -18,7 +18,7 @@
 	            <tr>
 	                <td valign="top">
 	                    <p>
-	                        <strong>Hallo {{var order.getCustomerName()}}</strong>,<br/>
+	                        <strong>Hallo {{htmlescape var=$order.getCustomerName()}}</strong>,<br/>
 	                        Vielen Dank für Ihre Bestellung bei {{block type="symmetrics_impressum/impressum" value="shopname"}}.
 	                        Sobald Ihre Sendung verschickt wurde, erhalten Sie per E-Mail weitere Informationen zur Sendungsverfolgung.
 	                        Sie können den aktuellen Status Ihrer Bestellung jederzeit <a href="{{store url="customer/account/"}}" style="color:#1E7EC8;">in Ihrem Kundenbereich</a> einsehen.

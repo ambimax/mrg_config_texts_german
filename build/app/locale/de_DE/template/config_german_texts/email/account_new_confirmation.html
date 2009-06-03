@@ -17,7 +17,7 @@
 				<table cellspacing="0" cellpadding="0" border="0" width="650">
 					<tr>
 						<td valign="top">
-							<p><strong>Hallo {{var customer.name}}</strong>, <br/> herzlich willkommen in unserem Shop.</p>
+							<p><strong>Hallo {{htmlescape var=$customer.name}}</strong>, <br/> herzlich willkommen in unserem Shop.</p>
 							<p>Ihre E-Mail-Adresse {{var customer.email}} muß bestätigt werden, bevor Sie sich damit in unserem Shop einloggen können.</p>
 							<p>Um die E-Mail-Adresse zu bestätigen und sich sofort einzuloggen, benutzen Sie bitte <a href="{{store url="customer/account/confirm/" _query_id=$customer.id _query_key=$customer.confirmation _query_back_url=$back_url}}" style="color:#1E7EC8;">diesen Bestätigunslink</a>. Dieser Link ist nur einmal gülitig.</p>
 							<p>Sollten Sie Fragen zu Ihrem Kundenkonto oder andere Anfragen haben, senden Sie uns eine E-Mail an <a href="mailto:{{block type="symmetrics_impressum/impressum" value="email"}}" style="color:#1E7EC8;">{{block type="symmetrics_impressum/impressum" value="email"}}</a>.</p>

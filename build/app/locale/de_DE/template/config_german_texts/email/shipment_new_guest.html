@@ -18,7 +18,7 @@
 	            <tr>
 	                <td valign="top">
 	                    <p>
-	                        <strong>Hallo {{var billing.getName()}}</strong>,<br/>
+	                        <strong>Hallo {{htmlescape var=$billing.getName()}}</strong>,<br/>
 	                        Vielen Dank für Ihre Bestellung bei {{block type="symmetrics_impressum/impressum" value="shopname"}}.
 	                        Sobald Ihre Sendung verschickt wurde, erhalten Sie per E-Mail weitere Informationen zur Sendungsverfolgung.
 	                        Sollten Sie Fragen zu Ihrer Bestellung haben, senden Sie uns eine E-Mail an <a href="mailto:{{block type="symmetrics_impressum/impressum" value="email"}}" style="color:#1E7EC8;">{{block type="symmetrics_impressum/impressum" value="email"}}</a>
