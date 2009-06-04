@@ -51,7 +51,7 @@
                                 <link>widerruf</link>
                             </default>
                         </footerlink>
-                        <text>app/locale/de_DE/template/config_german_texts/agb.html</text>
+                        <text>app/locale/de_DE/template/config_german_texts/widerruf.html</text>
                     </sym_widerruf>
                     
                     <sym_404>
