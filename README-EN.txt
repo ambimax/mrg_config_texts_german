@@ -17,6 +17,8 @@ Features:
     - Payment information (Zahlungsarten)
     - Data privacy (Datenschutz)
     - Shipping (Lieferung)
+    - Terms and Conditions (AGB)
+    - Widerruf
     - Order process (Bestellprozess)
     
 - Creates static blocks for agreement and revocation
