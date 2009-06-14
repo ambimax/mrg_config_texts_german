@@ -1,4 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
+<!--
+/**
+ * @category Symmetrics
+ * @package Symmetrics_ConfigGermanTexts
+ * @author symmetrics gmbh <info@symmetrics.de>, Eugen Gitin <eg@symmetrics.de>, Sergej Braznikov <sb@symmetrics.de>
+ * @copyright symmetrics gmbh
+ * @license http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+-->
 <config>
     <modules>
         <Symmetrics_ConfigGermanTexts>
@@ -11,289 +20,413 @@
             <config_german_texts_setup>
                 <setup>
                     <module>Symmetrics_ConfigGermanTexts</module>
+                    <class>Symmetrics_ConfigGermanTexts_Model_Setup</class>
                 </setup>
                 <connection>
                     <use>core_setup</use>
                 </connection>
             </config_german_texts_setup>
-            <config_german_texts_setup>
+            <config_german_texts_write>
                 <connection>
                     <use>core_write</use>
                 </connection>
-            </config_german_texts_setup>
-            <config_german_texts_setup>
+            </config_german_texts_write>
+            <config_german_texts_read>
                 <connection>
                     <use>core_read</use>
                 </connection>
-            </config_german_texts_setup>
+            </config_german_texts_read>
         </resources>
     </global>
     <default>
         <config_german_texts>
+            <pages>
+                <default>
+                    <symmetrics_404>
+                        <execute>1</execute>
+                        <title>Seite nicht gefunden</title>
+                        <identifier>not-found</identifier>
+                        <root_template>two_columns_right</root_template>
+                        <text>app/locale/de_DE/template/config_german_texts/404.html</text>
+                    </symmetrics_404>
+
+                    <symmetrics_imprint>
+                        <execute>1</execute>
+                        <title>Impressum</title>
+                        <identifier>impressum</identifier>
+                        <root_template>one_column</root_template>
+                        <text>app/locale/de_DE/template/config_german_texts/impressum.html</text>
+                    </symmetrics_imprint>
+
+                    <symmetrics_payment>
+                        <execute>1</execute>
+                        <title>Zahlungsarten</title>
+                        <identifier>zahlung</identifier>
+                        <root_template>one_column</root_template>
+                        <text>app/locale/de_DE/template/config_german_texts/zahlung.html</text>
+                    </symmetrics_payment>
+
+                    <symmetrics_privacy>
+                        <execute>1</execute>
+                        <title>Datenschutz</title>
+                        <identifier>datenschutz</identifier>
+                        <root_template>one_column</root_template>
+                        <text>app/locale/de_DE/template/config_german_texts/datenschutz.html</text>
+                    </symmetrics_privacy>
+
+                    <symmetrics_shipment>
+                        <execute>1</execute>
+                        <title>Lieferung</title>
+                        <identifier>lieferung</identifier>
+                        <root_template>one_column</root_template>
+                        <text>app/locale/de_DE/template/config_german_texts/lieferung.html</text>
+                    </symmetrics_shipment>
+
+                    <symmetrics_order>
+                        <execute>1</execute>
+                        <title>Bestellvorgang</title>
+                        <identifier>bestellung</identifier>
+                        <root_template>one_column</root_template>
+                        <text>app/locale/de_DE/template/config_german_texts/bestellung.html</text>
+                    </symmetrics_order>
+                </default>
+            </pages>
+
             <blocks>
                 <default>
-                    <sym_agb>
-                        <active>1</active>
-                        <footerlink>
-                            <default>
-                                <title>AGB</title>
-                                <link>agb</link>
-                            </default>
-                        </footerlink>
+                    <symmetrics_terms>
+                        <execute>1</execute>
+                        <title>AGB</title>
+                        <identifier>sym_agb</identifier>
                         <text>app/locale/de_DE/template/config_german_texts/agb.html</text>
-                    </sym_agb>
-    
-                    <sym_widerruf>
-                        <active>1</active>
-                        <footerlink>
-                            <default>
-                                <title>Widerrufsrecht</title>
-                                <link>widerruf</link>
-                            </default>
-                        </footerlink>
+                    </symmetrics_terms>
+
+                    <symmetrics_cancellation>
+                        <execute>1</execute>
+                        <title>Widerrufsbelehrung</title>
+                        <identifier>sym_widerruf</identifier>
                         <text>app/locale/de_DE/template/config_german_texts/widerruf.html</text>
-                    </sym_widerruf>
-                    
-                    <sym_404>
-                        <active>1</active>
-                        <text>app/locale/de_DE/template/config_german_texts/404.html</text>
-                    </sym_404>
-                    
-                    <sym_impressum>
-                        <active>1</active>
-                        <footerlink>
-                            <default>
-                                <title>Impressum</title>
-                                <link>impressum</link>
-                            </default>
-                        </footerlink>
-                        <text>app/locale/de_DE/template/config_german_texts/impressum.html</text>
-                    </sym_impressum>
-    
-                    <sym_zahlung>
-                        <active>1</active>
-                        <footerlink>
-                            <default>
-                                <title>Zahlungsarten</title>
-                                <link>zahlung</link>
-                            </default>
-                        </footerlink>
-                        <text>app/locale/de_DE/template/config_german_texts/zahlung.html</text>
-                    </sym_zahlung>
-    
-                    <sym_datenschutz>
-                        <active>1</active>
-                        <footerlink>
-                            <default>
-                                <title>Datenschutz</title>
-                                <link>datenschutz</link>
-                            </default>
-                        </footerlink>
-                        <text>app/locale/de_DE/template/config_german_texts/datenschutz.html</text>
-                    </sym_datenschutz>
-    
-                    <sym_lieferung>
-                        <active>1</active>
-                        <footerlink>
-                            <default>
-                                <title>Lieferung</title>
-                                <link>lieferung</link>
-                            </default>
-                        </footerlink>
-                        <text>app/locale/de_DE/template/config_german_texts/lieferung.html</text>
-                    </sym_lieferung>
-    
-                    <sym_bestellung>
-                        <footerlink>
-                            <default>
-                                <title>Bestellvorgang</title>
-                                <link>bestellung</link>
-                            </default>
-                        </footerlink>
-                        <active>1</active>
-                        <text>app/locale/de_DE/template/config_german_texts/bestellung.html</text>
-                    </sym_bestellung>
-    
-                    <sym_footerlinks>
-                        <active>1</active>
-                    </sym_footerlinks>
+                    </symmetrics_cancellation>
+
+                    <symmetrics_footerlinks>
+                        <execute>1</execute>
+                        <title>Footer Links DE</title>
+                        <identifier>footer_links</identifier>
+                    </symmetrics_footerlinks>
                 </default>
             </blocks>
-            
+
             <emails>
                 <default>
                     <admin_password_new>
-                        <active>1</active>
+                        <execute>1</execute>
+                        <template_code>Neues Admin-Passwort (Template)</template_code>
+                        <template_type>2</template_type>
+                        <template_subject>Neues Passwort für {{var user.name}}</template_subject>
+                        <config_data_path>admin/emails/forgot_email_template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/admin_password_new.html</text>
                     </admin_password_new>
-    
+
                     <currency_update_warning>
-                        <active>1</active>
+                        <execute>1</execute>
+                        <template_code>Währung Aktualisierung (Template)</template_code>
+                        <template_type>1</template_type>
+                        <template_subject>Warnungen bei Währungsupdate</template_subject>
+                        <config_data_path>currency/import/error_email_template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/currency_update_warning.html</text>
                     </currency_update_warning>
-    
+
                     <account_new>
-                        <active>1</active>
+                        <execute>1</execute>
+                        <template_code>Neues Konto (Template)</template_code>
+                        <template_type>2</template_type>
+                        <template_subject>Willkommen, {{var customer.name}}!</template_subject>
+                        <config_data_path>customer/create_account/email_template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/account_new.html</text>
                     </account_new>
-    
+
                     <account_new_confirmation>
-                        <active>1</active>
+                        <execute>1</execute>
+                        <template_code>Neues Konto Aktivierung  (Template)</template_code>
+                        <template_type>2</template_type>
+                        <template_subject>Bestätigung des Kundenkontos für {{var customer.name}}</template_subject>
+                        <config_data_path>customer/create_account/email_confirmation_template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/account_new_confirmation.html</text>
                     </account_new_confirmation>
-    
+
                     <account_new_confirmed>
-                        <active>1</active>
+                        <execute>1</execute>
+                        <template_code>Neues Konto Bestätigung (Template)</template_code>
+                        <template_type>2</template_type>
+                        <template_subject>Willkommen, {{var customer.name}}!</template_subject>
+                        <config_data_path>customer/create_account/email_confirmed_template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/account_new_confirmed.html</text>
                     </account_new_confirmed>
-    
+
                     <password_new>
-                        <active>1</active>
+                        <execute>1</execute>
+                        <template_code>Neues Passwort (Template)</template_code>
+                        <template_type>2</template_type>
+                        <template_subject>Neues Passwort für {{var customer.name}}</template_subject>
+                        <config_data_path>customer/password/forgot_email_template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/password_new.html</text>
-                    </password_new> 
-    
+                    </password_new>
+
                     <order_new>
-                        <active>1</active>
+                        <execute>1</execute>
+                        <template_code>Neue Bestellung (Template)</template_code>
+                        <template_type>2</template_type>
+                        <template_subject>{{var order.getStoreGroupName()}}: Neue Bestellung Nr. # {{var order.increment_id}}</template_subject>
+                        <config_data_path>sales_email/order/template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/order_new.html</text>
                     </order_new>
-    
+
                     <order_new_guest>
-                        <active>1</active>
+                        <execute>1</execute>
+                        <template_code>Neue Bestellung Gast (Template)</template_code>
+                        <template_type>2</template_type>
+                        <template_subject>{{var order.getStoreGroupName()}}: Neue Bestellung Nr. # {{var order.increment_id}}</template_subject>
+                        <config_data_path>sales_email/order/guest_template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/order_new_guest.html</text>
                     </order_new_guest>
-    
+
                     <order_update>
-                        <active>1</active>
+                        <execute>1</execute>
+                        <template_code>Bestellung Aktualsierung (Template)</template_code>
+                        <template_type>2</template_type>
+                        <template_subject>{{var order.getStoreGroupName()}}: Bestellung Nr. # {{var order.increment_id}} Aktualisierung</template_subject>
+                        <config_data_path>sales_email/order_comment/template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/order_update.html</text>
                     </order_update>
-    
+
                     <order_update_guest>
-                        <active>1</active>
+                        <execute>1</execute>
+                        <template_code>Bestellung Aktualsierung Gast (Template)</template_code>
+                        <template_type>2</template_type>
+                        <template_subject>{{var order.getStoreGroupName()}}: Bestellung Nr. # {{var order.increment_id}} Aktualisierung</template_subject>
+                        <config_data_path>sales_email/order_comment/guest_template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/order_update_guest.html</text>
                     </order_update_guest>
-    
+
                     <invoice_new>
-                        <active>1</active>
+                        <execute>1</execute>
+                        <template_code>Neue Rechnung (Template)</template_code>
+                        <template_type>2</template_type>
+                        <template_subject>{{var order.getStoreGroupName()}}: Proformarechnung Nr. # {{var invoice.increment_id}} für Bestellung Nr. # {{var order.increment_id}}</template_subject>
+                        <config_data_path>sales_email/invoice/template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/invoice_new.html</text>
                     </invoice_new>
-    
+
                     <invoice_new_guest>
-                        <active>1</active>
+                        <execute>1</execute>
+                        <template_code>Neue Rechnung Gast (Template)</template_code>
+                        <template_type>2</template_type>
+                        <template_subject>{{var order.getStoreGroupName()}}: Proformarechnung Nr. # {{var invoice.increment_id}} für Bestellung Nr. # {{var order.increment_id}}</template_subject>
+                        <config_data_path>sales_email/invoice/guest_template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/invoice_new_guest.html</text>
                     </invoice_new_guest>
-    
+
                     <invoice_update>
-                        <active>1</active>
+                        <execute>1</execute>
+                        <template_code>Rechnung Aktualisierung (Template)</template_code>
+                        <template_type>2</template_type>
+                        <template_subject>{{var order.getStoreGroupName()}}: Rechnung Nr. # {{var invoice.increment_id}} Aktualisierung</template_subject>
+                        <config_data_path>sales_email/invoice_comment/template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/invoice_update.html</text>
                     </invoice_update>
-    
+
                     <invoice_update_guest>
-                        <active>1</active>
+                        <execute>1</execute>
+                        <template_code>Rechnung Aktualisierung Gast (Template)</template_code>
+                        <template_type>2</template_type>
+                        <template_subject>{{var order.getStoreGroupName()}}: Rechnung Nr. # {{var invoice.increment_id}} Aktualisierung</template_subject>
+                        <config_data_path>sales_email/invoice_comment/guest_template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/invoice_update_guest.html</text>
                     </invoice_update_guest>
-    
+
                     <creditmemo_new>
-                        <active>1</active>
+                        <execute>1</execute>
+                        <template_code>Neue Gutschrift (Template)</template_code>
+                        <template_type>2</template_type>
+                        <template_subject>{{var order.getStoreGroupName()}}: Gutschrift Nr. # {{var creditmemo.increment_id}} für Bestellung Nr. # {{var order.increment_id}}</template_subject>
+                        <config_data_path>sales_email/creditmemo/template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/creditmemo_new.html</text>
                     </creditmemo_new>
-    
+
                     <creditmemo_new_guest>
-                        <active>1</active>
+                        <execute>1</execute>
+                        <template_code>Neue Gutschrift Gast (Template)</template_code>
+                        <template_type>2</template_type>
+                        <template_subject>{{var order.getStoreGroupName()}}: Gutschrift Nr. # {{var creditmemo.increment_id}} für Bestellung Nr. # {{var order.increment_id}}</template_subject>
+                        <config_data_path>sales_email/creditmemo/guest_template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/creditmemo_new_guest.html</text>
                     </creditmemo_new_guest>
-    
+
                     <creditmemo_update>
-                        <active>1</active>
+                        <execute>1</execute>
+                        <template_code>Gutschrift Aktualisierung (Template)</template_code>
+                        <template_type>2</template_type>
+                        <template_subject>{{var order.getStoreGroupName()}}: Gutschrift Nr. # {{var creditmemo.increment_id}} Aktualisierung</template_subject>
+                        <config_data_path>sales_email/creditmemo_comment/template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/creditmemo_update.html</text>
                     </creditmemo_update>
-    
+
                     <creditmemo_update_guest>
-                        <active>1</active>
+                        <execute>1</execute>
+                        <template_code>Gutschrift Aktualisierung Gast (Template)</template_code>
+                        <template_type>2</template_type>
+                        <template_subject>{{var order.getStoreGroupName()}}: Gutschrift Nr. # {{var creditmemo.increment_id}} Aktualisierung</template_subject>
+                        <config_data_path>sales_email/creditmemo_comment/guest_template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/creditmemo_update_guest.html</text>
                     </creditmemo_update_guest>
-    
+
                     <shipment_new>
-                        <active>1</active>
+                        <execute>1</execute>
+                        <template_code>Neue Lieferung (Template)</template_code>
+                        <template_type>2</template_type>
+                        <template_subject>{{var order.getStoreGroupName()}}: Lieferschein Nr. # {{var shipment.increment_id}} für Bestellung Nr. # {{var order.increment_id}}</template_subject>
+                        <config_data_path>sales_email/shipment/template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/shipment_new.html</text>
                     </shipment_new>
-    
+
                     <shipment_new_guest>
-                        <active>1</active>
+                        <execute>1</execute>
+                        <template_code>Neue Lieferung Gast (Template)</template_code>
+                        <template_type>2</template_type>
+                        <template_subject>{{var order.getStoreGroupName()}}: Lieferschein Nr. # {{var shipment.increment_id}} für Bestellung Nr. # {{var order.increment_id}}</template_subject>
+                        <config_data_path>sales_email/shipment/guest_template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/shipment_new_guest.html</text>
                     </shipment_new_guest>
-    
+
                     <shipment_update>
-                        <active>1</active>
+                        <execute>1</execute>
+                        <template_code>Lieferung Aktualisierung (Template)</template_code>
+                        <template_type>2</template_type>
+                        <template_subject>{{var order.getStoreGroupName()}}: Lieferschein Nr. # {{var shipment.increment_id}} Aktualisierung</template_subject>
+                        <config_data_path>sales_email/shipment_comment/template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/shipment_update.html</text>
                     </shipment_update>
-    
+
                     <shipment_update_guest>
-                        <active>1</active>
+                        <execute>1</execute>
+                        <template_code>Lieferung Aktualisierung Gast (Template)</template_code>
+                        <template_type>2</template_type>
+                        <template_subject>{{var order.getStoreGroupName()}}: Lieferschein Nr. # {{var shipment.increment_id}} Aktualisierung</template_subject>
+                        <config_data_path>sales_email/shipment_comment/guest_template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/shipment_update_guest.html</text>
                     </shipment_update_guest>
-    
+
                     <payment_failed>
-                        <active>1</active>
+                        <execute>1</execute>
+                        <template_code>Zahlung fehlgeschlagen (Template)</template_code>
+                        <template_type>2</template_type>
+                        <template_subject>Transaktion fehlgeschlagen</template_subject>
+                        <config_data_path>checkout/payment_failed/template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/payment_failed.html</text>
                     </payment_failed>
-    
+
                     <log_clean_warning>
-                        <active>1</active>
+                        <execute>1</execute>
+                        <template_code>Protokoll Bereinigung Warnungen (Template)</template_code>
+                        <template_type>1</template_type>
+                        <template_subject>Warnung bei der Protokollbereinigung</template_subject>
+                        <config_data_path>system/log/error_email_template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/log_clean_warning.html</text>
                     </log_clean_warning>
-    
+
                     <newsletter_subscr_confirm>
-                        <active>1</active>
+                        <execute>1</execute>
+                        <template_code>Newsletter Anmeldung Bestätigung (Template)</template_code>
+                        <template_type>2</template_type>
+                        <template_subject>Newsletter Anmeldung Bestätigung</template_subject>
+                        <config_data_path>newsletter/subscription/confirm_email_template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/newsletter_subscr_confirm.html</text>
                     </newsletter_subscr_confirm>
-    
+
                     <newsletter_subscr_success>
-                        <active>1</active>
+                        <execute>1</execute>
+                        <template_code>Newsletter Anmeldung Erfolg (Template)</template_code>
+                        <template_type>2</template_type>
+                        <template_subject>Newsletter Anmeldung erfolgreich</template_subject>
+                        <config_data_path>newsletter/subscription/un_email_template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/newsletter_subscr_success.html</text>
                     </newsletter_subscr_success>
-                    
+
                     <newsletter_unsub_success>
-                        <active>1</active>
+                        <execute>1</execute>
+                        <template_code>Newsletter Abmeldung Erfolg (Template)</template_code>
+                        <template_type>2</template_type>
+                        <template_subject>Newsletter Abmeldung erfolgreich</template_subject>
+                        <config_data_path>newsletter/subscription/success_email_template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/newsletter_unsub_success.html</text>
                     </newsletter_unsub_success>
-                    
+
                     <wishlist_share>
-                        <active>1</active>
+                        <execute>1</execute>
+                        <template_code>Wunschliste gemeinsam nutzen (Template)</template_code>
+                        <template_type>2</template_type>
+                        <template_subject>Schauen Sie sich {{var customer.name}}''s Wunschzettel an</template_subject>
+                        <config_data_path>wishlist/email/email_template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/wishlist_share.html</text>
                     </wishlist_share>
-    
+
                     <product_share>
-                        <active>1</active>
+                        <execute>1</execute>
+                        <template_code>Produkt an einen Freund verschicken (Template)</template_code>
+                        <template_type>2</template_type>
+                        <template_subject>Willkommen, {{var name}}</template_subject>
+                        <config_data_path>sendfriend/email/template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/product_share.html</text>
                     </product_share>
-    
+
                     <contact_form>
-                        <active>1</active>
+                        <execute>1</execute>
+                        <template_code>Kontaktformular (Template)</template_code>
+                        <template_type>1</template_type>
+                        <template_subject>Kontaktformular</template_subject>
+                        <config_data_path>contacts/email/email_template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/contact_form.html</text>
                     </contact_form>
-    
+
                     <sitemap_generate_warning>
-                        <active>1</active>
+                        <execute>1</execute>
+                        <template_code>Sitemap Generierung Warnungen (Template)</template_code>
+                        <template_type>1</template_type>
+                        <template_subject>Sitemap Generierung - Warnung</template_subject>
+                        <config_data_path>sitemap/generate/error_email_template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/sitemap_generate_warning.html</text>
                     </sitemap_generate_warning>
-    
+
                     <product_stock_alert>
-                        <active>1</active>
+                        <execute>1</execute>
+                        <template_code>Produkt wieder verfügbar (Template)</template_code>
+                        <template_type>2</template_type>
+                        <template_subject>Produkt wieder verfügbar</template_subject>
+                        <config_data_path>catalog/productalert/email_stock_template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/product_stock_alert.html</text>
                     </product_stock_alert>
-    
+
                     <product_price_alert>
-                        <active>1</active>
+                        <execute>1</execute>
+                        <template_code>Produkt Preisänderung (Template)</template_code>
+                        <template_type>2</template_type>
+                        <template_subject>Produkt Preisänderung</template_subject>
+                        <config_data_path>catalog/productalert/email_price_template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/product_price_alert.html</text>
                     </product_price_alert>
-    
+
                     <product_alert_cron_error>
-                        <active>1</active>
+                        <execute>1</execute>
+                        <template_code>Produkt Cron Fehler (Template)</template_code>
+                        <template_type>2</template_type>
+                        <template_subject>Product alerts Cron error</template_subject>
+                        <config_data_path>catalog/productalert_cron/error_email_template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/product_alert_cron_error.html</text>
                     </product_alert_cron_error>
                 </default>
             </emails>
-            <impressum>
+
+            <imprint>
                 <shop_name>[Beispielshop]</shop_name>
                 <company_name>[Musterfirma GmbH]</company_name>
                 <zip>[30123]</zip>
@@ -319,7 +452,7 @@
                 <invoice_maturity>[14]</invoice_maturity>
                 <invoice_note>[Vielen Dank für Ihren Auftrag!]</invoice_note>
                 <invoice_customer_prefix>[K]</invoice_customer_prefix>
-            </impressum>
+            </imprint>
         </config_german_texts>
     </default>
 </config>
