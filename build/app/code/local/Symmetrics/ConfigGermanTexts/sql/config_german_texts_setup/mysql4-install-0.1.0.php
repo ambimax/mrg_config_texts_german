@@ -54,8 +54,8 @@ $installer->run($query);
 
 // set imprint data
 $imprintFields = $this->getConfigImprint();
-$installer->setConfigData('general/impressum/company1', $imprintFields['company_name']);
-$installer->setConfigData('general/impressum/company2', '');
+$installer->setConfigData('general/impressum/company1', $imprintFields['company_name1']);
+$installer->setConfigData('general/impressum/company2', $imprintFields['company_name2']);
 $installer->setConfigData('general/impressum/street', $imprintFields['street']);
 $installer->setConfigData('general/impressum/zip', $imprintFields['zip']);
 $installer->setConfigData('general/impressum/city', $imprintFields['city']);
