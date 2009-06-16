@@ -428,8 +428,8 @@
 
             <imprint>
                 <shop_name>[Beispielshop]</shop_name>
-                <company_name1>[Musterfirma GmbH]</company_name1>
-                <company_name2>[Inh. Max Mustermann]</company_name2>
+                <company_name>[Musterfirma GmbH]</company_name>
+                <company_sub>[Inh. Max Mustermann]</company_sub>
                 <zip>[30123]</zip>
                 <street>[Musterstr. 1]</street>
                 <city>[Hannover]</city>

@@ -24,6 +24,7 @@ def main(config_module, info_py):
     data = dict(
         shop_name=magento['shop_name'],
         company_name=customer['company_name'],
+        company_sub=customer['company_sub'],
         zip=customer['zip'],
         street=customer['street'],
         city=customer['city'],
