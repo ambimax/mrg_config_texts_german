@@ -52,12 +52,14 @@ def main(config_module, info_py):
     for key, val in data.iteritems():
         if not isinstance(val, basestring):
             data[key] = str(val)
+        else:
+            data[key] = unicode(val, 'utf-8')
     
     filename = os.path.join(package_dir, 'build', 'app', 'code', 'local',
                             'Symmetrics', 'ConfigGermanTexts', 'etc',
                             'config.xml')
     tree = parse(filename)
-    elements = tree.findall('default/config_german_texts/impressum/*')
+    elements = tree.findall('default/config_german_texts/imprint/*')
     
     for element in elements:
         if data.has_key(element.tag):
