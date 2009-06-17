@@ -454,6 +454,37 @@
                 <invoice_note>[Vielen Dank für Ihren Auftrag!]</invoice_note>
                 <invoice_customer_prefix>[K]</invoice_customer_prefix>
             </imprint>
+            
+            <footer_links>
+                <link>
+                    <title>AGB</title>
+                    <target>agb</target>
+                </link>
+                <link>
+                    <title>Widerrufsbelehrung</title>
+                    <target>widerruf</target>
+                </link>
+                <link>
+                    <title>Lieferung</title>
+                    <target>lieferung</target>
+                </link>
+                <link>
+                    <title>Zahlungsarten</title>
+                    <target>zahlung</target>
+                </link>
+                <link>
+                    <title>Datenschutz</title>
+                    <target>datenschutz</target>
+                </link>
+                <link>
+                    <title>Bestellvorgang</title>
+                    <target>bestellung</target>
+                </link>
+                <link>
+                    <title>Impressum</title>
+                    <target>impressum</target>
+                </link>
+            </footer_links>
         </config_german_texts>
     </default>
 </config>

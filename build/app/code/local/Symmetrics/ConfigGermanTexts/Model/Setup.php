@@ -49,6 +49,11 @@ class Symmetrics_ConfigGermanTexts_Model_Setup extends Mage_Eav_Model_Entity_Set
         return file_get_contents($filename);
     }
 
+    public function getFooterLinks()
+    {
+        return $this->getConfigNode('footer_links');;
+    }
+
     public function createCmsPage($pageData)
     {
         $data = array(
@@ -90,11 +95,11 @@ class Symmetrics_ConfigGermanTexts_Model_Setup extends Mage_Eav_Model_Entity_Set
     {
         $footerLinksHtml = '<ul>';
         $footerLinksCounter = 0;
-        foreach ($this->getConfigPages() as $name => $data) {
+        foreach ($this->getFooterLinks() as $link => $data) {
             $footerLinksCounter++;
             $title = $data['title'];
-            $identifier = $data['identifier'];
-            $footerLinksHtml .= '<li class="'.(($footerLinksCounter == count($this->getConfigPages())) ? 'last' : '').'"><a href="{{store url=""}}' . $identifier . '">' . $title . '</a></li>';
+            $target = $data['target'];
+            $footerLinksHtml .= '<li class="'.(($footerLinksCounter == count($this->getFooterLinks())) ? 'last' : '').'"><a href="{{store url="'.$target.'"}}">' . $title . '</a></li>';
         }
 
         $footerLinksHtml .= '</ul>';
