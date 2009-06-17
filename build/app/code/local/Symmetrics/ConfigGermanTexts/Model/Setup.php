@@ -51,7 +51,7 @@ class Symmetrics_ConfigGermanTexts_Model_Setup extends Mage_Eav_Model_Entity_Set
 
     public function getFooterLinks()
     {
-        return $this->getConfigNode('footer_links');;
+        return $this->getConfigNode('footer_links', 'default');
     }
 
     public function createCmsPage($pageData)
