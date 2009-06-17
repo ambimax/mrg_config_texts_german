@@ -47,6 +47,8 @@ $query = <<< EOF
     ('Mage_Customer::Sign Up for Newsletter', 0, 'In den Newsletter eintragen (Abmeldung jederzeit möglich)', 'de_DE'),
     ('Mage_Catalog::Availability: In stock.', 0, 'Verfügbarkeit: sofort lieferbar', 'de_DE'),
     ('Mage_Sales::Tax', 0, 'Zzgl. MwSt.', 'de_DE'),
+    ('Mage_Checkout::Please agree to all Terms and Conditions before placing the order.', 0, 'Bitte bestätigen Sie die AGB und ggf. die Widerrufsbelehrung.', 'de_DE'),
+    ('Mage_Checkout::Please agree to all Terms and Conditions before placing the orders.', 0, 'Bitte bestätigen Sie die AGB und ggf. die Widerrufsbelehrung.', 'de_DE'),
     ('Mage_Sales::Subtotal', 0, 'Zwischensumme (Netto)', 'de_DE');
 EOF;
 
