@@ -457,34 +457,34 @@
             
             <footer_links>
                 <default>
-	                <link>
+	                <agreement>
 	                    <title>AGB</title>
 	                    <target>agb</target>
-	                </link>
-	                <link>
-	                    <title>Widerrufsbelehrung</title>
+	                </agreement>
+	                <revocation>
+	                    <title>Widerruf</title>
 	                    <target>widerruf</target>
-	                </link>
-	                <link>
+	                </revocation>
+	                <shipping>
 	                    <title>Lieferung</title>
 	                    <target>lieferung</target>
-	                </link>
-	                <link>
+	                </shipping>
+	                <payment>
 	                    <title>Zahlungsarten</title>
 	                    <target>zahlung</target>
-	                </link>
-	                <link>
+	                </payment>
+	                <privacy>
 	                    <title>Datenschutz</title>
 	                    <target>datenschutz</target>
-	                </link>
-	                <link>
+	                </privacy>
+	                <order>
 	                    <title>Bestellvorgang</title>
 	                    <target>bestellung</target>
-	                </link>
-	                <link>
+	                </order>
+	                <imprint>
 	                    <title>Impressum</title>
 	                    <target>impressum</target>
-	                </link>
+	                </imprint>
                 </default>
             </footer_links>
         </config_german_texts>
