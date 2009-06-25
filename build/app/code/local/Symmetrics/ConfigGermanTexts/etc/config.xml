@@ -45,8 +45,8 @@
                     <symmetrics_404>
                         <execute>1</execute>
                         <title>Seite nicht gefunden</title>
-                        <identifier>not-found</identifier>
-                        <root_template>two_columns_right</root_template>
+                        <identifier>no-route</identifier>
+                        <root_template>one_column</root_template>
                         <text>app/locale/de_DE/template/config_german_texts/404.html</text>
                     </symmetrics_404>
 
