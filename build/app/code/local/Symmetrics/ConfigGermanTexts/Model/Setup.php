@@ -61,7 +61,7 @@ class Symmetrics_ConfigGermanTexts_Model_Setup extends Mage_Eav_Model_Entity_Set
             'identifier' => $pageData['identifier'],
             'content' => $this->getTemplateContent($pageData['text']),
             'root_template' => $pageData['root_template'],
-            'stores' => array('1'),
+            'stores' => array('0'),
             'is_active' => '1',
         );
 
@@ -74,7 +74,7 @@ class Symmetrics_ConfigGermanTexts_Model_Setup extends Mage_Eav_Model_Entity_Set
             'title' => $blockData['title'],
             'identifier' => $blockData['identifier'],
             'content' => $this->getTemplateContent($blockData['text']),
-            'stores' => array('1'),
+            'stores' => array('0'),
             'is_active' => '1',
         );
 
@@ -122,7 +122,7 @@ class Symmetrics_ConfigGermanTexts_Model_Setup extends Mage_Eav_Model_Entity_Set
             'title' => $blockData['title'],
             'identifier' => $blockData['identifier'],
             'content' => $this->createFooterLinksContent(),
-            'stores' => array('1'),
+            'stores' => array('0'),
             'is_active' => '1',
         );
 

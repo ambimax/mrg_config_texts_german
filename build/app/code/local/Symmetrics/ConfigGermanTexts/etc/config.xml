@@ -12,7 +12,6 @@
     <modules>
         <Symmetrics_ConfigGermanTexts>
             <version>0.1.13</version>
-            <depends />
         </Symmetrics_ConfigGermanTexts>
     </modules>
     <global>

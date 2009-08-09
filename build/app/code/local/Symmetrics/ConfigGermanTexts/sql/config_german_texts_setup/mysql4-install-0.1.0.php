@@ -38,7 +38,7 @@ foreach ($this->getConfigEmails() as $name => $data) {
 
 // set some translations
 $query = <<< EOF
-    INSERT INTO `core_translate` (`string`, `store_id`, `translate`, `locale`) VALUES
+    INSERT INTO {$this->getTable('core_translate')} (`string`, `store_id`, `translate`, `locale`) VALUES
     ('Mage_Sales::Logo for PDF print-outs (200x50)', 0, 'Logo for PDF print-outs', 'de_DE'),
     ('Mage_Checkout::You will receive an order confirmation email with details of your order and a link to track its progress.', 0, 'Wenn Sie aktuell eingeloggt sind und einen Kunden Account in unserem Shop haben, dann klicken Sie hier, um eine Kopie Ihrer Bestellbestätigung zu drucken:', 'de_DE'),
     ('Mage_Checkout::Click <a href=""%s"" onclick=""this.target=''_blank''"">here to print</a> a copy of your order confirmation.', 0, '<a href=""%s"" onclick=""this.target=''_blank''"">Bestellbestätigung drucken</a>', 'de_DE'),
