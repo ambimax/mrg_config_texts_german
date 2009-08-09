@@ -4,6 +4,10 @@
 		<Symmetrics_ConfigGermanTexts>
 			<active>true</active>
 			<codePool>local</codePool>
+			<depends>
+            	<Mage_Cms />
+            	<Symmetrics_ConfigGerman />
+			</depends>
 		</Symmetrics_ConfigGermanTexts>     
 	</modules>
 </config>
