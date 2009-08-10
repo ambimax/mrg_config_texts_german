@@ -46,7 +46,7 @@ class Symmetrics_ConfigGermanTexts_Model_Setup extends Mage_Eav_Model_Entity_Set
 
     public function getTemplateContent($filename)
     {
-        return file_get_contents($filename);
+        return file_get_contents(Mage::getBaseDir() . '/' . $filename);
     }
 
     public function getFooterLinks()
