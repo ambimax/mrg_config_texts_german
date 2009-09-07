@@ -347,7 +347,7 @@
                         <template_code>Newsletter Anmeldung Erfolg (Template)</template_code>
                         <template_type>2</template_type>
                         <template_subject>Newsletter Anmeldung erfolgreich</template_subject>
-                        <config_data_path>newsletter/subscription/un_email_template</config_data_path>
+                        <config_data_path>newsletter/subscription/success_email_template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/newsletter_subscr_success.html</text>
                     </newsletter_subscr_success>
 
@@ -356,7 +356,7 @@
                         <template_code>Newsletter Abmeldung Erfolg (Template)</template_code>
                         <template_type>2</template_type>
                         <template_subject>Newsletter Abmeldung erfolgreich</template_subject>
-                        <config_data_path>newsletter/subscription/success_email_template</config_data_path>
+                        <config_data_path>newsletter/subscription/un_email_template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/newsletter_unsub_success.html</text>
                     </newsletter_unsub_success>
 
