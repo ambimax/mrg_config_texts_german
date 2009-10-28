@@ -45,10 +45,10 @@ NOTES = '''
 # =============================================================================
 # relations
 # =============================================================================
-REQUIRES = {
-    'magento': '*',
-    'mc_module_locale_mage_community_de_de': '*',
-}
+REQUIRES = [
+    {'magento': '*', 'magento_enterprise': '*'}, 
+    {'mc_module_locale_mage_community_de_de': '*'}, 
+]
 
 EXCLUDES = {
 }
@@ -95,4 +95,5 @@ PEAR_KEY = ''
 
 COMPATIBLE_WITH = {
     'magento': ['1.3.2.1', '1.3.2.3', '1.3.2.4'],
+	'magento_enterprise': ['1.3.2.4']
 }
