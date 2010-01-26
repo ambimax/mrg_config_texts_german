@@ -3,7 +3,7 @@
 	<modules>
 		<Symmetrics_ConfigGermanTexts>
 			<active>true</active>
-			<codePool>local</codePool>
+			<codePool>community</codePool>
 			<depends>
             	<Mage_Cms />
             	<Symmetrics_ConfigGerman />
