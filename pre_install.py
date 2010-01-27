@@ -55,7 +55,7 @@ def main(config_module, info_py):
         else:
             data[key] = unicode(val, 'utf-8')
     
-    filename = os.path.join(package_dir, 'build', 'app', 'code', 'local',
+    filename = os.path.join(package_dir, 'build', 'app', 'code', 'community',
                             'Symmetrics', 'ConfigGermanTexts', 'etc',
                             'config.xml')
     tree = parse(filename)
