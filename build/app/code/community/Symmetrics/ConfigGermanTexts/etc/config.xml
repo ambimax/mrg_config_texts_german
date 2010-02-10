@@ -422,6 +422,15 @@
                         <config_data_path>catalog/productalert_cron/error_email_template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/product_alert_cron_error.html</text>
                     </product_alert_cron_error>
+                    
+                    <enterprise_invitation>
+                        <execute>1</execute>
+                        <template_code>Kundeneinladung (Template) [Invitation]</template_code>
+                        <template_type>2</template_type>
+                        <template_subject>Einladung</template_subject>
+                        <config_data_path>enterprise_invitation/email/template</config_data_path>
+                        <text>app/locale/de_DE/template/config_german_texts/email/enterprise_invitation.html</text>
+                    </enterprise_invitation>
                 </default>
             </emails>
 
