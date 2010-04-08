@@ -54,8 +54,7 @@ REQUIRES = [
     {'mc_module_locale_mage_community_de_de': '*'}, 
 ]
 
-EXCLUDES = {
-}
+EXCLUDES = {}
 
 DEPENDS_ON_FILES = (
     'app/locale/en_US/template/email/account_new.html',

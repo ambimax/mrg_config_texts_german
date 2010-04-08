@@ -38,8 +38,7 @@ foreach ($this->getConfigBlocks() as $name => $data) {
     if ($data['execute'] == 1) {
         if ($name == 'symmetrics_footerlinks') {
             $this->updateFooterLinksBlock($data);
-        }
-        else {
+        } else {
             $this->createCmsBlock($data);
         }
     }

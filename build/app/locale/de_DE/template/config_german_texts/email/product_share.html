@@ -20,6 +20,8 @@ Use vars: {{var var_name}}
 @-->
 
 <p>Willkommen, {{htmlescape var=$name}}</p>
-<p>Bitte schau dir <a href="{{var product_url}}">{{var product_name}}</a></p>
+<p>Bitte schau dir <a href="{{var product_url}}">{{var product_name}}</a> an.</p>
 <p>Hier ist die Nachricht:</p> 
 <p>{{var message}}</p>
+
+{{block type="imprint/content" template="symmetrics/imprint/email/footer.phtml"}}
