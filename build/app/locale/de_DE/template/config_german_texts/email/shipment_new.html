@@ -27,7 +27,7 @@
 	        <!-- [ header starts here] -->
 	        <table cellspacing="0" cellpadding="0" border="0" width="650">
 	            <tr>
-	                <td valign="top"><a href="{{store url=""}}"><img src="{{skin url="images/logo_email.gif" _area=''frontend''}}" alt="{{block type="symmetrics_impressum/impressum" value="shopname"}}"  style="margin-bottom:10px;" border="0"/></a></td>
+	                <td valign="top"><a href="{{store url=""}}"><img src="{{skin url="images/logo_email.gif" _area=''frontend''}}" alt="{{block type="imprint/field" value="shop_name"}}"  style="margin-bottom:10px;" border="0"/></a></td>
 	            </tr>
 	        </table>
 	        <!-- [ middle starts here] -->
@@ -36,10 +36,10 @@
 	                <td valign="top">
 	                    <p>
 	                        <strong>Hallo {{htmlescape var=$order.getCustomerName()}}</strong>,<br/>
-	                        Vielen Dank für Ihre Bestellung bei {{block type="symmetrics_impressum/impressum" value="shopname"}}.
+	                        Vielen Dank für Ihre Bestellung bei {{block type="imprint/field" value="shop_name"}}.
 	                        Sobald Ihre Sendung verschickt wurde, erhalten Sie per E-Mail weitere Informationen zur Sendungsverfolgung.
 	                        Sie können den aktuellen Status Ihrer Bestellung jederzeit <a href="{{store url="customer/account/"}}" style="color:#1E7EC8;">in Ihrem Kundenbereich</a> einsehen.
-	                        Sollten Sie Fragen zu Ihrem Kundenkonto oder Ihrer Bestellung haben, senden Sie uns eine E-Mail an <a href="mailto:{{block type="symmetrics_impressum/impressum" value="email"}}" style="color:#1E7EC8;">{{block type="symmetrics_impressum/impressum" value="email"}}</a>.
+	                        Sollten Sie Fragen zu Ihrem Kundenkonto oder Ihrer Bestellung haben, senden Sie uns eine E-Mail an <a href="mailto:{{block type="imprint/content" template="symmetrics/imprint/email/footer.phtml"}}" style="color:#1E7EC8;">{{block type="imprint/content" template="symmetrics/imprint/email/footer.phtml"}}</a>.
 	                    </p>
 	                    <p>
 	                        Nachfolgend finden Sie Ihren Lieferschein, vielen Dank!
