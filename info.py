@@ -6,7 +6,8 @@
 # =============================================================================
 NAME = 'symmetrics_config_texts_german'
 
-TAGS = ('magento', 'module', 'symmetrics', 'config', 'german', 'germanconfig', 'texts', 'locpack')
+TAGS = ('magento', 'module', 'symmetrics', 'config', 'german', 'germanconfig',
+        'texts', 'locpack', 'php')
 
 LICENSE = 'AFL 3.0'
 
@@ -19,15 +20,18 @@ INSTALL_PATH = ''
 # responsibilities
 # =============================================================================
 TEAM_LEADER = {
-    'Sergej Braznikov': 'sb@symmetrics.de'
+    'Sergej Braznikov': 'sb@symmetrics.de',
+    'Torsten Walluhn': 'tw@symmetrics.de'
 }
 
 MAINTAINER = {
-    'Eugen Gitin': 'eg@symmetrics.de'
+    'Eugen Gitin': 'eg@symmetrics.de',
+    'Eric Reiche': 'er@symmetrics.de'
 }
 
 AUTHORS = {
-    'Eugen Gitin': 'eg@symmetrics.de'
+    'Eugen Gitin': 'eg@symmetrics.de',
+    'Eric Reiche': 'er@symmetrics.de'
 }
 
 # =============================================================================
