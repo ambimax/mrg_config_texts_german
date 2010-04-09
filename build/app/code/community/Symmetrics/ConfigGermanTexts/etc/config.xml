@@ -112,14 +112,14 @@
                     <symmetrics_terms>
                         <execute>1</execute>
                         <title>AGB</title>
-                        <identifier>agb</identifier>
+                        <identifier>symmetrics_business_terms</identifier>
                         <text>app/locale/de_DE/template/config_german_texts/agb.html</text>
                     </symmetrics_terms>
 
                     <symmetrics_cancellation>
                         <execute>1</execute>
                         <title>Widerrufsbelehrung</title>
-                        <identifier>widerruf</identifier>
+                        <identifier>symmetrics_revocation</identifier>
                         <text>app/locale/de_DE/template/config_german_texts/widerruf.html</text>
                     </symmetrics_cancellation>
 
