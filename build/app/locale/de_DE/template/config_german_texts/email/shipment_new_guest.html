@@ -37,7 +37,7 @@
 	                        <strong>Hallo {{htmlescape var=$billing.getName()}}</strong>,<br/>
 	                        Vielen Dank für Ihre Bestellung bei {{block type="imprint/field" value="shop_name"}}.
 	                        Sobald Ihre Sendung verschickt wurde, erhalten Sie per E-Mail weitere Informationen zur Sendungsverfolgung.
-	                        Sollten Sie Fragen zu Ihrer Bestellung haben, senden Sie uns eine E-Mail an <a href="mailto:{{block type="imprint/content" template="symmetrics/imprint/email/footer.phtml"}}" style="color:#1E7EC8;">{{block type="imprint/content" template="symmetrics/imprint/email/footer.phtml"}}</a>
+	                        Sollten Sie Fragen zu Ihrer Bestellung haben, senden Sie uns eine E-Mail an <a href="mailto:{{block type="imprint/field" value="email"}}" style="color:#1E7EC8;">{{block type="imprint/field" value="email"}}</a>
 	                    </p>
 	                    <p>
 	                        Nachfolgend finden Sie Ihren Lieferschein, vielen Dank!
