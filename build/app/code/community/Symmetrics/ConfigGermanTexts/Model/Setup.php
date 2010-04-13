@@ -176,8 +176,8 @@ class Symmetrics_ConfigGermanTexts_Model_Setup extends Mage_Eav_Model_Entity_Set
         $block = $model->load($blockData['identifier']);
         $blockData['content'] = $this->getTemplateContent($blockData['text']);
         if (!$block->getId()) {
-            $blockData['stores'] => array('0');
-            $blockData['is_active'] => '1';
+            $blockData['stores'] = array('0');
+            $blockData['is_active'] = '1';
 
             $model->setData($blockData)->save();
         } else {
