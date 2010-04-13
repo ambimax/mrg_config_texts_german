@@ -148,7 +148,7 @@ class Symmetrics_ConfigGermanTexts_Model_Setup extends Mage_Eav_Model_Entity_Set
             $data['stores'] = array('0');
             $data['is_active'] = '1';
         } else {
-            return;
+            return null;
         }
 
         $model = Mage::getModel('cms/page');
@@ -172,12 +172,9 @@ class Symmetrics_ConfigGermanTexts_Model_Setup extends Mage_Eav_Model_Entity_Set
      */
     public function createCmsBlock($blockData, $override=true)
     {
-        $blockData['stores'] = array('0');
-        $blockData['is_active'] = '1';
-
         $model = Mage::getModel('cms/block');
         $block = $model->load($blockData['identifier']);
-
+        $blockData['content'] = $this->getTemplateContent($blockData['text']);
         if (!$block->getId()) {
             if ($override) {
                 $model->setData($blockData)->save();
@@ -201,10 +198,11 @@ class Symmetrics_ConfigGermanTexts_Model_Setup extends Mage_Eav_Model_Entity_Set
             $footerLinksCounter++;
             $title = $data['title'];
             $target = $data['target'];
+            $class = '';
             if ($footerLinksCounter == count($this->getFooterLinks())) {
                 $class = 'last';
             }
-            $footerLinksHtml .= '<li class="'.$class.'"><a href="{{store url="'.$target.'"}}">' . $title . '</a></li>';
+            $footerLinksHtml .= '<li class="'.$class.'"><a href="{{store url="' . $target . '"}}">' . $title . '</a></li>';
         }
 
         $footerLinksHtml .= '</ul>';
@@ -262,5 +260,214 @@ class Symmetrics_ConfigGermanTexts_Model_Setup extends Mage_Eav_Model_Entity_Set
             ->save();
 
         $this->setConfigData($emailData['config_data_path'], $template->getId());
+    }
+    
+    /**
+     * Create transactional email template
+     * 
+     * @param string $newPath new config path
+     * @param string $oldPath old config path
+     * 
+     * @return void
+     */
+    public function moveConfigData($newPath, $oldPath)
+    {
+        if($value = Mage::getStoreConfig($oldPath)) {
+            Mage::setStoreConfig($newPath, $value);
+        }
+    }
+    
+    /**
+     * Update CMS pages if upgrading from previous versions
+     *
+     * @return void
+     */
+    public function updatePages()
+    {
+        /**
+         * @var $pageCollection Mage_Cms_Model_Mysql4_Page_Collection
+         */
+        $pageCollection = Mage::getModel('cms/page')->getCollection();
+        foreach ($pageCollection as $page) {
+            $content = $page->getContent();
+            $content = $this->_replaceContent($content);
+            $page->setContent($content)
+                ->save();
+        }
+    }
+    
+    /**
+     * Define which strings to replace with what
+     * 
+     * @return array
+     */
+    protected function _getReplaceStrings()
+    {
+        $strings['search'] = array(
+            '{{block type="symmetrics_impressum/impressum" value="shopname"}}',
+            '{{block type="symmetrics_impressum/impressum" value="company1"}}',
+            '{{block type="symmetrics_impressum/impressum" value="company2"}}',
+            '{{block type="symmetrics_impressum/impressum" value="street"}}',
+            '{{block type="symmetrics_impressum/impressum" value="zip"}}',
+            '{{block type="symmetrics_impressum/impressum" value="city"}}',
+            '{{block type="symmetrics_impressum/impressum" value="telephone"}}',
+            '{{block type="symmetrics_impressum/impressum" value="fax"}}',
+            '{{block type="symmetrics_impressum/impressum" value="email"}}',
+            '{{block type="symmetrics_impressum/impressum" value="web"}}',
+            '{{block type="symmetrics_impressum/impressum" value="taxnumber"}}',
+            '{{block type="symmetrics_impressum/impressum" value="vatid"}}',
+            '{{block type="symmetrics_impressum/impressum" value="court"}}',
+            '{{block type="symmetrics_impressum/impressum" value="taxoffice"}}',
+            '{{block type="symmetrics_impressum/impressum" value="ceo"}}',
+            '{{block type="symmetrics_impressum/impressum" value="hrb"}}',
+            '{{block type="symmetrics_impressum/impressum" value="legal"}}',
+            '{{block type="symmetrics_impressum/impressum" value="bankaccountowner"}}',
+            '{{block type="symmetrics_impressum/impressum" value="bankaccount"}}',
+            '{{block type="symmetrics_impressum/impressum" value="bankcodenumber"}}',
+            '{{block type="symmetrics_impressum/impressum" value="bankname"}}',
+            '{{block type="symmetrics_impressum/impressum" value="swift"}}',
+            '{{block type="symmetrics_impressum/impressum" value="iban"}}',
+            '{{block type="symmetrics_impressum/impressum" value="bank"}}',
+            
+            '{{block type="symmetrics_impressum/impressum" value="emailfooter"}}',
+            '{{block type="symmetrics_impressum/impressum" value="address"}}',
+            '{{block type="symmetrics_impressum/impressum" value="communication"}}',
+            '{{block type="symmetrics_impressum/impressum" value="legal"}}',
+            '{{block type="symmetrics_impressum/impressum" value="tax"}}',
+            '{{block type="symmetrics_impressum/impressum" value="bank"}}',
+            
+            '{{block type="symmetrics_impressum/impressum" value="web_href"}}',
+            '{{block type="symmetrics_impressum/impressum" value="email_href"}}',
+            
+            '{{block type="symmetrics_impressum/impressum" value="imprint"}}',
+            
+            '{{block type="symmetrics_impressum/impressum" value="imprintplain"}}'
+        );
+        
+        $strings['replace'] = array(
+            '{{block type="imprint/field" value="shop_name"}}',
+            '{{block type="imprint/field" value="company_first"}}',
+            '{{block type="imprint/field" value="company_second"}}',
+            '{{block type="imprint/field" value="street"}}',
+            '{{block type="imprint/field" value="zip"}}',
+            '{{block type="imprint/field" value="city"}}',
+            '{{block type="imprint/field" value="telephone"}}',
+            '{{block type="imprint/field" value="fax"}}',
+            '{{block type="imprint/field" value="email"}}',
+            '{{block type="imprint/field" value="web"}}',
+            '{{block type="imprint/field" value="tax_number"}}',
+            '{{block type="imprint/field" value="vat_id"}}',
+            '{{block type="imprint/field" value="court"}}',
+            '{{block type="imprint/field" value="financial_office"}}',
+            '{{block type="imprint/field" value="ceo"}}',
+            '{{block type="imprint/field" value="register_number"}}',
+            '{{block type="imprint/field" value="business_rules"}}',
+            '{{block type="imprint/field" value="bank_account_owner"}}',
+            '{{block type="imprint/field" value="bank_account"}}',
+            '{{block type="imprint/field" value="bank_code_number"}}',
+            '{{block type="imprint/field" value="bank_name"}}',
+            '{{block type="imprint/field" value="swift"}}',
+            '{{block type="imprint/field" value="iban"}}',
+            
+            '{{block type="imprint/content" template="symmetrics/imprint/email/footer.phtml"}}',
+            '{{block type="imprint/content" template="symmetrics/imprint/address.phtml"}}',
+            '{{block type="imprint/content" template="symmetrics/imprint/communication.phtml"}}',
+            '{{block type="imprint/content" template="symmetrics/imprint/legal.phtml"}}',
+            '{{block type="imprint/content" template="symmetrics/imprint/tax.phtml"}}',
+            '{{block type="imprint/content" template="symmetrics/imprint/bank.phtml"}}',
+            
+            '{{block type="imprint/field" value="web"}}',
+            '{{block type="imprint/field" value="email"}}',
+            
+            '{{block type="imprint/content" template="symmetrics/imprint/email/footer.phtml"}}
+            {{block type="imprint/content" template="symmetrics/imprint/tax.phtml"}}
+            {{block type="imprint/content" template="symmetrics/imprint/legal.phtml"}}
+            {{block type="imprint/content" template="symmetrics/imprint/bank.phtml"}}',
+            
+            '{{block type="imprint/content" template="symmetrics/imprint/email/footer.phtml"}}
+            {{block type="imprint/content" template="symmetrics/imprint/tax.phtml"}}
+            {{block type="imprint/content" template="symmetrics/imprint/legal.phtml"}}
+            {{block type="imprint/content" template="symmetrics/imprint/bank.phtml"}}',
+        );
+        
+        return $strings;
+    }
+    
+    /**
+     * Replace some old values for upgrading
+     * 
+     * @param string $content   content ro replace
+     * @param string $storeurls replace store url notation
+     *                          only in symmetrics blocks
+     * 
+     * @return string
+     */
+    protected function _replaceContent($content, $storeUrls=true)
+    {
+        $content = str_replace(
+            '{{block type="cms/block" block_id="sym_agb"}}',
+            '{{block type="cms/block" block_id="symmetrics_business_terms"}}',
+            $content
+        );
+        $content = str_replace(
+            '{{block type="cms/block" block_id="sym_widerruf"}}',
+            '{{block type="cms/block" block_id="symmetrics_revocation"}}',
+            $content
+        );
+        
+        $content = preg_replace('!\{\{store url=""\}\}([^\"\>\}]+)!', '{{store url="$1"}}', $content);
+        
+        $replaceStrings = $this->_getReplaceStrings();
+        $content = str_replace($replaceStrings['search'], $replaceStrings['replace'], $content);
+
+        return $content;
+    }
+    
+    /**
+     * Update CMS blocks if upgrading from previous versions
+     *
+     * @return void
+     */
+    public function updateBlocks()
+    {
+        /**
+         * @var $blockCollection Mage_Cms_Model_Mysql4_Block_Collection
+         */
+        $blockCollection = Mage::getModel('cms/block')->getCollection();
+        foreach ($blockCollection as $block) {
+            $storeurls = false;
+            if ($block->getIdentifier() == 'sym_agb') {
+                $block->setIdentifier('symmetrics_business_terms');
+                $storeurls = true;
+            }
+            if ($block->getIdentifier() == 'sym_widerruf') {
+                $block->setIdentifier('symmetrics_revocation');
+                $storeurls = true;
+            }
+            $content = $block->getContent();
+            $content = $this->_replaceContent($content, $storeurls);
+            $block->setContent($content)
+                ->save();
+        }
+    }
+    
+    /**
+     * Update agreements if upgrading from previous versions
+     *
+     * @return void
+     */
+    public function updateAgreements()
+    {
+        /**
+         * @var $agreementCollection Mage_Checkout_Model_Mysql4_Agreement_Collection
+         */
+        $agreementCollection = Mage::getModel('checkout/agreement')
+            ->getCollection();
+        foreach ($agreementCollection as $agreement) {
+            $content = $agreement->getContent();
+            $content = $this->_replaceContent($content);
+            $agreement->setContent($content)
+                ->save();
+        }
     }
 }
