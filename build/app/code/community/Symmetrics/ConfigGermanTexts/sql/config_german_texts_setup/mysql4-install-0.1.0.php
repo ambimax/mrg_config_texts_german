@@ -51,39 +51,9 @@ foreach ($this->getConfigEmails() as $name => $data) {
     }
 }
 
-$prefixNew = 'general/imprint/';
-// set imprint data
-$imprintFields = $this->getConfigImprint();
-$installer->setConfigData($prefixNew . 'shop_name', $imprintFields['shop_name']);
-$installer->setConfigData($prefixNew . 'company_first', $imprintFields['company_name']);
-$installer->setConfigData($prefixNew . 'company_second', $imprintFields['company_sub']);
-$installer->setConfigData($prefixNew . 'street', $imprintFields['street']);
-$installer->setConfigData($prefixNew . 'zip', $imprintFields['zip']);
-$installer->setConfigData($prefixNew . 'city', $imprintFields['city']);
-$installer->setConfigData($prefixNew . 'telephone', $imprintFields['phone']);
-$installer->setConfigData($prefixNew . 'fax', $imprintFields['fax']);
-$installer->setConfigData($prefixNew . 'email', $imprintFields['email']);
-$installer->setConfigData($prefixNew . 'web', $imprintFields['homepage']);
-$installer->setConfigData($prefixNew . 'tax_number', $imprintFields['tax_number']);
-$installer->setConfigData($prefixNew . 'vat_id', $imprintFields['sales_tax_id_number']);
-$installer->setConfigData($prefixNew . 'court', $imprintFields['commercial_register']);
-$installer->setConfigData($prefixNew . 'financial_office', $imprintFields['tax_office']);
-$installer->setConfigData($prefixNew . 'ceo', $imprintFields['holder_names']);
-$installer->setConfigData($prefixNew . 'register_number', $imprintFields['hrb']);
-$installer->setConfigData($prefixNew . 'business_rules', $this->getTemplateContent($imprintFields['legal_info']));
-$installer->setConfigData($prefixNew . 'bank_account', $imprintFields['bank_account']);
-$installer->setConfigData($prefixNew . 'bank_code_number', $imprintFields['bank_id_code']);
-$installer->setConfigData($prefixNew . 'bank_account_owner', $imprintFields['bank_account_owner']);
-$installer->setConfigData($prefixNew . 'bank_name', $imprintFields['bank_name']);
-$installer->setConfigData($prefixNew . 'swift', $imprintFields['bank_swift']);
-$installer->setConfigData($prefixNew . 'iban', $imprintFields['bank_iban']);
-
 // set some misc data
 $installer->setConfigData('sales_pdf/invoice/put_order_id', '1');
-$installer->setConfigData('sales_pdf/invoice/maturity', $imprintFields['invoice_maturity']);
-$installer->setConfigData('sales_pdf/invoice/note', $imprintFields['invoice_note']);
 $installer->setConfigData('sales_pdf/shipment/put_order_id', '1');
 $installer->setConfigData('sales_pdf/creditmemo/put_order_id', '1');
 $installer->setConfigData('sales/identity/logo', 'default/logo.jpg');
-$installer->setConfigData('sales_pdf/invoice/customeridprefix', $imprintFields['invoice_customer_prefix']);
 $installer->setConfigData('tax/display/shippingurl', 'lieferung');

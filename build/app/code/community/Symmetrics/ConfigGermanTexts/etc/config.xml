@@ -452,35 +452,6 @@
                 </default>
             </emails>
 
-            <imprint>
-                <shop_name>[Beispielshop]</shop_name>
-                <company_name>[Musterfirma GmbH]</company_name>
-                <company_sub>[Inh. Max Mustermann]</company_sub>
-                <zip>[30123]</zip>
-                <street>[Musterstr. 1]</street>
-                <city>[Hannover]</city>
-                <phone>[+49 511 123456]</phone>
-                <fax>[+49 511 654321]</fax>
-                <email>[info@musterdomain.de]</email>
-                <homepage>[www.musterdomain.de]</homepage>
-                <tax_number>[12/123/123456]</tax_number>
-                <sales_tax_id_number>[DE123456789]</sales_tax_id_number>
-                <commercial_register>[Amtsgericht Hannover]</commercial_register>
-                <tax_office>[Finanzamt]</tax_office>
-                <holder_names>[Max Mustermann]</holder_names>
-                <hrb>[123456]</hrb>
-                <bank_account>[123456789]</bank_account>
-                <bank_id_code>[100200300]</bank_id_code>
-                <bank_name>[Musterbank]</bank_name>
-                <bank_swift>[1234567890]</bank_swift>
-                <bank_iban>[0987654321]</bank_iban>
-                <bank_account_owner>[Max Muster]</bank_account_owner>
-                <legal_info>app/locale/de_DE/template/config_german_texts/rechtlicheinfos.html</legal_info>
-                <invoice_maturity>[14]</invoice_maturity>
-                <invoice_note>[Vielen Dank für Ihren Auftrag!]</invoice_note>
-                <invoice_customer_prefix>[K]</invoice_customer_prefix>
-            </imprint>
-            
             <footer_links>
                 <default>
 	                <agreement>
@@ -514,5 +485,40 @@
                 </default>
             </footer_links>
         </config_german_texts>
+        
+        <general>
+            <imprint>
+                <shop_name>[Beispielshop]</shop_name>
+                <company_first>[Musterfirma GmbH]</company_first>
+                <company_second>[Inh. Max Mustermann]</company_second>
+                <zip>[30123]</zip>
+                <street>[Musterstr. 1]</street>
+                <city>[Hannover]</city>
+                <telephone>[+49 511 123456]</telephone>
+                <fax>[+49 511 654321]</fax>
+                <email>[info@musterdomain.de]</email>
+                <web>[www.musterdomain.de]</web>
+                <tax_number>[12/123/123456]</tax_number>
+                <vat_id>[DE123456789]</vat_id>
+                <court>[Amtsgericht Hannover]</court>
+                <financial_office>[Finanzamt]</financial_office>
+                <ceo>[Max Mustermann]</ceo>
+                <register_number>[123456]</register_number>
+                <bank_account>[123456789]</bank_account>
+                <bank_code_number>[100200300]</bank_code_number>
+                <bank_name>[Musterbank]</bank_name>
+                <swift>[1234567890]</swift>
+                <iban>[0987654321]</iban>
+                <bank_account_owner>[Max Muster]</bank_account_owner>
+                <business_rules>[Berufsspezifische Regelungen für Apotheken etc.]</business_rules>
+            </imprint>
+        </general>
+        <sales_pdf>
+            <invoice>
+                <maturity>14</maturity>
+                <note>Vielen Dank für Ihren Auftrag!</note>
+                <customeridprefix>K</customeridprefix>
+            </invoice>
+        </sales_pdf>
     </default>
 </config>
