@@ -27,7 +27,7 @@
 <config>
     <modules>
         <Symmetrics_ConfigGermanTexts>
-            <version>0.3.0</version>
+            <version>0.3.1</version>
         </Symmetrics_ConfigGermanTexts>
     </modules>
     <global>
@@ -117,13 +117,13 @@
                         <text>app/locale/de_DE/template/config_german_texts/agb.html</text>
                     </symmetrics_terms>
 
-                    <symmetrics_cancellation>
+                    <symmetrics_revocation>
                         <execute>1</execute>
                         <title>Widerrufsbelehrung</title>
                         <identifier>symmetrics_revocation</identifier>
                         <old_identifier>sym_widerruf</old_identifier>
                         <text>app/locale/de_DE/template/config_german_texts/widerruf.html</text>
-                    </symmetrics_cancellation>
+                    </symmetrics_revocation>
 
                     <symmetrics_footerlinks>
                         <execute>1</execute>
