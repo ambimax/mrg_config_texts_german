@@ -141,24 +141,20 @@ class Symmetrics_ConfigGermanTexts_Model_Setup extends Mage_Eav_Model_Entity_Set
      */
     public function createCmsPage($pageData)
     {
-        if (is_array($pageData)) {
-            foreach ($pageData as $key => $value) {
-                $data[$key] = $value;
-            }
-            $data['stores'] = array('0');
-            $data['is_active'] = '1';
-        } else {
+        if (!is_array($pageData)) {
             return null;
         }
+        $pageData['stores'] = array('0');
+        $pageData['is_active'] = '1';
 
         $model = Mage::getModel('cms/page');
         $page = $model->load($pageData['identifier']);
 
         if (!$page->getId()) {
-            $model->setData($data)->save();
+            $model->setData($pageData)->save();
         } else {
-            $data['page_id'] = $page->getId();
-            $model->setData($data)->save();
+            $pageData['page_id'] = $page->getId();
+            $model->setData($pageData)->setId($pageData['page_id'])->save();
         }
     }
     
