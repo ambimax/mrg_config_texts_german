@@ -77,8 +77,8 @@ Symmetrics_InvoicePdf und Symmetrics_InvoicePdf.
 **** Bestellvorgang
 
 *** B: Erstellt zentrale Blöcke für AGBs und Widerrufsrecht
-**** symmetrics_business_terms -> AGB
-**** symmetrics_revocation -> Widerruf
+**** mrg_business_terms -> AGB
+**** mrg_revocation -> Widerruf
 
 *** C: Erstellt untere Link-Leiste (inkl. leere AGB- und 
         Widerrufsrecht-Links)
