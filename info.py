@@ -52,6 +52,7 @@ NOTES = '''
 REQUIRES = [
     {'magento': '*', 'magento_enterprise': '*'}, 
     {'mc_module_locale_mage_community_de_de': '*'}, 
+    {'symmetrics_config_german': '*'}
 ]
 
 EXCLUDES = {}
