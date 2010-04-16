@@ -53,6 +53,107 @@
             </config_german_texts_read>
         </resources>
     </global>
+    
+    <frontend>
+        <translate>
+            <modules>
+                <Mage_Sales>
+                    <files>
+                        <configgermantexts>Symmetrics_ConfigGermanTexts.csv</configgermantexts>
+                    </files>
+                </Mage_Sales>
+                <Mage_Checkout>
+                    <files>
+                        <configgermantexts>Symmetrics_ConfigGermanTexts.csv</configgermantexts>
+                    </files>
+                </Mage_Checkout>
+                <Mage_Newsletter>
+                    <files>
+                        <configgermantexts>Symmetrics_ConfigGermanTexts.csv</configgermantexts>
+                    </files>
+                </Mage_Newsletter>
+                <Mage_Customer>
+                    <files>
+                        <configgermantexts>Symmetrics_ConfigGermanTexts.csv</configgermantexts>
+                    </files>
+                </Mage_Customer>
+                <Mage_Catalog>
+                    <files>
+                        <configgermantexts>Symmetrics_ConfigGermanTexts.csv</configgermantexts>
+                    </files>
+                </Mage_Catalog>
+                <Mage_Tax>
+                    <files>
+                        <configgermantexts>Symmetrics_ConfigGermanTexts.csv</configgermantexts>
+                    </files>
+                </Mage_Tax>
+            </modules>
+        </translate>
+    </frontend>
+    <admin>
+        <translate>
+            <modules>
+                <Mage_Sales>
+                    <files>
+                        <configgermantexts>Symmetrics_ConfigGermanTexts.csv</configgermantexts>
+                    </files>
+                </Mage_Sales>
+                <Mage_Checkout>
+                    <files>
+                        <configgermantexts>Symmetrics_ConfigGermanTexts.csv</configgermantexts>
+                    </files>
+                </Mage_Checkout>
+                <Mage_Newsletter>
+                    <files>
+                        <configgermantexts>Symmetrics_ConfigGermanTexts.csv</configgermantexts>
+                    </files>
+                </Mage_Newsletter>
+                <Mage_Customer>
+                    <files>
+                        <configgermantexts>Symmetrics_ConfigGermanTexts.csv</configgermantexts>
+                    </files>
+                </Mage_Customer>
+                <Mage_Catalog>
+                    <files>
+                        <configgermantexts>Symmetrics_ConfigGermanTexts.csv</configgermantexts>
+                    </files>
+                </Mage_Catalog>
+            </modules>
+        </translate>
+    </admin>
+    
+    <adminhtml>
+        <translate>
+            <modules>
+                <Mage_Sales>
+                    <files>
+                        <configgermantexts>Symmetrics_ConfigGermanTexts.csv</configgermantexts>
+                    </files>
+                </Mage_Sales>
+                <Mage_Checkout>
+                    <files>
+                        <configgermantexts>Symmetrics_ConfigGermanTexts.csv</configgermantexts>
+                    </files>
+                </Mage_Checkout>
+                <Mage_Newsletter>
+                    <files>
+                        <configgermantexts>Symmetrics_ConfigGermanTexts.csv</configgermantexts>
+                    </files>
+                </Mage_Newsletter>
+                <Mage_Customer>
+                    <files>
+                        <configgermantexts>Symmetrics_ConfigGermanTexts.csv</configgermantexts>
+                    </files>
+                </Mage_Customer>
+                <Mage_Catalog>
+                    <files>
+                        <configgermantexts>Symmetrics_ConfigGermanTexts.csv</configgermantexts>
+                    </files>
+                </Mage_Catalog>
+            </modules>
+        </translate>
+    </adminhtml>
+    
     <default>
         <config_german_texts>
             <pages>
@@ -113,7 +214,6 @@
                         <execute>1</execute>
                         <title>AGB</title>
                         <identifier>mrg_business_terms</identifier>
-                        <old_identifier>sym_agb</old_identifier>
                         <text>app/locale/de_DE/template/config_german_texts/agb.html</text>
                     </mrg_business_terms>
 
@@ -121,7 +221,6 @@
                         <execute>1</execute>
                         <title>Widerrufsbelehrung</title>
                         <identifier>mrg_revocation</identifier>
-                        <old_identifier>sym_widerruf</old_identifier>
                         <text>app/locale/de_DE/template/config_german_texts/widerruf.html</text>
                     </mrg_revocation>
 
