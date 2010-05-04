@@ -71,12 +71,12 @@ Symmetrics_InvoicePdf und Symmetrics_InvoicePdf.
 
 ** FUNCTIONALITY
 *** A: Erstellt Seiten für:
-**** 404 Seite nicht gefunden
-**** Impressum
-**** Zahlungsarten
-**** Datenschutz
-**** Lieferung
-**** Bestellvorgang
+        404 Seite nicht gefunden
+        Impressum
+        Zahlungsarten
+        Datenschutz
+        Lieferung
+        Bestellvorgang
 
 *** B: Erstellt zentrale Blöcke für AGBs und Widerrufsrecht
         mrg_business_terms -> AGB
@@ -112,3 +112,4 @@ Keine Probleme bekannt.
 *** D: Prüfen Sie, ob die Emails entsprechend angelegt wurden
 *** E: Ändern Sie vor der Installation die Dateien und prüfen Sie,
         ob die texte übernommen werden.
+*** F: Überprüfen Sie, ob die Strings alle korrekt übersetzt werden.
