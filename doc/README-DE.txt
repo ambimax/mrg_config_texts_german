@@ -69,8 +69,6 @@ Symmetrics_InvoicePdf und Symmetrics_InvoicePdf.
 *** A: Erstellt Seiten für:
 **** 404 Seite nicht gefunden
 **** Impressum
-**** Widerruf
-**** AGB
 **** Zahlungsarten
 **** Datenschutz
 **** Lieferung
@@ -89,6 +87,10 @@ Symmetrics_InvoicePdf und Symmetrics_InvoicePdf.
 
 *** E: Alle Texte sind vor der Installation zentral über 
         HTML-Dateien veränderbar (app/locale/de_DE)
+        
+*** F: Übersetzt einige fehlende bzw. nicht-rechtskonform
+        übersetzte strings. Sichtbar sind diese unter
+        app/locale/de_DE/Symmetrics_ConfigGermanTexts.csv
 
 
 ** TECHNINCAL

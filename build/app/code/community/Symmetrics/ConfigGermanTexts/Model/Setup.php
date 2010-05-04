@@ -149,6 +149,10 @@ class Symmetrics_ConfigGermanTexts_Model_Setup extends Mage_Eav_Model_Entity_Set
 
         $model = Mage::getModel('cms/page');
         $page = $model->load($pageData['identifier']);
+        
+        if (array_key_exists('text', $pageData)) {
+            $pageData['content'] = $this->getTemplateContent($pageData['text']);
+        }
 
         if (!$page->getId()) {
             $model->setData($pageData)->save();
