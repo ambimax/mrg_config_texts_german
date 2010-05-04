@@ -93,7 +93,7 @@ Symmetrics_InvoicePdf und Symmetrics_InvoicePdf.
         app/locale/de_DE/Symmetrics_ConfigGermanTexts.csv
 
 
-** TECHNINCAL
+** TECHNICAL
 Die Gesamte Funktionalität des Moduls findet in einem Migrationsskript
 gekoppelt mit dem Setup-Model statt.
 
