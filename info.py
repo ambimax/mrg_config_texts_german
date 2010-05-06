@@ -56,9 +56,9 @@ REQUIRES = [
 
 EXCLUDES = {}
 
-prepend_path =  lambda template: 'app/locale/en_US/template/email/' + template
+prepend_path = lambda template: 'app/locale/en_US/template/email/' + template
 DEPENDS_ON_FILES = [
-    prepend_path(template)    
+    prepend_path(template)
     for template in (
     'account_new.html',
     'account_new_confirmation.html',
