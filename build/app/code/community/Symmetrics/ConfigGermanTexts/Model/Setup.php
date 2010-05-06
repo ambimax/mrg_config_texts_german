@@ -25,7 +25,7 @@
 
 /**
  * Setup model
- * 
+ *
  * @category  Symmetrics
  * @package   Symmetrics_ConfigGermanTexts
  * @author    symmetrics gmbh <info@symmetrics.de>
@@ -40,7 +40,7 @@ class Symmetrics_ConfigGermanTexts_Model_Setup extends Mage_Eav_Model_Entity_Set
 {
     /**
      * Get config.xml data
-     * 
+     *
      * @return array
      */
     public function getConfigData()
@@ -48,16 +48,16 @@ class Symmetrics_ConfigGermanTexts_Model_Setup extends Mage_Eav_Model_Entity_Set
         $configData = Mage::getConfig()
             ->getNode('default/config_german_texts')
             ->asArray();
-            
+
         return $configData;
     }
 
     /**
      * Get config.xml data
-     * 
+     *
      * @param string      $node      xml noce
      * @param string|null $childNode if set, child node of the first noce
-     * 
+     *
      * @return array
      */
     protected function _getConfigNode($node, $childNode = null)
@@ -72,7 +72,7 @@ class Symmetrics_ConfigGermanTexts_Model_Setup extends Mage_Eav_Model_Entity_Set
 
     /**
      * Get pages/default from config file
-     * 
+     *
      * @return array
      */
     public function getConfigPages()
@@ -82,7 +82,7 @@ class Symmetrics_ConfigGermanTexts_Model_Setup extends Mage_Eav_Model_Entity_Set
 
     /**
      * Get blocks/default from config file
-     * 
+     *
      * @return array
      */
     public function getConfigBlocks()
@@ -92,7 +92,7 @@ class Symmetrics_ConfigGermanTexts_Model_Setup extends Mage_Eav_Model_Entity_Set
 
     /**
      * Get emails/default from config file
-     * 
+     *
      * @return array
      */
     public function getConfigEmails()
@@ -102,7 +102,7 @@ class Symmetrics_ConfigGermanTexts_Model_Setup extends Mage_Eav_Model_Entity_Set
 
     /**
      * Get imprint from config file
-     * 
+     *
      * @return array
      */
     public function getConfigImprint()
@@ -112,9 +112,9 @@ class Symmetrics_ConfigGermanTexts_Model_Setup extends Mage_Eav_Model_Entity_Set
 
     /**
      * Get template content
-     * 
+     *
      * @param string $filename template file name
-     * 
+     *
      * @return string
      */
     public function getTemplateContent($filename)
@@ -124,7 +124,7 @@ class Symmetrics_ConfigGermanTexts_Model_Setup extends Mage_Eav_Model_Entity_Set
 
     /**
      * Get footer_links/default from config file
-     * 
+     *
      * @return array
      */
     public function getFooterLinks()
@@ -144,20 +144,29 @@ class Symmetrics_ConfigGermanTexts_Model_Setup extends Mage_Eav_Model_Entity_Set
         if (!is_array($pageData)) {
             return null;
         }
-        $pageData['stores'] = array('0');
-        $pageData['is_active'] = '1';
-
+        
+        $pageData = array(
+            'title' => $pageData['title'],
+            'identifier' => $pageData['identifier'],
+            'content' => $this->getTemplateContent($pageData['text']),
+            'root_template' => $pageData['root_template'],
+            'stores' => array('1'),
+            'is_active' => '1',
+        );
+        
         $model = Mage::getModel('cms/page');
         $page = $model->load($pageData['identifier']);
-
-        if (!$page->getId()) {
+        
+        if (!(int)$page->getId()) {
+            // create
             $model->setData($pageData)->save();
         } else {
+            // update
             $pageData['page_id'] = $page->getId();
             $model->setData($pageData)->setId($pageData['page_id'])->save();
         }
     }
-    
+
     /**
      * Collect data and create CMS block
      *
@@ -188,7 +197,7 @@ class Symmetrics_ConfigGermanTexts_Model_Setup extends Mage_Eav_Model_Entity_Set
 
     /**
      * Generate footer_links block from config data
-     * 
+     *
      * @return string
      */
     public function createFooterLinksContent()
@@ -207,15 +216,15 @@ class Symmetrics_ConfigGermanTexts_Model_Setup extends Mage_Eav_Model_Entity_Set
         }
 
         $footerLinksHtml .= '</ul>';
-        
+
         return $footerLinksHtml;
     }
 
     /**
      * Update footer_links cms block
-     * 
+     *
      * @param array $blockData cms block data
-     * 
+     *
      * @return void
      */
     public function updateFooterLinksBlock($blockData)
@@ -243,22 +252,34 @@ class Symmetrics_ConfigGermanTexts_Model_Setup extends Mage_Eav_Model_Entity_Set
 
     /**
      * Create transactional email template
-     * 
+     *
      * @param array $emailData template data
-     * 
+     *
      * @return void
-     * 
+     *
      * @todo check if template exists
      */
     public function createEmail($emailData)
     {
         $model = Mage::getModel('core/email_template');
-        $template = $model->setTemplateSubject($emailData['template_subject'])
-            ->setTemplateCode($emailData['template_code'])
-            ->setTemplateText($this->getTemplateContent($emailData['text']))
-            ->setTemplateType($emailData['template_type'])
-            ->setModifiedAt(Mage::getSingleton('core/date')->gmtDate())
-            ->save();
+        $template = $model->loadByCode($emailData['template_code']);
+        if (!$template->getId()) {
+            // create
+            $template = $model->setTemplateSubject($emailData['template_subject'])
+                ->setTemplateCode($emailData['template_code'])
+                ->setTemplateText($this->getTemplateContent($emailData['text']))
+                ->setTemplateType($emailData['template_type'])
+                ->setModifiedAt(Mage::getSingleton('core/date')->gmtDate())
+                ->save();
+        } else {
+            //update
+            $template->setTemplateSubject($emailData['template_subject'])
+                ->setTemplateCode($emailData['template_code'])
+                ->setTemplateText($this->getTemplateContent($emailData['text']))
+                ->setTemplateType($emailData['template_type'])
+                ->setModifiedAt(Mage::getSingleton('core/date')->gmtDate())
+                ->save();
+        }
 
         $this->setConfigData($emailData['config_data_path'], $template->getId());
     }
