@@ -25,7 +25,9 @@ Symmetrics_ConfigGermanTexts erstellt u.A. Blöcke
 für AGBs und Widerrufsbelehrung, die überall auf der 
 Webseite verwendet werden können. Das erleichtert die 
 Arbeit erheblich, wenn die Texte ausgetauscht oder 
-angepasst werden müssen, da die relevanten Stellen nun alle zentralisiert werden, ebenso greift die Zentralisiertung bis auf die Emailtemplates, die die Textänderungen ebenso bekommen würden. Am Beispiel der AGB:
+angepasst werden müssen, da die relevanten Stellen nun alle zentralisiert 
+werden, ebenso greift die Zentralisiertung bis auf die Emailtemplates, die
+die Textänderungen ebenso bekommen würden. Am Beispiel der AGB:
 
 Sie ändern den eigentlichen AGB-Text in CMS -> Static
 Blocks und die Änderungen erscheinen in 

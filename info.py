@@ -20,18 +20,17 @@ INSTALL_PATH = ''
 # responsibilities
 # =============================================================================
 TEAM_LEADER = {
-    'Sergej Braznikov': 'sb@symmetrics.de',
-    'Torsten Walluhn': 'tw@symmetrics.de'
+    'Torsten Walluhn': 'tw@symmetrics.de',
 }
 
 MAINTAINER = {
     'Eugen Gitin': 'eg@symmetrics.de',
-    'Eric Reiche': 'er@symmetrics.de'
+    'Eric Reiche': 'er@symmetrics.de',
 }
 
 AUTHORS = {
     'Eugen Gitin': 'eg@symmetrics.de',
-    'Eric Reiche': 'er@symmetrics.de'
+    'Eric Reiche': 'er@symmetrics.de',
 }
 
 # =============================================================================
@@ -50,54 +49,59 @@ NOTES = '''
 # relations
 # =============================================================================
 REQUIRES = [
-    {'magento': '*', 'magento_enterprise': '*'}, 
-    {'mc_module_locale_mage_community_de_de': '*'}, 
-    {'symmetrics_config_german': '*'}
+    {'magento': '*', 'magento_enterprise': '*'},
+    {'mc_module_locale_mage_community_de_de': '*'},
+    {'symmetrics_config_german': '*'},
 ]
 
 EXCLUDES = {}
 
-DEPENDS_ON_FILES = (
-    'app/locale/en_US/template/email/account_new.html',
-    'app/locale/en_US/template/email/account_new_confirmation.html',
-    'app/locale/en_US/template/email/account_new_confirmed.html',
-    'app/locale/en_US/template/email/admin_password_new.html',
-    'app/locale/en_US/template/email/amazonpayments_asp_notification_error.html',
-    'app/locale/en_US/template/email/contact_form.html',
-    'app/locale/en_US/template/email/currency_update_warning.html',
-    'app/locale/en_US/template/email/log_clean_warning.html',
-    'app/locale/en_US/template/email/newsletter_subscr_confirm.html',
-    'app/locale/en_US/template/email/newsletter_subscr_success.html',
-    'app/locale/en_US/template/email/newsletter_unsub_success.html',
-    'app/locale/en_US/template/email/password_new.html',
-    'app/locale/en_US/template/email/payment_failed.html',
-    'app/locale/en_US/template/email/product_alert_cron_error.html',
-    'app/locale/en_US/template/email/product_price_alert.html',
-    'app/locale/en_US/template/email/product_share.html',
-    'app/locale/en_US/template/email/product_stock_alert.html',
-    'app/locale/en_US/template/email/sitemap_generate_warning.html',
-    'app/locale/en_US/template/email/wishlist_share.html',
-    'app/locale/en_US/template/email/sales/creditmemo_new.html',
-    'app/locale/en_US/template/email/sales/creditmemo_new_guest.html',
-    'app/locale/en_US/template/email/sales/creditmemo_update.html',
-    'app/locale/en_US/template/email/sales/creditmemo_update_guest.html',
-    'app/locale/en_US/template/email/sales/invoice_new.html',
-    'app/locale/en_US/template/email/sales/invoice_new_guest.html',
-    'app/locale/en_US/template/email/sales/invoice_update.html',
-    'app/locale/en_US/template/email/sales/invoice_update_guest.html',
-    'app/locale/en_US/template/email/sales/order_new.html',
-    'app/locale/en_US/template/email/sales/order_new_guest.html',
-    'app/locale/en_US/template/email/sales/order_update.html',
-    'app/locale/en_US/template/email/sales/order_update_guest.html',
-    'app/locale/en_US/template/email/sales/shipment_new.html',
-    'app/locale/en_US/template/email/sales/shipment_new_guest.html',
-    'app/locale/en_US/template/email/sales/shipment_update.html',
-    'app/locale/en_US/template/email/sales/shipment_update_guest.html'
-)
+prepend_path =  lambda template: 'app/locale/en_US/template/email/' + template
+DEPENDS_ON_FILES = [
+    prepend_path(template)    
+    for template in (
+    'account_new.html',
+    'account_new_confirmation.html',
+    'account_new_confirmed.html',
+    'admin_password_new.html',
+    'amazonpayments_asp_notification_error.html',
+    'contact_form.html',
+    'currency_update_warning.html',
+    'log_clean_warning.html',
+    'newsletter_subscr_confirm.html',
+    'newsletter_subscr_success.html',
+    'newsletter_unsub_success.html',
+    'password_new.html',
+    'payment_failed.html',
+    'product_alert_cron_error.html',
+    'product_price_alert.html',
+    'product_share.html',
+    'product_stock_alert.html',
+    'sitemap_generate_warning.html',
+    'wishlist_share.html',
+    'sales/creditmemo_new.html',
+    'sales/creditmemo_new_guest.html',
+    'sales/creditmemo_update.html',
+    'sales/creditmemo_update_guest.html',
+    'sales/invoice_new.html',
+    'sales/invoice_new_guest.html',
+    'sales/invoice_update.html',
+    'sales/invoice_update_guest.html',
+    'sales/order_new.html',
+    'sales/order_new_guest.html',
+    'sales/order_update.html',
+    'sales/order_update_guest.html',
+    'sales/shipment_new.html',
+    'sales/shipment_new_guest.html',
+    'sales/shipment_update.html',
+    'sales/shipment_update_guest.html',
+)]
+
+print DEPENDS_ON_FILES
 
 PEAR_KEY = ''
 
 COMPATIBLE_WITH = {
     'magento': ['1.4.0.0'],
-	'magento_enterprise': ['1.7.0.0']
+    'magento_enterprise': ['1.8.0.0'],
 }
