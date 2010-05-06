@@ -212,7 +212,8 @@ class Symmetrics_ConfigGermanTexts_Model_Setup extends Mage_Eav_Model_Entity_Set
             if ($footerLinksCounter == count($this->getFooterLinks())) {
                 $class = 'last';
             }
-            $footerLinksHtml .= '<li class="'.$class.'"><a href="{{store url="' . $target . '"}}">' . $title . '</a></li>';
+            $footerLinksHtml .= '<li class="'.$class.'">';
+            $footerLinksHtml .= '<a href="{{store url="' . $target . '"}}">' . $title . '</a></li>';
         }
 
         $footerLinksHtml .= '</ul>';
