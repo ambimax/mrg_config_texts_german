@@ -57,7 +57,7 @@ REQUIRES = [
 EXCLUDES = {}
 
 prepend_path = lambda template: 'app/locale/en_US/template/email/' + template
-DEPENDS_ON_FILES = [
+DEPENDS_ON_FILES = tuple((
     prepend_path(template)
     for template in (
     'account_new.html',
@@ -95,9 +95,7 @@ DEPENDS_ON_FILES = [
     'sales/shipment_new_guest.html',
     'sales/shipment_update.html',
     'sales/shipment_update_guest.html',
-)]
-
-print DEPENDS_ON_FILES
+)))
 
 PEAR_KEY = ''
 
