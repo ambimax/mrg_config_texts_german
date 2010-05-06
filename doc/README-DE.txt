@@ -92,12 +92,12 @@ Symmetrics_InvoicePdf und Symmetrics_InvoicePdf.
 *** E: Alle Texte sind vor der Installation zentral über 
         HTML-Dateien veränderbar (app/locale/de_DE)
 
-
-** TECHNINCAL
+** TECHNICAL
 Die Gesamte Funktionalität des Moduls findet in einem Migrationsskript
 gekoppelt mit dem Setup-Model statt.
 
 ** PROBLEMS
+Keine Probleme bekannt
 
 * TESTCASES
 ** BASIC
@@ -109,6 +109,3 @@ gekoppelt mit dem Setup-Model statt.
 *** E: Ändern Sie vor der Installation die Dateien und prüfen Sie,
         ob die texte übernommen werden.
 
-** CATCHABLE
-
-** STRESS
