@@ -25,9 +25,11 @@ Symmetrics_ConfigGermanTexts erstellt u.A. Blöcke
 für AGBs und Widerrufsbelehrung, die überall auf der 
 Webseite verwendet werden können. Das erleichtert die 
 Arbeit erheblich, wenn die Texte ausgetauscht oder 
-angepasst werden müssen, da die relevanten Stellen nun alle zentralisiert 
-werden, ebenso greift die Zentralisiertung bis auf die Emailtemplates, die
-die Textänderungen ebenso bekommen würden. Am Beispiel der AGB:
+angepasst werden müssen, da die relevanten Stellen nun
+alle zentralisiert werden, ebenso greift die Zentralisiertung
+bis auf die Emailtemplates, die die Textänderungen ebenso
+bekommen würden.
+Am Beispiel der AGB:
 
 Sie ändern den eigentlichen AGB-Text in CMS -> Static
 Blocks und die Änderungen erscheinen in 
@@ -69,18 +71,16 @@ Symmetrics_InvoicePdf und Symmetrics_InvoicePdf.
 
 ** FUNCTIONALITY
 *** A: Erstellt Seiten für:
-**** 404 Seite nicht gefunden
-**** Impressum
-**** Widerruf
-**** AGB
-**** Zahlungsarten
-**** Datenschutz
-**** Lieferung
-**** Bestellvorgang
+        404 Seite nicht gefunden
+        Impressum
+        Zahlungsarten
+        Datenschutz
+        Lieferung
+        Bestellvorgang
 
 *** B: Erstellt zentrale Blöcke für AGBs und Widerrufsrecht
-**** mrg_business_terms -> AGB
-**** mrg_revocation -> Widerruf
+        mrg_business_terms -> AGB
+        mrg_revocation -> Widerruf
 
 *** C: Erstellt untere Link-Leiste (inkl. leere AGB- und 
         Widerrufsrecht-Links)
@@ -91,13 +91,17 @@ Symmetrics_InvoicePdf und Symmetrics_InvoicePdf.
 
 *** E: Alle Texte sind vor der Installation zentral über 
         HTML-Dateien veränderbar (app/locale/de_DE)
+        
+*** F: Übersetzt einige fehlende bzw. nicht-rechtskonform
+        übersetzte strings. Sichtbar sind diese unter
+        app/locale/de_DE/Symmetrics_ConfigGermanTexts.csv
 
 ** TECHNICAL
 Die Gesamte Funktionalität des Moduls findet in einem Migrationsskript
 gekoppelt mit dem Setup-Model statt.
 
 ** PROBLEMS
-Keine Probleme bekannt
+Keine Probleme bekannt.
 
 * TESTCASES
 ** BASIC
@@ -108,4 +112,4 @@ Keine Probleme bekannt
 *** D: Prüfen Sie, ob die Emails entsprechend angelegt wurden
 *** E: Ändern Sie vor der Installation die Dateien und prüfen Sie,
         ob die texte übernommen werden.
-
+*** F: Überprüfen Sie, ob die Strings alle korrekt übersetzt werden.

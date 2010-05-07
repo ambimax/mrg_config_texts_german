@@ -18,6 +18,7 @@
  * @author    Eric Reiche <er@symmetrics.de>
  * @author    Eugen Gitin <eg@symmetrics.de>
  * @author    Sergej Braznikov <sb@symmetrics.de>
+ * @author    Yauhen Yakimovich <yy@symmetrics.de>
  * @copyright 2010 symmetrics gmbh
  * @license   http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  * @link      http://www.symmetrics.de/
@@ -32,6 +33,7 @@
  * @author    Eric Reiche <er@symmetrics.de>
  * @author    Eugen Gitin <eg@symmetrics.de>
  * @author    Sergej Braznikov <sb@symmetrics.de>
+ * @author    Yauhen Yakimovich <yy@symmetrics.de>
  * @copyright 2010 symmetrics gmbh
  * @license   http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  * @link      http://www.symmetrics.de/
@@ -256,9 +258,7 @@ class Symmetrics_ConfigGermanTexts_Model_Setup extends Mage_Eav_Model_Entity_Set
      *
      * @param array $emailData template data
      *
-     * @return void
-     *
-     * @todo check if template exists
+     * @return voids
      */
     public function createEmail($emailData)
     {
