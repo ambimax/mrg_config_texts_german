@@ -165,6 +165,7 @@ class Symmetrics_ConfigGermanTexts_Model_Setup extends Mage_Eav_Model_Entity_Set
         } else {
             // update
             $pageData['page_id'] = $page->getId();
+            $pageData['stores'] = $page->getStoreId();
             $model->setData($pageData)->setId($pageData['page_id'])->save();
         }
     }
