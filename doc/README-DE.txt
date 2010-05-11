@@ -109,7 +109,10 @@ Keine Probleme bekannt.
 *** B: Prüfen Sie, ob die Blöcke entsprechend angelegt wurden
 *** C: Prüfen Sie, ob die untere Linkleiste korrekt angelegt wurde
         und die Links alle funktionieren
-*** D: Prüfen Sie, ob die Emails entsprechend angelegt wurden
+*** D: Prüfen Sie, ob die Emails entsprechend angelegt wurden.
+        Gehen Sie ins Back-End unter "System" -> "Transactions-Emails".
+        Klicken Sie bei jeder Email auf "Vorschau". Falls Sie eine leere Seite
+        sehen, bedeutet das, dass der Fehler aufgetreten ist.
 *** E: Ändern Sie vor der Installation die Dateien und prüfen Sie,
         ob die texte übernommen werden.
 *** F: Überprüfen Sie, ob die Strings alle korrekt übersetzt werden.
