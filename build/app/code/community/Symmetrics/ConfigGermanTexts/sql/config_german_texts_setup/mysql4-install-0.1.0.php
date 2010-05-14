@@ -29,7 +29,12 @@ $installer->startSetup();
 // execute pages
 foreach ($this->getConfigPages() as $name => $data) {
     if ($data['execute'] == 1) {
-        $this->createCmsPage($data);
+        if ($name == 'symmetrics_mrgbeispiel') {
+            // create inactive CMS page
+            $this->createCmsPage($data, '0');
+        } else {
+            $this->createCmsPage($data);
+        }
     }
 }
 

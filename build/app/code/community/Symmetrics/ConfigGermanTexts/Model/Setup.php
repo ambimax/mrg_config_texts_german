@@ -137,11 +137,12 @@ class Symmetrics_ConfigGermanTexts_Model_Setup extends Mage_Eav_Model_Entity_Set
     /**
      * Collect data and create CMS page
      *
-     * @param array $pageData cms page data
+     * @param array  $pageData cms page data
+     * @param string $isActive if '1' cms page will be set to active
      *
      * @return void
      */
-    public function createCmsPage($pageData)
+    public function createCmsPage($pageData, $isActive='1')
     {
         if (!is_array($pageData)) {
             return null;
@@ -153,7 +154,7 @@ class Symmetrics_ConfigGermanTexts_Model_Setup extends Mage_Eav_Model_Entity_Set
             'content' => $this->getTemplateContent($pageData['text']),
             'root_template' => $pageData['root_template'],
             'stores' => array('1'),
-            'is_active' => '1',
+            'is_active' => $isActive,
         );
         
         $model = Mage::getModel('cms/page');
@@ -174,7 +175,7 @@ class Symmetrics_ConfigGermanTexts_Model_Setup extends Mage_Eav_Model_Entity_Set
      * Collect data and create CMS block
      *
      * @param array   $blockData cms block data
-     * @param boolean $override  override cms block if it exists
+     * @param boolean $override  override cms block if it exists     
      *
      * @return void
      */

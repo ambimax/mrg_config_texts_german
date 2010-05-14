@@ -53,7 +53,7 @@
             </config_german_texts_read>
         </resources>
     </global>
-    
+
     <frontend>
         <translate>
             <modules>
@@ -121,7 +121,7 @@
             </modules>
         </translate>
     </admin>
-    
+
     <adminhtml>
         <translate>
             <modules>
@@ -153,11 +153,19 @@
             </modules>
         </translate>
     </adminhtml>
-    
+
     <default>
         <config_german_texts>
             <pages>
                 <default>
+                    <symmetrics_mrgbeispiel>
+                        <execute>1</execute>
+                        <title>MRG Beispiel Seite</title>
+                        <identifier>mrg-cms-beispiel</identifier>
+                        <root_template>one_column</root_template>
+                        <text>app/locale/de_DE/template/config_german_texts/mrg-cms-beispiel.html</text>
+                    </symmetrics_mrgbeispiel>
+
                     <symmetrics_404>
                         <execute>1</execute>
                         <title>Seite nicht gefunden</title>
@@ -539,7 +547,7 @@
                         <config_data_path>catalog/productalert_cron/error_email_template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/product_alert_cron_error.html</text>
                     </product_alert_cron_error>
-                    
+
                     <enterprise_invitation>
                         <execute>1</execute>
                         <template_code>Kundeneinladung (Template) [Invitation]</template_code>
@@ -584,7 +592,7 @@
                 </default>
             </footer_links>
         </config_german_texts>
-        
+
         <general>
             <imprint>
                 <shop_name>[Beispielshop]</shop_name>
