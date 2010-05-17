@@ -300,7 +300,7 @@
                         <execute>1</execute>
                         <template_code>Neue Bestellung (Template)</template_code>
                         <template_type>2</template_type>
-                        <template_subject>{{block type="imprint/field" value="shopname"}}: Neue Bestellung Nr. # {{var order.increment_id}}</template_subject>
+                        <template_subject>{{block type="imprint/field" value="shop_name"}}: Neue Bestellung Nr. # {{var order.increment_id}}</template_subject>
                         <config_data_path>sales_email/order/template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/order_new.html</text>
                     </order_new>
@@ -309,7 +309,7 @@
                         <execute>1</execute>
                         <template_code>Neue Bestellung Gast (Template)</template_code>
                         <template_type>2</template_type>
-                        <template_subject>{{block type="imprint/field" value="shopname"}}: Neue Bestellung Nr. # {{var order.increment_id}}</template_subject>
+                        <template_subject>{{block type="imprint/field" value="shop_name"}}: Neue Bestellung Nr. # {{var order.increment_id}}</template_subject>
                         <config_data_path>sales_email/order/guest_template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/order_new_guest.html</text>
                     </order_new_guest>
@@ -318,7 +318,7 @@
                         <execute>1</execute>
                         <template_code>Bestellung Aktualsierung (Template)</template_code>
                         <template_type>2</template_type>
-                        <template_subject>{{block type="imprint/field" value="shopname"}}: Bestellung Nr. # {{var order.increment_id}} Aktualisierung</template_subject>
+                        <template_subject>{{block type="imprint/field" value="shop_name"}}: Bestellung Nr. # {{var order.increment_id}} Aktualisierung</template_subject>
                         <config_data_path>sales_email/order_comment/template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/order_update.html</text>
                     </order_update>
@@ -327,7 +327,7 @@
                         <execute>1</execute>
                         <template_code>Bestellung Aktualsierung Gast (Template)</template_code>
                         <template_type>2</template_type>
-                        <template_subject>{{block type="imprint/field" value="shopname"}}: Bestellung Nr. # {{var order.increment_id}} Aktualisierung</template_subject>
+                        <template_subject>{{block type="imprint/field" value="shop_name"}}: Bestellung Nr. # {{var order.increment_id}} Aktualisierung</template_subject>
                         <config_data_path>sales_email/order_comment/guest_template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/order_update_guest.html</text>
                     </order_update_guest>
@@ -336,7 +336,7 @@
                         <execute>1</execute>
                         <template_code>Neue Rechnung (Template)</template_code>
                         <template_type>2</template_type>
-                        <template_subject>{{block type="imprint/field" value="shopname"}}: Proformarechnung Nr. # {{var invoice.increment_id}} für Bestellung Nr. # {{var order.increment_id}}</template_subject>
+                        <template_subject>{{block type="imprint/field" value="shop_name"}}: Proformarechnung Nr. # {{var invoice.increment_id}} für Bestellung Nr. # {{var order.increment_id}}</template_subject>
                         <config_data_path>sales_email/invoice/template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/invoice_new.html</text>
                     </invoice_new>
@@ -345,7 +345,7 @@
                         <execute>1</execute>
                         <template_code>Neue Rechnung Gast (Template)</template_code>
                         <template_type>2</template_type>
-                        <template_subject>{{block type="imprint/field" value="shopname"}}: Proformarechnung Nr. # {{var invoice.increment_id}} für Bestellung Nr. # {{var order.increment_id}}</template_subject>
+                        <template_subject>{{block type="imprint/field" value="shop_name"}}: Proformarechnung Nr. # {{var invoice.increment_id}} für Bestellung Nr. # {{var order.increment_id}}</template_subject>
                         <config_data_path>sales_email/invoice/guest_template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/invoice_new_guest.html</text>
                     </invoice_new_guest>
@@ -354,7 +354,7 @@
                         <execute>1</execute>
                         <template_code>Rechnung Aktualisierung (Template)</template_code>
                         <template_type>2</template_type>
-                        <template_subject>{{block type="imprint/field" value="shopname"}}: Rechnung Nr. # {{var invoice.increment_id}} Aktualisierung</template_subject>
+                        <template_subject>{{block type="imprint/field" value="shop_name"}}: Rechnung Nr. # {{var invoice.increment_id}} Aktualisierung</template_subject>
                         <config_data_path>sales_email/invoice_comment/template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/invoice_update.html</text>
                     </invoice_update>
@@ -363,7 +363,7 @@
                         <execute>1</execute>
                         <template_code>Rechnung Aktualisierung Gast (Template)</template_code>
                         <template_type>2</template_type>
-                        <template_subject>{{block type="imprint/field" value="shopname"}}: Rechnung Nr. # {{var invoice.increment_id}} Aktualisierung</template_subject>
+                        <template_subject>{{block type="imprint/field" value="shop_name"}}: Rechnung Nr. # {{var invoice.increment_id}} Aktualisierung</template_subject>
                         <config_data_path>sales_email/invoice_comment/guest_template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/invoice_update_guest.html</text>
                     </invoice_update_guest>
@@ -372,7 +372,7 @@
                         <execute>1</execute>
                         <template_code>Neue Gutschrift (Template)</template_code>
                         <template_type>2</template_type>
-                        <template_subject>{{block type="imprint/field" value="shopname"}}: Gutschrift Nr. # {{var creditmemo.increment_id}} für Bestellung Nr. # {{var order.increment_id}}</template_subject>
+                        <template_subject>{{block type="imprint/field" value="shop_name"}}: Gutschrift Nr. # {{var creditmemo.increment_id}} für Bestellung Nr. # {{var order.increment_id}}</template_subject>
                         <config_data_path>sales_email/creditmemo/template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/creditmemo_new.html</text>
                     </creditmemo_new>
@@ -381,7 +381,7 @@
                         <execute>1</execute>
                         <template_code>Neue Gutschrift Gast (Template)</template_code>
                         <template_type>2</template_type>
-                        <template_subject>{{block type="imprint/field" value="shopname"}}: Gutschrift Nr. # {{var creditmemo.increment_id}} für Bestellung Nr. # {{var order.increment_id}}</template_subject>
+                        <template_subject>{{block type="imprint/field" value="shop_name"}}: Gutschrift Nr. # {{var creditmemo.increment_id}} für Bestellung Nr. # {{var order.increment_id}}</template_subject>
                         <config_data_path>sales_email/creditmemo/guest_template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/creditmemo_new_guest.html</text>
                     </creditmemo_new_guest>
@@ -390,7 +390,7 @@
                         <execute>1</execute>
                         <template_code>Gutschrift Aktualisierung (Template)</template_code>
                         <template_type>2</template_type>
-                        <template_subject>{{block type="imprint/field" value="shopname"}}: Gutschrift Nr. # {{var creditmemo.increment_id}} Aktualisierung</template_subject>
+                        <template_subject>{{block type="imprint/field" value="shop_name"}}: Gutschrift Nr. # {{var creditmemo.increment_id}} Aktualisierung</template_subject>
                         <config_data_path>sales_email/creditmemo_comment/template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/creditmemo_update.html</text>
                     </creditmemo_update>
@@ -399,7 +399,7 @@
                         <execute>1</execute>
                         <template_code>Gutschrift Aktualisierung Gast (Template)</template_code>
                         <template_type>2</template_type>
-                        <template_subject>{{block type="imprint/field" value="shopname"}}: Gutschrift Nr. # {{var creditmemo.increment_id}} Aktualisierung</template_subject>
+                        <template_subject>{{block type="imprint/field" value="shop_name"}}: Gutschrift Nr. # {{var creditmemo.increment_id}} Aktualisierung</template_subject>
                         <config_data_path>sales_email/creditmemo_comment/guest_template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/creditmemo_update_guest.html</text>
                     </creditmemo_update_guest>
@@ -408,7 +408,7 @@
                         <execute>1</execute>
                         <template_code>Neue Lieferung (Template)</template_code>
                         <template_type>2</template_type>
-                        <template_subject>{{block type="imprint/field" value="shopname"}}: Lieferschein Nr. # {{var shipment.increment_id}} für Bestellung Nr. # {{var order.increment_id}}</template_subject>
+                        <template_subject>{{block type="imprint/field" value="shop_name"}}: Lieferschein Nr. # {{var shipment.increment_id}} für Bestellung Nr. # {{var order.increment_id}}</template_subject>
                         <config_data_path>sales_email/shipment/template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/shipment_new.html</text>
                     </shipment_new>
@@ -417,7 +417,7 @@
                         <execute>1</execute>
                         <template_code>Neue Lieferung Gast (Template)</template_code>
                         <template_type>2</template_type>
-                        <template_subject>{{block type="imprint/field" value="shopname"}}: Lieferschein Nr. # {{var shipment.increment_id}} für Bestellung Nr. # {{var order.increment_id}}</template_subject>
+                        <template_subject>{{block type="imprint/field" value="shop_name"}}: Lieferschein Nr. # {{var shipment.increment_id}} für Bestellung Nr. # {{var order.increment_id}}</template_subject>
                         <config_data_path>sales_email/shipment/guest_template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/shipment_new_guest.html</text>
                     </shipment_new_guest>
@@ -426,7 +426,7 @@
                         <execute>1</execute>
                         <template_code>Lieferung Aktualisierung (Template)</template_code>
                         <template_type>2</template_type>
-                        <template_subject>{{block type="imprint/field" value="shopname"}}: Lieferschein Nr. # {{var shipment.increment_id}} Aktualisierung</template_subject>
+                        <template_subject>{{block type="imprint/field" value="shop_name"}}: Lieferschein Nr. # {{var shipment.increment_id}} Aktualisierung</template_subject>
                         <config_data_path>sales_email/shipment_comment/template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/shipment_update.html</text>
                     </shipment_update>
@@ -435,7 +435,7 @@
                         <execute>1</execute>
                         <template_code>Lieferung Aktualisierung Gast (Template)</template_code>
                         <template_type>2</template_type>
-                        <template_subject>{{block type="imprint/field" value="shopname"}}: Lieferschein Nr. # {{var shipment.increment_id}} Aktualisierung</template_subject>
+                        <template_subject>{{block type="imprint/field" value="shop_name"}}: Lieferschein Nr. # {{var shipment.increment_id}} Aktualisierung</template_subject>
                         <config_data_path>sales_email/shipment_comment/guest_template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/shipment_update_guest.html</text>
                     </shipment_update_guest>
