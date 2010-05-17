@@ -33,6 +33,6 @@
             	<Mage_Cms />
             	<Symmetrics_ConfigGerman />
 			</depends>
-		</Symmetrics_ConfigGermanTexts>     
+		</Symmetrics_ConfigGermanTexts>
 	</modules>
 </config>
