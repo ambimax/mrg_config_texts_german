@@ -1,17 +1,33 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
 /**
- * @category Symmetrics
- * @package Symmetrics_ConfigGermanTexts
- * @author symmetrics gmbh <info@symmetrics.de>, Eugen Gitin <eg@symmetrics.de>, Sergej Braznikov <sb@symmetrics.de>
- * @copyright symmetrics gmbh
- * @license http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * @category  Symmetrics
+ * @package   Symmetrics_ConfigGermanTexts
+ * @author    symmetrics gmbh <info@symmetrics.de>
+ * @author    Eric Reiche <er@symmetrics.de>
+ * @author    Eugen Gitin <eg@symmetrics.de>
+ * @author    Sergej Braznikov <sb@symmetrics.de>
+ * @copyright 2010 symmetrics gmbh
+ * @license   http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ * @link      http://www.symmetrics.de/
  */
 -->
 <config>
     <modules>
         <Symmetrics_ConfigGermanTexts>
-            <version>0.2.0</version>
+            <version>0.3.24</version>
         </Symmetrics_ConfigGermanTexts>
     </modules>
     <global>
@@ -37,10 +53,119 @@
             </config_german_texts_read>
         </resources>
     </global>
+
+    <frontend>
+        <translate>
+            <modules>
+                <Mage_Sales>
+                    <files>
+                        <configgermantexts>Symmetrics_ConfigGermanTexts.csv</configgermantexts>
+                    </files>
+                </Mage_Sales>
+                <Mage_Checkout>
+                    <files>
+                        <configgermantexts>Symmetrics_ConfigGermanTexts.csv</configgermantexts>
+                    </files>
+                </Mage_Checkout>
+                <Mage_Newsletter>
+                    <files>
+                        <configgermantexts>Symmetrics_ConfigGermanTexts.csv</configgermantexts>
+                    </files>
+                </Mage_Newsletter>
+                <Mage_Customer>
+                    <files>
+                        <configgermantexts>Symmetrics_ConfigGermanTexts.csv</configgermantexts>
+                    </files>
+                </Mage_Customer>
+                <Mage_Catalog>
+                    <files>
+                        <configgermantexts>Symmetrics_ConfigGermanTexts.csv</configgermantexts>
+                    </files>
+                </Mage_Catalog>
+                <Mage_Tax>
+                    <files>
+                        <configgermantexts>Symmetrics_ConfigGermanTexts.csv</configgermantexts>
+                    </files>
+                </Mage_Tax>
+            </modules>
+        </translate>
+    </frontend>
+    <admin>
+        <translate>
+            <modules>
+                <Mage_Sales>
+                    <files>
+                        <configgermantexts>Symmetrics_ConfigGermanTexts.csv</configgermantexts>
+                    </files>
+                </Mage_Sales>
+                <Mage_Checkout>
+                    <files>
+                        <configgermantexts>Symmetrics_ConfigGermanTexts.csv</configgermantexts>
+                    </files>
+                </Mage_Checkout>
+                <Mage_Newsletter>
+                    <files>
+                        <configgermantexts>Symmetrics_ConfigGermanTexts.csv</configgermantexts>
+                    </files>
+                </Mage_Newsletter>
+                <Mage_Customer>
+                    <files>
+                        <configgermantexts>Symmetrics_ConfigGermanTexts.csv</configgermantexts>
+                    </files>
+                </Mage_Customer>
+                <Mage_Catalog>
+                    <files>
+                        <configgermantexts>Symmetrics_ConfigGermanTexts.csv</configgermantexts>
+                    </files>
+                </Mage_Catalog>
+            </modules>
+        </translate>
+    </admin>
+
+    <adminhtml>
+        <translate>
+            <modules>
+                <Mage_Sales>
+                    <files>
+                        <configgermantexts>Symmetrics_ConfigGermanTexts.csv</configgermantexts>
+                    </files>
+                </Mage_Sales>
+                <Mage_Checkout>
+                    <files>
+                        <configgermantexts>Symmetrics_ConfigGermanTexts.csv</configgermantexts>
+                    </files>
+                </Mage_Checkout>
+                <Mage_Newsletter>
+                    <files>
+                        <configgermantexts>Symmetrics_ConfigGermanTexts.csv</configgermantexts>
+                    </files>
+                </Mage_Newsletter>
+                <Mage_Customer>
+                    <files>
+                        <configgermantexts>Symmetrics_ConfigGermanTexts.csv</configgermantexts>
+                    </files>
+                </Mage_Customer>
+                <Mage_Catalog>
+                    <files>
+                        <configgermantexts>Symmetrics_ConfigGermanTexts.csv</configgermantexts>
+                    </files>
+                </Mage_Catalog>
+            </modules>
+        </translate>
+    </adminhtml>
+
     <default>
         <config_german_texts>
             <pages>
                 <default>
+                    <symmetrics_mrgbeispiel>
+                        <execute>1</execute>
+                        <title>MRG Beispiel Seite</title>
+                        <identifier>mrg-cms-beispiel</identifier>
+                        <root_template>one_column</root_template>
+                        <text>app/locale/de_DE/template/config_german_texts/mrg-cms-beispiel.html</text>
+                    </symmetrics_mrgbeispiel>
+
                     <symmetrics_404>
                         <execute>1</execute>
                         <title>Seite nicht gefunden</title>
@@ -93,25 +218,25 @@
 
             <blocks>
                 <default>
-                    <symmetrics_terms>
+                    <mrg_business_terms>
                         <execute>1</execute>
                         <title>AGB</title>
-                        <identifier>sym_agb</identifier>
+                        <identifier>mrg_business_terms</identifier>
                         <text>app/locale/de_DE/template/config_german_texts/agb.html</text>
-                    </symmetrics_terms>
+                    </mrg_business_terms>
 
-                    <symmetrics_cancellation>
+                    <mrg_revocation>
                         <execute>1</execute>
                         <title>Widerrufsbelehrung</title>
-                        <identifier>sym_widerruf</identifier>
+                        <identifier>mrg_revocation</identifier>
                         <text>app/locale/de_DE/template/config_german_texts/widerruf.html</text>
-                    </symmetrics_cancellation>
+                    </mrg_revocation>
 
-                    <symmetrics_footerlinks>
+                    <mrg_footerlinks>
                         <execute>1</execute>
-                        <title>Footer Links DE</title>
+                        <title>Footer Links</title>
                         <identifier>footer_links</identifier>
-                    </symmetrics_footerlinks>
+                    </mrg_footerlinks>
                 </default>
             </blocks>
 
@@ -175,7 +300,7 @@
                         <execute>1</execute>
                         <template_code>Neue Bestellung (Template)</template_code>
                         <template_type>2</template_type>
-                        <template_subject>{{block type="symmetrics_impressum/impressum" value="shopname"}}: Neue Bestellung Nr. # {{var order.increment_id}}</template_subject>
+                        <template_subject>{{block type="imprint/field" value="shop_name"}}: Neue Bestellung Nr. # {{var order.increment_id}}</template_subject>
                         <config_data_path>sales_email/order/template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/order_new.html</text>
                     </order_new>
@@ -184,7 +309,7 @@
                         <execute>1</execute>
                         <template_code>Neue Bestellung Gast (Template)</template_code>
                         <template_type>2</template_type>
-                        <template_subject>{{block type="symmetrics_impressum/impressum" value="shopname"}}: Neue Bestellung Nr. # {{var order.increment_id}}</template_subject>
+                        <template_subject>{{block type="imprint/field" value="shop_name"}}: Neue Bestellung Nr. # {{var order.increment_id}}</template_subject>
                         <config_data_path>sales_email/order/guest_template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/order_new_guest.html</text>
                     </order_new_guest>
@@ -193,7 +318,7 @@
                         <execute>1</execute>
                         <template_code>Bestellung Aktualsierung (Template)</template_code>
                         <template_type>2</template_type>
-                        <template_subject>{{block type="symmetrics_impressum/impressum" value="shopname"}}: Bestellung Nr. # {{var order.increment_id}} Aktualisierung</template_subject>
+                        <template_subject>{{block type="imprint/field" value="shop_name"}}: Bestellung Nr. # {{var order.increment_id}} Aktualisierung</template_subject>
                         <config_data_path>sales_email/order_comment/template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/order_update.html</text>
                     </order_update>
@@ -202,7 +327,7 @@
                         <execute>1</execute>
                         <template_code>Bestellung Aktualsierung Gast (Template)</template_code>
                         <template_type>2</template_type>
-                        <template_subject>{{block type="symmetrics_impressum/impressum" value="shopname"}}: Bestellung Nr. # {{var order.increment_id}} Aktualisierung</template_subject>
+                        <template_subject>{{block type="imprint/field" value="shop_name"}}: Bestellung Nr. # {{var order.increment_id}} Aktualisierung</template_subject>
                         <config_data_path>sales_email/order_comment/guest_template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/order_update_guest.html</text>
                     </order_update_guest>
@@ -211,7 +336,7 @@
                         <execute>1</execute>
                         <template_code>Neue Rechnung (Template)</template_code>
                         <template_type>2</template_type>
-                        <template_subject>{{block type="symmetrics_impressum/impressum" value="shopname"}}: Proformarechnung Nr. # {{var invoice.increment_id}} für Bestellung Nr. # {{var order.increment_id}}</template_subject>
+                        <template_subject>{{block type="imprint/field" value="shop_name"}}: Proformarechnung Nr. # {{var invoice.increment_id}} für Bestellung Nr. # {{var order.increment_id}}</template_subject>
                         <config_data_path>sales_email/invoice/template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/invoice_new.html</text>
                     </invoice_new>
@@ -220,7 +345,7 @@
                         <execute>1</execute>
                         <template_code>Neue Rechnung Gast (Template)</template_code>
                         <template_type>2</template_type>
-                        <template_subject>{{block type="symmetrics_impressum/impressum" value="shopname"}}: Proformarechnung Nr. # {{var invoice.increment_id}} für Bestellung Nr. # {{var order.increment_id}}</template_subject>
+                        <template_subject>{{block type="imprint/field" value="shop_name"}}: Proformarechnung Nr. # {{var invoice.increment_id}} für Bestellung Nr. # {{var order.increment_id}}</template_subject>
                         <config_data_path>sales_email/invoice/guest_template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/invoice_new_guest.html</text>
                     </invoice_new_guest>
@@ -229,7 +354,7 @@
                         <execute>1</execute>
                         <template_code>Rechnung Aktualisierung (Template)</template_code>
                         <template_type>2</template_type>
-                        <template_subject>{{block type="symmetrics_impressum/impressum" value="shopname"}}: Rechnung Nr. # {{var invoice.increment_id}} Aktualisierung</template_subject>
+                        <template_subject>{{block type="imprint/field" value="shop_name"}}: Rechnung Nr. # {{var invoice.increment_id}} Aktualisierung</template_subject>
                         <config_data_path>sales_email/invoice_comment/template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/invoice_update.html</text>
                     </invoice_update>
@@ -238,7 +363,7 @@
                         <execute>1</execute>
                         <template_code>Rechnung Aktualisierung Gast (Template)</template_code>
                         <template_type>2</template_type>
-                        <template_subject>{{block type="symmetrics_impressum/impressum" value="shopname"}}: Rechnung Nr. # {{var invoice.increment_id}} Aktualisierung</template_subject>
+                        <template_subject>{{block type="imprint/field" value="shop_name"}}: Rechnung Nr. # {{var invoice.increment_id}} Aktualisierung</template_subject>
                         <config_data_path>sales_email/invoice_comment/guest_template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/invoice_update_guest.html</text>
                     </invoice_update_guest>
@@ -247,7 +372,7 @@
                         <execute>1</execute>
                         <template_code>Neue Gutschrift (Template)</template_code>
                         <template_type>2</template_type>
-                        <template_subject>{{block type="symmetrics_impressum/impressum" value="shopname"}}: Gutschrift Nr. # {{var creditmemo.increment_id}} für Bestellung Nr. # {{var order.increment_id}}</template_subject>
+                        <template_subject>{{block type="imprint/field" value="shop_name"}}: Gutschrift Nr. # {{var creditmemo.increment_id}} für Bestellung Nr. # {{var order.increment_id}}</template_subject>
                         <config_data_path>sales_email/creditmemo/template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/creditmemo_new.html</text>
                     </creditmemo_new>
@@ -256,7 +381,7 @@
                         <execute>1</execute>
                         <template_code>Neue Gutschrift Gast (Template)</template_code>
                         <template_type>2</template_type>
-                        <template_subject>{{block type="symmetrics_impressum/impressum" value="shopname"}}: Gutschrift Nr. # {{var creditmemo.increment_id}} für Bestellung Nr. # {{var order.increment_id}}</template_subject>
+                        <template_subject>{{block type="imprint/field" value="shop_name"}}: Gutschrift Nr. # {{var creditmemo.increment_id}} für Bestellung Nr. # {{var order.increment_id}}</template_subject>
                         <config_data_path>sales_email/creditmemo/guest_template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/creditmemo_new_guest.html</text>
                     </creditmemo_new_guest>
@@ -265,7 +390,7 @@
                         <execute>1</execute>
                         <template_code>Gutschrift Aktualisierung (Template)</template_code>
                         <template_type>2</template_type>
-                        <template_subject>{{block type="symmetrics_impressum/impressum" value="shopname"}}: Gutschrift Nr. # {{var creditmemo.increment_id}} Aktualisierung</template_subject>
+                        <template_subject>{{block type="imprint/field" value="shop_name"}}: Gutschrift Nr. # {{var creditmemo.increment_id}} Aktualisierung</template_subject>
                         <config_data_path>sales_email/creditmemo_comment/template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/creditmemo_update.html</text>
                     </creditmemo_update>
@@ -274,7 +399,7 @@
                         <execute>1</execute>
                         <template_code>Gutschrift Aktualisierung Gast (Template)</template_code>
                         <template_type>2</template_type>
-                        <template_subject>{{block type="symmetrics_impressum/impressum" value="shopname"}}: Gutschrift Nr. # {{var creditmemo.increment_id}} Aktualisierung</template_subject>
+                        <template_subject>{{block type="imprint/field" value="shop_name"}}: Gutschrift Nr. # {{var creditmemo.increment_id}} Aktualisierung</template_subject>
                         <config_data_path>sales_email/creditmemo_comment/guest_template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/creditmemo_update_guest.html</text>
                     </creditmemo_update_guest>
@@ -283,7 +408,7 @@
                         <execute>1</execute>
                         <template_code>Neue Lieferung (Template)</template_code>
                         <template_type>2</template_type>
-                        <template_subject>{{block type="symmetrics_impressum/impressum" value="shopname"}}: Lieferschein Nr. # {{var shipment.increment_id}} für Bestellung Nr. # {{var order.increment_id}}</template_subject>
+                        <template_subject>{{block type="imprint/field" value="shop_name"}}: Lieferschein Nr. # {{var shipment.increment_id}} für Bestellung Nr. # {{var order.increment_id}}</template_subject>
                         <config_data_path>sales_email/shipment/template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/shipment_new.html</text>
                     </shipment_new>
@@ -292,7 +417,7 @@
                         <execute>1</execute>
                         <template_code>Neue Lieferung Gast (Template)</template_code>
                         <template_type>2</template_type>
-                        <template_subject>{{block type="symmetrics_impressum/impressum" value="shopname"}}: Lieferschein Nr. # {{var shipment.increment_id}} für Bestellung Nr. # {{var order.increment_id}}</template_subject>
+                        <template_subject>{{block type="imprint/field" value="shop_name"}}: Lieferschein Nr. # {{var shipment.increment_id}} für Bestellung Nr. # {{var order.increment_id}}</template_subject>
                         <config_data_path>sales_email/shipment/guest_template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/shipment_new_guest.html</text>
                     </shipment_new_guest>
@@ -301,7 +426,7 @@
                         <execute>1</execute>
                         <template_code>Lieferung Aktualisierung (Template)</template_code>
                         <template_type>2</template_type>
-                        <template_subject>{{block type="symmetrics_impressum/impressum" value="shopname"}}: Lieferschein Nr. # {{var shipment.increment_id}} Aktualisierung</template_subject>
+                        <template_subject>{{block type="imprint/field" value="shop_name"}}: Lieferschein Nr. # {{var shipment.increment_id}} Aktualisierung</template_subject>
                         <config_data_path>sales_email/shipment_comment/template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/shipment_update.html</text>
                     </shipment_update>
@@ -310,7 +435,7 @@
                         <execute>1</execute>
                         <template_code>Lieferung Aktualisierung Gast (Template)</template_code>
                         <template_type>2</template_type>
-                        <template_subject>{{block type="symmetrics_impressum/impressum" value="shopname"}}: Lieferschein Nr. # {{var shipment.increment_id}} Aktualisierung</template_subject>
+                        <template_subject>{{block type="imprint/field" value="shop_name"}}: Lieferschein Nr. # {{var shipment.increment_id}} Aktualisierung</template_subject>
                         <config_data_path>sales_email/shipment_comment/guest_template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/shipment_update_guest.html</text>
                     </shipment_update_guest>
@@ -422,7 +547,7 @@
                         <config_data_path>catalog/productalert_cron/error_email_template</config_data_path>
                         <text>app/locale/de_DE/template/config_german_texts/email/product_alert_cron_error.html</text>
                     </product_alert_cron_error>
-                    
+
                     <enterprise_invitation>
                         <execute>1</execute>
                         <template_code>Kundeneinladung (Template) [Invitation]</template_code>
@@ -434,35 +559,6 @@
                 </default>
             </emails>
 
-            <imprint>
-                <shop_name>[Beispielshop]</shop_name>
-                <company_name>[Musterfirma GmbH]</company_name>
-                <company_sub>[Inh. Max Mustermann]</company_sub>
-                <zip>[30123]</zip>
-                <street>[Musterstr. 1]</street>
-                <city>[Hannover]</city>
-                <phone>[+49 511 123456]</phone>
-                <fax>[+49 511 654321]</fax>
-                <email>[info@musterdomain.de]</email>
-                <homepage>[www.musterdomain.de]</homepage>
-                <tax_number>[12/123/123456]</tax_number>
-                <sales_tax_id_number>[DE123456789]</sales_tax_id_number>
-                <commercial_register>[Amtsgericht Hannover]</commercial_register>
-                <tax_office>[Finanzamt]</tax_office>
-                <holder_names>[Max Mustermann]</holder_names>
-                <hrb>[123456]</hrb>
-                <bank_account>[123456789]</bank_account>
-                <bank_id_code>[100200300]</bank_id_code>
-                <bank_name>[Musterbank]</bank_name>
-                <bank_swift>[1234567890]</bank_swift>
-                <bank_iban>[0987654321]</bank_iban>
-                <bank_account_owner>[Max Muster]</bank_account_owner>
-                <legal_info>app/locale/de_DE/template/config_german_texts/rechtlicheinfos.html</legal_info>
-                <invoice_maturity>[14]</invoice_maturity>
-                <invoice_note>[Vielen Dank für Ihren Auftrag!]</invoice_note>
-                <invoice_customer_prefix>[K]</invoice_customer_prefix>
-            </imprint>
-            
             <footer_links>
                 <default>
 	                <agreement>
@@ -496,5 +592,40 @@
                 </default>
             </footer_links>
         </config_german_texts>
+
+        <general>
+            <imprint>
+                <shop_name>[Beispielshop]</shop_name>
+                <company_first>[Musterfirma GmbH]</company_first>
+                <company_second>[Inh. Max Mustermann]</company_second>
+                <zip>[30123]</zip>
+                <street>[Musterstr. 1]</street>
+                <city>[Hannover]</city>
+                <telephone>[+49 511 123456]</telephone>
+                <fax>[+49 511 654321]</fax>
+                <email>[info@musterdomain.de]</email>
+                <web>[www.musterdomain.de]</web>
+                <tax_number>[12/123/123456]</tax_number>
+                <vat_id>[DE123456789]</vat_id>
+                <court>[Amtsgericht Hannover]</court>
+                <financial_office>[Finanzamt]</financial_office>
+                <ceo>[Max Mustermann]</ceo>
+                <register_number>[123456]</register_number>
+                <bank_account>[123456789]</bank_account>
+                <bank_code_number>[100200300]</bank_code_number>
+                <bank_name>[Musterbank]</bank_name>
+                <swift>[1234567890]</swift>
+                <iban>[0987654321]</iban>
+                <bank_account_owner>[Max Muster]</bank_account_owner>
+                <business_rules>[Berufsspezifische Regelungen für Apotheken etc.]</business_rules>
+            </imprint>
+        </general>
+        <sales_pdf>
+            <invoice>
+                <maturity>14</maturity>
+                <note>Vielen Dank für Ihren Auftrag!</note>
+                <customeridprefix>K</customeridprefix>
+            </invoice>
+        </sales_pdf>
     </default>
 </config>
