@@ -71,7 +71,7 @@ Symmetrics_InvoicePdf und Symmetrics_InvoicePdf.
 
 ** FUNCTIONALITY
 *** A: Erstellt Seiten für:
-        404 Seite nicht gefunden
+        Seite nicht gefunden
         Impressum
         Zahlungsarten
         Datenschutz
@@ -80,7 +80,7 @@ Symmetrics_InvoicePdf und Symmetrics_InvoicePdf.
 
 *** B: Erstellt zentrale Blöcke für AGBs und Widerrufsrecht
         mrg_business_terms -> AGB
-        mrg_revocation -> Widerruf
+        mrg_revocation -> Widerrufsbelehrung
 
 *** C: Erstellt untere Link-Leiste (inkl. leere AGB- und 
         Widerrufsrecht-Links)
