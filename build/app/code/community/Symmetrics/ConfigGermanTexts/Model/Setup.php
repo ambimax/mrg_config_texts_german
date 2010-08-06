@@ -208,7 +208,8 @@ class Symmetrics_ConfigGermanTexts_Model_Setup extends Mage_Eav_Model_Entity_Set
     {
         $footerLinksHtml = '<ul>';
         $footerLinksCounter = 0;
-        foreach ($this->getFooterLinks() as $link => $data) {
+
+        foreach ($this->getFooterLinks() as $data) {
             $footerLinksCounter++;
             $title = $data['title'];
             $target = $data['target'];
