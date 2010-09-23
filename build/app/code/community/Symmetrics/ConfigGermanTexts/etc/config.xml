@@ -27,7 +27,7 @@
 <config>
     <modules>
         <Symmetrics_ConfigGermanTexts>
-            <version>0.3.28</version>
+            <version>0.3.30</version>
         </Symmetrics_ConfigGermanTexts>
     </modules>
     <global>
