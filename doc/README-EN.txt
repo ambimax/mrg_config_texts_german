@@ -1,118 +1,101 @@
 * DOCUMENTATION
 
 ** INSTALLATION
-Extrahieren Sie den Inhalt dieses Archivs in Ihr Magento Verzeichnis.
-! Das Modul überschreibt den Block footer_links !
+Extract the contents of this archive into your Magento directory.
+! The module overwrites footer_links block!
 
 ** USAGE
-Das Modul erstellt Blöcke mit Beispieltexten und 
-installiert deutsche E-Mail Templates. Alle Webshops,
-die in Deutschland betrieben werden, müssen bestimmte
- Voraussetzungen erfüllen und unterschiedliche Informationen 
-für den Verbraucher beinhalten. So muss der Verbraucher 
-über z.B. Versandkosten, Bezahlmethoden, Bestellprozess usw. 
-explizit im Shop informiert werden. Um die Arbeit für 
-den Shopbetreiber zu erleichern, installiert das Modul 
-alle benötigten Texte, die u.A. auch vom Modul
-Symmetrics_ConfigGerman, Symmetrics_Agreement usw. 
-verwendet werden. 
+The module creates blocks with examples of texts and 
+installs German e-mail templates. All the web shops
+running in Germany should meet certain
+ requirements and should contain different information 
+for the consumer. Thus the consumer should be informed for ex. about shipment costs, payment methods, order processes etc. explicitly in the shop.
+To make the work for the shop owner  easier, the module installs
+all the required texts, which among others are also used by 
+Symmetrics_ConfigGerman, Symmetrics_Agreement etc. modules.
 
-Es werden auch rechtskonforme E-Mail Templates
- installiert, die AGBs und Widerrufsbelehrungen beinhalten. 
-Die Templates sind alle in Deutsch übersetzt. 
 
-Symmetrics_ConfigGermanTexts erstellt u.A. Blöcke 
-für AGBs und Widerrufsbelehrungen, die überall auf der 
-Webseite verwendet werden können. Dies erleichtert die 
-Arbeit erheblich, wenn die Texte ausgetauscht oder 
-angepasst werden müssen, da die relevanten Stellen nun
- alle zentralisiert werden, ebenso greift die Zentralisierung 
-bis auf die E-mail Templates, die die Textänderungen ebenso 
-bekommen würden. 
-Am Beispiel der AGB: 
+Also legally compliant e-mail templates are installed, which contain Terms and Conditions along with revocation instructions. 
+All the templates are translated into German. 
 
-Sie ändern den eigentlichen AGB-Text in CMS -> Static
-Blocks und die Änderungen erscheinen in 
-Bestellbedingungen am Ende des Checkout-Prozesses
- (Voraussetzung ist, dass das Modul Symmetrics_Agreement
-installiert ist), auf der Seite "AGB" und in allen
- E-Mail Templates. 
-ACHTUNG! Das Modul überschreibt die Konfiguration von
- E-Mail Templates. Die E-Mail Templates werden aber nicht 
-ersetzt. Es werden neue E-Mail Templates hinzugefügt und 
-die Konfiguration so angepasst, dass diese E-Mail 
-Templates benutzt werden.
+Symmetrics_ConfigGermanTexts creates along with other things blocks 
+for the Terms and Conditions and revocation instructions, which can be used anywhere on the web page. This simplifies things considerably as the text would only need some changes or adjustments due to the facat that relevant placements are being centralized. This centralization also covers e-mail templates where text alterations will also be applied.
+On the example of the Terms and Conditions: 
+
+You change the actual text of Terms and Conditions in CMS-> Static
+blocks and changes appear in 
+Order Conditions at the end of the checkout process
+(the requirement is, that the module Symmetrics_Agreement
+is installed), on Terms and Conditions page and in all
+ e-mail templates. 
+ATTENTION! The module overwrites the e-mail templates configuration.
+However, the e-mail templates are not replaced. New e-mail templates are added and 
+the configuration is adjusted so that these new e-mail templates are used.
  
-WICHTIG! Die Daten aus config.xml werden nur bei einer 
-Neuinstallation des Moduls in die Datenbank
- geschrieben. Alle weiteren Aenderungen in config.xml
- werden ignoriert. Alle Aenderungen, die nach der
- Installation gemacht werden, müssen über die Admin-
-Oberfläche erfolgen.
+IMPORTANT! Data from config.xml will only be written to the database after the reinstallation of the module. All the further changes are ignored. All the changes after the installation should be made via the admin interface.
 
- Das Modul Symmetrics_ConfigGermanTexts arbeitet eng 
-mit dem Modul Symmetrics_Agreement zusammen. Es ist
- empfehlenswert das Modul Symmetrics_Agreement ebenfalls 
-zu installieren. Symmetrics_ConfigGermanTexts erstellt 
-Blöcke und Seiten, die von Symmetrics_Agreement benutzt 
-werden. 
 
-Es besteht auch eine Verbindung zu dem Modul
-Symmetrics_Imprint, welches die Impressuminformationen
- liefert. Auf der CMS-Seite Impressum und in AGBs finden
- Sie die Programmaufrufe von diesem Modul. Es werden 
-auch Beispieltexte für Symmetrics_Imprint installiert.
-Sichtbar werden diese aber nur, wenn das Modul 
-Symmetrics_Imprint installiert ist. 
+ The module Symmetrics_ConfigGermanTexts works closely 
+with the module Symmetrics_Agreement. It is
+ recommended to also install the module Symmetrics_Agreement.
+Symmetrics_ConfigGermanTexts creates 
+blocks and pages which are used by Symmetrics_Agreement.
+ 
 
-Das Modul installiert auch Beispieltexte für andere 
-Symmetrics Konfigurations-Module, wie z.B. 
-Symmetrics_InvoicePdf und Symmetrics_InvoicePdf.
+There is also a connection to the module
+Symmetrics_Imprint, which delivers impressum information.
+On the CMS page Impressum Information and in Terms and Conditions
+ you can find program requests of this module. Text examples are also installed for Symmetrics_Imprint.
+However, it is visible only if the module Symmetrics_Imprint is installed. 
+
+The module also installs text examples for other 
+Symmetrics configuration modules, as for example 
+Symmetrics_InvoicePdf and Symmetrics_InvoicePdf.
 
 ** FUNCTIONALITY
-*** A: Erstellt Seiten für:
-        Seite nicht gefunden
+*** A: Creates pages for:
+        Page not found
         Impressum
-        Zahlungsarten
-        Datenschutz
-        Lieferung
-        Bestellvorgang
+        Payment methods
+        Data protection
+        Delivery
+        Order process
 
-*** B: Erstellt zentrale Blöcke für AGBs und Widerrufsrecht
-        mrg_business_terms -> AGB
-        mrg_revocation -> Widerrufsbelehrung
+*** B: Creates central blocks for Terms and Conditions and revocation right
+        mrg_business_terms-> Terms and Conditions
+        mrg_revocation-> revocation instruction
 
-*** C: Erstellt untere Link-Leiste (inkl. leere AGB- und 
-        Widerrufsrecht-Links)
+*** C: Creates a bottom link bar (incl. empty Terms and Conditions and  
+        revocation right links)
 
-*** D: Ersetzt Standard E-Mail Templates mit Rechtskonformen
-        und übersetzten E-Mail Templates inkl. AGB und 
-        Widerrufsbelehrung
+*** D: Replaces standard e-mail templates with legally compliant
+        and translated e-mail templates incl. Terms and Conditions and 
+        revocation instruction.
 
-*** E: Alle Texte sind vor der Installation zentral über 
-        HTML-Dateien veränderbar (app/locale/de_DE)
+*** E: All the texts prior to installation are centrally alterable via HTML files
+        (app / locale / de_DE)
         
-*** F: Übersetzt einige fehlende bzw. nicht-rechtskonform
-        übersetzte Strings. Sichtbar sind diese unter
+*** F Translates some missing or not legally compliant
+        strings. These are visible under
         app/locale/de_DE/Symmetrics_ConfigGermanTexts.csv
 
 ** TECHNICAL 
-Die gesamte Funktionalität des Moduls findet in einem Migrationsskript
- gekoppelt mit dem Setup-Model statt.
+The whole functionality of the module is to be found in a migration script
+ coupled with the setup model.
 
-** PROBLEMS
-  Keine Probleme bekannt.
+**  PROBLEMS
+  No problems known.
 
 * TESTCASES
 ** BASIC
-*** A: Prüfen Sie, ob die Seiten entsprechend angelegt wurden
-*** B: Prüfen Sie, ob die Blöcke entsprechend angelegt wurden
-*** C: Prüfen Sie, ob die untere Linkleiste korrekt angelegt wurde
-        und alle Links funktionieren
-*** D: Prüfen Sie, ob die Emails entsprechend angelegt wurden.
-        Gehen Sie ins Back-End unter "System" -> "Transactions-Emails".
-        Klicken Sie bei jeder Email auf "Vorschau". Falls Sie eine leere Seite
-        sehen, bedeutet das, dass der Fehler aufgetreten ist.
-*** E: Ändern Sie vor der Installation die Dateien und prüfen Sie,
-        ob die Texte übernommen werden.
-*** F: Überprüfen Sie, ob die Strings alle korrekt übersetzt werden.
+*** A: Check whether the pages were appropriately created.
+*** B: Check whether the blocks were appropriately created.
+*** C: Check whether the bottom link bar was appropriately created 
+        and all the links are functioning.
+*** D: Check whether the emails were appropriately created.
+        Go to the backend under "System"-> "Transactions-Emails".
+        Click "Preview" for every email. If you see an empty page,
+        this means that an error has occured.
+*** E: Change the files before installation and check,
+        whether the texts are applied.
+*** F: Check whether all the strings are correctly translated.
