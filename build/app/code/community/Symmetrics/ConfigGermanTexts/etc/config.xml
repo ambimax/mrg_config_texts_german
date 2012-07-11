@@ -67,6 +67,11 @@
                         <configgermantexts>Symmetrics_ConfigGermanTexts.csv</configgermantexts>
                     </files>
                 </Mage_Checkout>
+                <Mage_Paypal>
+                    <files>
+                        <configgermantexts>Symmetrics_ConfigGermanTexts.csv</configgermantexts>
+                    </files>
+                </Mage_Paypal>
                 <Mage_Newsletter>
                     <files>
                         <configgermantexts>Symmetrics_ConfigGermanTexts.csv</configgermantexts>
