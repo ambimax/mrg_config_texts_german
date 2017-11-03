@@ -3,6 +3,6 @@
     "description": "Symmetrics MRG ConfigTextsGerman",
     "type": "magento-module"
     "require": {
-        "magento-hackathon/magento-composer-installer": "*"
+        "magento-hackathon/magento-composer-installer": "~3"
     },
 }
