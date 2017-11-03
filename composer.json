@@ -2,4 +2,7 @@
     "name": "symmetrics/mrg_config_texts_german",
     "description": "Symmetrics MRG ConfigTextsGerman",
     "type": "magento-module"
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*"
+    },
 }
